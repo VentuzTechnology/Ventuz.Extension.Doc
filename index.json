@@ -982,6 +982,6 @@
   "index.html": {
     "href": "index.html",
     "title": "Ventuz Extension API",
-    "summary": "Ventuz Extension API This documentation contains the Ventuz Extension API reference and a step by step guide on how to create your own Ventuz extension using the Ventuz Extension API."
+    "summary": "Ventuz Extension API This documentation contains the Ventuz Extension API reference and a step by step guide on how to create your own Ventuz extension using the Ventuz Extension API. Important This documentation is work in progress as the Ventuz Extension API is. The documentation is still work in progress and will be periodically updated. For questions, requests and other communication, feel free to open an issue in the VentuzExtensions repository. Version Current version: 48409. History 2025-03-11 Initial version (48409)."
   }
 }
