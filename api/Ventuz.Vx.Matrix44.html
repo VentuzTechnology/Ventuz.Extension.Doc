@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Matrix44 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Matrix44 ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/VENTUZ_Logo_white.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ventuz.Vx.Matrix44">
+
+
+
+  <h1 id="Ventuz_Vx_Matrix44" data-uid="Ventuz.Vx.Matrix44" class="text-break">
+Struct Matrix44  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ventuz.html">Ventuz</a>.<a class="xref" href="Ventuz.Vx.html">Vx</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Matrix44 : IEquatable&lt;Matrix44&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Ventuz_Vx_Matrix44__ctor_" data-uid="Ventuz.Vx.Matrix44.#ctor*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44__ctor_Ventuz_Vx_Matrix33__" data-uid="Ventuz.Vx.Matrix44.#ctor(Ventuz.Vx.Matrix33@)">
+  Matrix44(in Matrix33)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix44(in Matrix33 s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="Ventuz.Vx.Matrix33.html">Matrix33</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44__ctor_" data-uid="Ventuz.Vx.Matrix44.#ctor*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44__ctor_Ventuz_Vx_Matrix33ST__" data-uid="Ventuz.Vx.Matrix44.#ctor(Ventuz.Vx.Matrix33ST@)">
+  Matrix44(in Matrix33ST)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix44(in Matrix33ST m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="Ventuz.Vx.Matrix33ST.html">Matrix33ST</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44__ctor_" data-uid="Ventuz.Vx.Matrix44.#ctor*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44__ctor_Ventuz_Vx_Matrix44A__" data-uid="Ventuz.Vx.Matrix44.#ctor(Ventuz.Vx.Matrix44A@)">
+  Matrix44(in Matrix44A)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix44(in Matrix44A s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="Ventuz.Vx.Matrix44A.html">Matrix44A</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44__ctor_" data-uid="Ventuz.Vx.Matrix44.#ctor*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44__ctor_Ventuz_Vx_Vector4__Ventuz_Vx_Vector4__Ventuz_Vx_Vector4__Ventuz_Vx_Vector4__" data-uid="Ventuz.Vx.Matrix44.#ctor(Ventuz.Vx.Vector4@,Ventuz.Vx.Vector4@,Ventuz.Vx.Vector4@,Ventuz.Vx.Vector4@)">
+  Matrix44(in Vector4, in Vector4, in Vector4, in Vector4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix44(in Vector4 _i, in Vector4 _j, in Vector4 _k, in Vector4 _l)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_i</code> <a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+    <dt><code>_j</code> <a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+    <dt><code>_k</code> <a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+    <dt><code>_l</code> <a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Ventuz_Vx_Matrix44_Identity" data-uid="Ventuz.Vx.Matrix44.Identity">
+  Identity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Matrix44 Identity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Matrix44_Zero" data-uid="Ventuz.Vx.Matrix44.Zero">
+  Zero
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Matrix44 Zero</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Matrix44_i" data-uid="Ventuz.Vx.Matrix44.i">
+  i
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 i</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Matrix44_j" data-uid="Ventuz.Vx.Matrix44.j">
+  j
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 j</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Matrix44_k" data-uid="Ventuz.Vx.Matrix44.k">
+  k
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 k</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Matrix44_l" data-uid="Ventuz.Vx.Matrix44.l">
+  l
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 l</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ventuz_Vx_Matrix44_IsRotated_" data-uid="Ventuz.Vx.Matrix44.IsRotated*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_IsRotated" data-uid="Ventuz.Vx.Matrix44.IsRotated">
+  IsRotated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRotated { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ventuz_Vx_Matrix44_Determinant_" data-uid="Ventuz.Vx.Matrix44.Determinant*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Determinant" data-uid="Ventuz.Vx.Matrix44.Determinant">
+  Determinant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Determinant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Equals_" data-uid="Ventuz.Vx.Matrix44.Equals*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Equals_System_Object_" data-uid="Ventuz.Vx.Matrix44.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Equals_" data-uid="Ventuz.Vx.Matrix44.Equals*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Equals_Ventuz_Vx_Matrix44_" data-uid="Ventuz.Vx.Matrix44.Equals(Ventuz.Vx.Matrix44)">
+  Equals(Matrix44)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Matrix44 a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Equals_" data-uid="Ventuz.Vx.Matrix44.Equals*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Equals_Ventuz_Vx_Matrix44__" data-uid="Ventuz.Vx.Matrix44.Equals(Ventuz.Vx.Matrix44@)">
+  Equals(in Matrix44)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(in Matrix44 a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_FastEquals_" data-uid="Ventuz.Vx.Matrix44.FastEquals*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_FastEquals_Ventuz_Vx_Matrix44__" data-uid="Ventuz.Vx.Matrix44.FastEquals(Ventuz.Vx.Matrix44@)">
+  FastEquals(in Matrix44)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FastEquals(in Matrix44 a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_GetColumn_" data-uid="Ventuz.Vx.Matrix44.GetColumn*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_GetColumn_System_Int32_" data-uid="Ventuz.Vx.Matrix44.GetColumn(System.Int32)">
+  GetColumn(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 GetColumn(int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_GetHashCode_" data-uid="Ventuz.Vx.Matrix44.GetHashCode*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_GetHashCode" data-uid="Ventuz.Vx.Matrix44.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_GetRow_" data-uid="Ventuz.Vx.Matrix44.GetRow*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_GetRow_System_Int32_" data-uid="Ventuz.Vx.Matrix44.GetRow(System.Int32)">
+  GetRow(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 GetRow(int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Lerp_" data-uid="Ventuz.Vx.Matrix44.Lerp*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Lerp_Ventuz_Vx_Matrix44__Ventuz_Vx_Matrix44__System_Single_" data-uid="Ventuz.Vx.Matrix44.Lerp(Ventuz.Vx.Matrix44@,Ventuz.Vx.Matrix44@,System.Single)">
+  Lerp(in Matrix44, in Matrix44, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 Lerp(in Matrix44 a, in Matrix44 b, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_OrthoLH_" data-uid="Ventuz.Vx.Matrix44.OrthoLH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_OrthoLH_System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.OrthoLH(System.Single@,System.Single@,System.Single@,System.Single@)">
+  OrthoLH(in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 OrthoLH(in float w, in float h, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>w</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>h</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_OrthoOffCenterLH_" data-uid="Ventuz.Vx.Matrix44.OrthoOffCenterLH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_OrthoOffCenterLH_System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.OrthoOffCenterLH(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+  OrthoOffCenterLH(in float, in float, in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 OrthoOffCenterLH(in float l, in float r, in float b, in float t, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>l</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_OrthoOffCenterRH_" data-uid="Ventuz.Vx.Matrix44.OrthoOffCenterRH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_OrthoOffCenterRH_System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.OrthoOffCenterRH(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+  OrthoOffCenterRH(in float, in float, in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 OrthoOffCenterRH(in float l, in float r, in float b, in float t, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>l</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_OrthoRH_" data-uid="Ventuz.Vx.Matrix44.OrthoRH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_OrthoRH_System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.OrthoRH(System.Single@,System.Single@,System.Single@,System.Single@)">
+  OrthoRH(in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 OrthoRH(in float w, in float h, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>w</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>h</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_PerspectiveFovLH_" data-uid="Ventuz.Vx.Matrix44.PerspectiveFovLH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_PerspectiveFovLH_System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.PerspectiveFovLH(System.Single@,System.Single@,System.Single@,System.Single@)">
+  PerspectiveFovLH(in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 PerspectiveFovLH(in float fovy, in float aspect, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fovy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_PerspectiveFovRH_" data-uid="Ventuz.Vx.Matrix44.PerspectiveFovRH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_PerspectiveFovRH_System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.PerspectiveFovRH(System.Single@,System.Single@,System.Single@,System.Single@)">
+  PerspectiveFovRH(in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 PerspectiveFovRH(in float fovy, in float aspect, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fovy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_PerspectiveOffCenterLH_" data-uid="Ventuz.Vx.Matrix44.PerspectiveOffCenterLH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_PerspectiveOffCenterLH_System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.PerspectiveOffCenterLH(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+  PerspectiveOffCenterLH(in float, in float, in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 PerspectiveOffCenterLH(in float l, in float r, in float b, in float t, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>l</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_PerspectiveOffCenterRH_" data-uid="Ventuz.Vx.Matrix44.PerspectiveOffCenterRH*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_PerspectiveOffCenterRH_System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="Ventuz.Vx.Matrix44.PerspectiveOffCenterRH(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+  PerspectiveOffCenterRH(in float, in float, in float, in float, in float, in float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 PerspectiveOffCenterRH(in float l, in float r, in float b, in float t, in float zn, in float zf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>l</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Projection_" data-uid="Ventuz.Vx.Matrix44.Projection*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Projection_System_Single_System_Single_System_Single_System_Single_" data-uid="Ventuz.Vx.Matrix44.Projection(System.Single,System.Single,System.Single,System.Single)">
+  Projection(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 Projection(float zoom, float aspect, float znear, float zfar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>zoom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>znear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zfar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_ProjectionFovX_" data-uid="Ventuz.Vx.Matrix44.ProjectionFovX*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_ProjectionFovX_System_Single_System_Single_System_Single_System_Single_" data-uid="Ventuz.Vx.Matrix44.ProjectionFovX(System.Single,System.Single,System.Single,System.Single)">
+  ProjectionFovX(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 ProjectionFovX(float zoom, float aspect, float znear, float zfar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>zoom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>znear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zfar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_ProjectionFovY_" data-uid="Ventuz.Vx.Matrix44.ProjectionFovY*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_ProjectionFovY_System_Single_System_Single_System_Single_System_Single_" data-uid="Ventuz.Vx.Matrix44.ProjectionFovY(System.Single,System.Single,System.Single,System.Single)">
+  ProjectionFovY(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 ProjectionFovY(float zoom, float aspect, float znear, float zfar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>zoom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>aspect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>znear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>zfar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_RotationXYZ_" data-uid="Ventuz.Vx.Matrix44.RotationXYZ*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_RotationXYZ_System_Single_System_Single_System_Single_" data-uid="Ventuz.Vx.Matrix44.RotationXYZ(System.Single,System.Single,System.Single)">
+  RotationXYZ(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 RotationXYZ(float ax, float ay, float az)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>ay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>az</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Scale_" data-uid="Ventuz.Vx.Matrix44.Scale*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Scale_System_Single_" data-uid="Ventuz.Vx.Matrix44.Scale(System.Single)">
+  Scale(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix44 Scale(float s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_SetColumn_" data-uid="Ventuz.Vx.Matrix44.SetColumn*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_SetColumn_System_Int32_Ventuz_Vx_Vector4__" data-uid="Ventuz.Vx.Matrix44.SetColumn(System.Int32,Ventuz.Vx.Vector4@)">
+  SetColumn(int, in Vector4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColumn(int column, in Vector4 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>v</code> <a class="xref" href="Ventuz.Vx.Vector4.html">Vector4</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_ToString_" data-uid="Ventuz.Vx.Matrix44.ToString*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_ToString" data-uid="Ventuz.Vx.Matrix44.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Translation_" data-uid="Ventuz.Vx.Matrix44.Translation*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Translation_System_Single_System_Single_System_Single_" data-uid="Ventuz.Vx.Matrix44.Translation(System.Single,System.Single,System.Single)">
+  Translation(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 Translation(float x, float y, float z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_Translation_" data-uid="Ventuz.Vx.Matrix44.Translation*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_Translation_Ventuz_Vx_Vector3__" data-uid="Ventuz.Vx.Matrix44.Translation(Ventuz.Vx.Vector3@)">
+  Translation(in Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 Translation(in Vector3 vec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vec</code> <a class="xref" href="Ventuz.Vx.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Ventuz_Vx_Matrix44_op_Addition_" data-uid="Ventuz.Vx.Matrix44.op_Addition*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_op_Addition_Ventuz_Vx_Matrix44__Ventuz_Vx_Matrix44__" data-uid="Ventuz.Vx.Matrix44.op_Addition(Ventuz.Vx.Matrix44@,Ventuz.Vx.Matrix44@)">
+  operator +(in Matrix44, in Matrix44)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 operator +(in Matrix44 a, in Matrix44 b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_op_Equality_" data-uid="Ventuz.Vx.Matrix44.op_Equality*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_op_Equality_Ventuz_Vx_Matrix44__Ventuz_Vx_Matrix44__" data-uid="Ventuz.Vx.Matrix44.op_Equality(Ventuz.Vx.Matrix44@,Ventuz.Vx.Matrix44@)">
+  operator ==(in Matrix44, in Matrix44)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(in Matrix44 a, in Matrix44 b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_op_Inequality_" data-uid="Ventuz.Vx.Matrix44.op_Inequality*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_op_Inequality_Ventuz_Vx_Matrix44__Ventuz_Vx_Matrix44__" data-uid="Ventuz.Vx.Matrix44.op_Inequality(Ventuz.Vx.Matrix44@,Ventuz.Vx.Matrix44@)">
+  operator !=(in Matrix44, in Matrix44)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(in Matrix44 a, in Matrix44 b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Matrix44_op_Subtraction_" data-uid="Ventuz.Vx.Matrix44.op_Subtraction*"></a>
+
+  <h3 id="Ventuz_Vx_Matrix44_op_Subtraction_Ventuz_Vx_Matrix44__Ventuz_Vx_Matrix44__" data-uid="Ventuz.Vx.Matrix44.op_Subtraction(Ventuz.Vx.Matrix44@,Ventuz.Vx.Matrix44@)">
+  operator -(in Matrix44, in Matrix44)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix44 operator -(in Matrix44 a, in Matrix44 b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44.html">Matrix44</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

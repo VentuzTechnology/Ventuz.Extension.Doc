@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IVxApiDesigner </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IVxApiDesigner ">
+      
+      <meta name="description" content="This interface represents the designer api. All provided methods are only available in the context of a running Ventuz Designer.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/VENTUZ_Logo_white.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ventuz.Extension.IVxApiDesigner">
+
+
+
+  <h1 id="Ventuz_Extension_IVxApiDesigner" data-uid="Ventuz.Extension.IVxApiDesigner" class="text-break">
+Interface IVxApiDesigner  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ventuz.html">Ventuz</a>.<a class="xref" href="Ventuz.Extension.html">Extension</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This interface represents the designer api.
+All provided methods are only available in the context of a running Ventuz Designer.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IVxApiDesigner : IVxApi</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_CloseScene_" data-uid="Ventuz.Extension.IVxApiDesigner.CloseScene*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_CloseScene_Ventuz_Extension_VxScene_System_Boolean_" data-uid="Ventuz.Extension.IVxApiDesigner.CloseScene(Ventuz.Extension.VxScene,System.Boolean)">
+  CloseScene(VxScene, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseScene(VxScene scene, bool queryUser = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+    <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_CreateAndOpenScene_" data-uid="Ventuz.Extension.IVxApiDesigner.CreateAndOpenScene*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_CreateAndOpenScene_System_Action_Ventuz_Extension_VxScene__System_String_System_Boolean_" data-uid="Ventuz.Extension.IVxApiDesigner.CreateAndOpenScene(System.Action{Ventuz.Extension.VxScene},System.String,System.Boolean)">
+  CreateAndOpenScene(Action&lt;VxScene&gt;, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxScene CreateAndOpenScene(Action&lt;VxScene&gt; buildSceneAction = null, string nameTemplate = null, bool withLayer3D = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buildSceneAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>nameTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>withLayer3D</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_ExportArchive_" data-uid="Ventuz.Extension.IVxApiDesigner.ExportArchive*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_ExportArchive_Ventuz_Extension_VxScene_System_Uri_System_Boolean_" data-uid="Ventuz.Extension.IVxApiDesigner.ExportArchive(Ventuz.Extension.VxScene,System.Uri,System.Boolean)">
+  ExportArchive(VxScene, Uri, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ExportArchive(VxScene scene, Uri uri = null, bool queryUser = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+    <dt><code>uri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_ExportPresentation_" data-uid="Ventuz.Extension.IVxApiDesigner.ExportPresentation*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_ExportPresentation_Ventuz_Extension_VxScene_System_Uri_System_Boolean_" data-uid="Ventuz.Extension.IVxApiDesigner.ExportPresentation(Ventuz.Extension.VxScene,System.Uri,System.Boolean)">
+  ExportPresentation(VxScene, Uri, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ExportPresentation(VxScene scene, Uri uri = null, bool queryUser = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+    <dt><code>uri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_GetCurrentContainer_" data-uid="Ventuz.Extension.IVxApiDesigner.GetCurrentContainer*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_GetCurrentContainer" data-uid="Ventuz.Extension.IVxApiDesigner.GetCurrentContainer">
+  GetCurrentContainer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVxContainer GetCurrentContainer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_GetCurrentScene_" data-uid="Ventuz.Extension.IVxApiDesigner.GetCurrentScene*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_GetCurrentScene" data-uid="Ventuz.Extension.IVxApiDesigner.GetCurrentScene">
+  GetCurrentScene()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxScene GetCurrentScene()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_GetLoadedAndOpenScenes_" data-uid="Ventuz.Extension.IVxApiDesigner.GetLoadedAndOpenScenes*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_GetLoadedAndOpenScenes" data-uid="Ventuz.Extension.IVxApiDesigner.GetLoadedAndOpenScenes">
+  GetLoadedAndOpenScenes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxScene[] GetLoadedAndOpenScenes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_GetUiStyle_" data-uid="Ventuz.Extension.IVxApiDesigner.GetUiStyle*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_GetUiStyle" data-uid="Ventuz.Extension.IVxApiDesigner.GetUiStyle">
+  GetUiStyle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxUiStyle GetUiStyle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxUiStyle.html">VxUiStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_ImportArchive_" data-uid="Ventuz.Extension.IVxApiDesigner.ImportArchive*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_ImportArchive_System_Uri_System_Boolean_System_Boolean_" data-uid="Ventuz.Extension.IVxApiDesigner.ImportArchive(System.Uri,System.Boolean,System.Boolean)">
+  ImportArchive(Uri, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxScene ImportArchive(Uri uri, bool openScene = true, bool queryUser = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+    <dt><code>openScene</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_IsSceneOpen_" data-uid="Ventuz.Extension.IVxApiDesigner.IsSceneOpen*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_IsSceneOpen_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiDesigner.IsSceneOpen(Ventuz.Extension.VxScene)">
+  IsSceneOpen(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSceneOpen(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_LoadAndOpenScene_" data-uid="Ventuz.Extension.IVxApiDesigner.LoadAndOpenScene*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_LoadAndOpenScene_System_String_" data-uid="Ventuz.Extension.IVxApiDesigner.LoadAndOpenScene(System.String)">
+  LoadAndOpenScene(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxScene LoadAndOpenScene(string identity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_Navigate_" data-uid="Ventuz.Extension.IVxApiDesigner.Navigate*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_Navigate_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.IVxApiDesigner.Navigate(Ventuz.Extension.VxNode)">
+  Navigate(VxNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Navigate(VxNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiDesigner_OpenScene_" data-uid="Ventuz.Extension.IVxApiDesigner.OpenScene*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiDesigner_OpenScene_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiDesigner.OpenScene(Ventuz.Extension.VxScene)">
+  OpenScene(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OpenScene(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

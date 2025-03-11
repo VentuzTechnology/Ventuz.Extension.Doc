@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IVxApiResources </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IVxApiResources ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/VENTUZ_Logo_white.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ventuz.Extension.IVxApiResources">
+
+
+
+  <h1 id="Ventuz_Extension_IVxApiResources" data-uid="Ventuz.Extension.IVxApiResources" class="text-break">
+Interface IVxApiResources  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ventuz.html">Ventuz</a>.<a class="xref" href="Ventuz.Extension.html">Extension</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IVxApiResources : IVxApi</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateCustomResource_" data-uid="Ventuz.Extension.IVxApiResources.CreateCustomResource*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateCustomResource__1_System_String_Ventuz_Extension_ICustomResourceParameter___0__" data-uid="Ventuz.Extension.IVxApiResources.CreateCustomResource``1(System.String,Ventuz.Extension.ICustomResourceParameter{``0})">
+  CreateCustomResource&lt;D&gt;(string, ICustomResourceParameter&lt;D&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">D CreateCustomResource&lt;D&gt;(string name, ICustomResourceParameter&lt;D&gt; parameter) where D : class, ICustomResource</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameter</code> <a class="xref" href="Ventuz.Extension.ICustomResourceParameter-1.html">ICustomResourceParameter</a>&lt;D&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">D</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>D</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateCustomResource_" data-uid="Ventuz.Extension.IVxApiResources.CreateCustomResource*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateCustomResource__1___0__Ventuz_Extension_ICustomResourceParameter___0__" data-uid="Ventuz.Extension.IVxApiResources.CreateCustomResource``1(``0@,Ventuz.Extension.ICustomResourceParameter{``0})">
+  CreateCustomResource&lt;D&gt;(ref D, ICustomResourceParameter&lt;D&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateCustomResource&lt;D&gt;(ref D resource, ICustomResourceParameter&lt;D&gt; parameter) where D : class, ICustomResource</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <span class="xref">D</span></dt>
+    <dd></dd>
+    <dt><code>parameter</code> <a class="xref" href="Ventuz.Extension.ICustomResourceParameter-1.html">ICustomResourceParameter</a>&lt;D&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>D</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateMesh_" data-uid="Ventuz.Extension.IVxApiResources.CreateMesh*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateMesh__1_System_String___0_" data-uid="Ventuz.Extension.IVxApiResources.CreateMesh``1(System.String,``0)">
+  CreateMesh&lt;P&gt;(string, P)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IMesh CreateMesh&lt;P&gt;(string name, P parameter) where P : struct, IMeshResourceParameter</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameter</code> <span class="xref">P</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.IMesh.html">IMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>P</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateMesh_" data-uid="Ventuz.Extension.IVxApiResources.CreateMesh*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateMesh__1_Ventuz_Extension_IMesh____0_" data-uid="Ventuz.Extension.IVxApiResources.CreateMesh``1(Ventuz.Extension.IMesh@,``0)">
+  CreateMesh&lt;P&gt;(ref IMesh, P)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateMesh&lt;P&gt;(ref IMesh meshResource, P parameter) where P : struct, IMeshResourceParameter</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>meshResource</code> <a class="xref" href="Ventuz.Extension.IMesh.html">IMesh</a></dt>
+    <dd></dd>
+    <dt><code>parameter</code> <span class="xref">P</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>P</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateText_" data-uid="Ventuz.Extension.IVxApiResources.CreateText*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateText_System_String_System_String_Ventuz_Extension_TextLayoutOptions_System_String_" data-uid="Ventuz.Extension.IVxApiResources.CreateText(System.String,System.String,Ventuz.Extension.TextLayoutOptions,System.String)">
+  CreateText(string, string, TextLayoutOptions, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IText CreateText(string name, string text, TextLayoutOptions layoutOptions = null, string font = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>layoutOptions</code> <a class="xref" href="Ventuz.Extension.TextLayoutOptions.html">TextLayoutOptions</a></dt>
+    <dd></dd>
+    <dt><code>font</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.IText.html">IText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateText_" data-uid="Ventuz.Extension.IVxApiResources.CreateText*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateText_Ventuz_Extension_IText__System_String_Ventuz_Extension_TextLayoutOptions_System_String_" data-uid="Ventuz.Extension.IVxApiResources.CreateText(Ventuz.Extension.IText@,System.String,Ventuz.Extension.TextLayoutOptions,System.String)">
+  CreateText(ref IText, string, TextLayoutOptions, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateText(ref IText textResource, string text, TextLayoutOptions layoutOptions = null, string font = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>textResource</code> <a class="xref" href="Ventuz.Extension.IText.html">IText</a></dt>
+    <dd></dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>layoutOptions</code> <a class="xref" href="Ventuz.Extension.TextLayoutOptions.html">TextLayoutOptions</a></dt>
+    <dd></dd>
+    <dt><code>font</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateText2D_" data-uid="Ventuz.Extension.IVxApiResources.CreateText2D*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateText2D_Ventuz_Extension_ITextRenderObject__Ventuz_Extension_IText_System_String_" data-uid="Ventuz.Extension.IVxApiResources.CreateText2D(Ventuz.Extension.ITextRenderObject@,Ventuz.Extension.IText,System.String)">
+  CreateText2D(ref ITextRenderObject, IText, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateText2D(ref ITextRenderObject textRenderResource, IText text, string style)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>textRenderResource</code> <a class="xref" href="Ventuz.Extension.ITextRenderObject.html">ITextRenderObject</a></dt>
+    <dd></dd>
+    <dt><code>text</code> <a class="xref" href="Ventuz.Extension.IText.html">IText</a></dt>
+    <dd></dd>
+    <dt><code>style</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateTexture_" data-uid="Ventuz.Extension.IVxApiResources.CreateTexture*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateTexture__1_System_String___0_" data-uid="Ventuz.Extension.IVxApiResources.CreateTexture``1(System.String,``0)">
+  CreateTexture&lt;P&gt;(string, P)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITexture CreateTexture&lt;P&gt;(string name, P parameter) where P : struct, ITextureResourceParameter</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameter</code> <span class="xref">P</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.ITexture.html">ITexture</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>P</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_CreateTexture_" data-uid="Ventuz.Extension.IVxApiResources.CreateTexture*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_CreateTexture__1_Ventuz_Extension_ITexture____0_" data-uid="Ventuz.Extension.IVxApiResources.CreateTexture``1(Ventuz.Extension.ITexture@,``0)">
+  CreateTexture&lt;P&gt;(ref ITexture, P)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateTexture&lt;P&gt;(ref ITexture textureResource, P parameter) where P : struct, ITextureResourceParameter</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>textureResource</code> <a class="xref" href="Ventuz.Extension.ITexture.html">ITexture</a></dt>
+    <dd></dd>
+    <dt><code>parameter</code> <span class="xref">P</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>P</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiResources_ReleaseLocalResource_" data-uid="Ventuz.Extension.IVxApiResources.ReleaseLocalResource*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiResources_ReleaseLocalResource_Ventuz_Extension_IResource__" data-uid="Ventuz.Extension.IVxApiResources.ReleaseLocalResource(Ventuz.Extension.IResource@)">
+  ReleaseLocalResource(ref IResource)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReleaseLocalResource(ref IResource resource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resource</code> <a class="xref" href="Ventuz.Extension.IResource.html">IResource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

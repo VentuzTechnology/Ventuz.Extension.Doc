@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>How to develop </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="How to develop ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/VENTUZ_Logo_white.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="how-to-develop">How to develop</h1>
+
+<div class="alert alert-secondary">
+<h5>TODO</h5>
+<p>Björn</p>
+</div>
+<h2 id="requirements-vs-project-typ-build-type-dependencies">Requirements (VS, Project Typ, Build Type, Dependencies)</h2>
+<div class="alert alert-secondary">
+<h5>TODO</h5>
+<p>Björn</p>
+</div>
+<h2 id="visual-studio--net-project">Visual Studio / NET Project</h2>
+<div class="alert alert-secondary">
+<h5>TODO</h5>
+<p>Björn</p>
+</div>
+<h2 id="develop--debug">Develop / Debug</h2>
+<div class="alert alert-secondary">
+<h5>TODO</h5>
+<p>Björn</p>
+</div>
+<h2 id="deployment-and-versioning">Deployment and Versioning</h2>
+<div class="alert alert-secondary">
+<h5>TODO</h5>
+<p>Björn</p>
+</div>
+<h2 id="code-api-design-concept-conventions">Code API Design Concept Conventions</h2>
+<p>Vx is based on reflection, which means that the Vx Engine examines the declarations and types found in a Vx package. Implementors must derive from a Vx base class, implement a Vx interface or attach a Vx attribute. Required metadata such as display names, icons, descriptions, or user help references is not mandatory, so implementations will work even if such metadata is not provided. This drastically improves turnaround times and prototyping speed.</p>
+<p>Normally, user code never manually creates vx instances. The instance handling (creating/deleting) is done by the Vx engine in <em>Ventuz</em>. Only custom objects required for business logic of the implementor are completely under user control. The implementor is then also responsible to clean-up memory for custom instances while Vx takes care about the Vx objects.</p>
+<p>Vx is a proxy-based API, which means that the Vx classes and their derivatives and implementations (mostly) only represent a proxy to the real object behind. This proxy class are of type <code>VxBase</code>. For example, a class of type <code>VxNode</code> doesn't represent the real node in <em>Ventuz</em>, but acts as a proxy pointing to the real internal object. This abstraction helps to keep the Vx APIs simple. Also the vx code (the actual extension) derives from such proxies.</p>
+<h2 id="type-references-and-aliases">Type references and aliases</h2>
+<p>Types on Vx and Ventuz side can be handled as a strong type reference (e.g. <code>typeof(Ventuz.Intrinsic.World.Axis)</code>). every type in the Vx world as a type alias of type string. The axis for example could also be addressed by its alias <code>&quot;IntrComp.World.Axis&quot;</code>. A custom Vx type can provide the <code>VxTypeAliasAttribute</code> to specify the alias name. Using aliases help to maintain compatibility and versioning without strong but symbolic references. Ventuz is using this technique to write scene to disk on make sure that such scenes can be loaded even if the Vx code is not existent.</p>
+<h2 id="api-interfaces">API interfaces</h2>
+<p>Whenever a Vx code needs to call the API an interface method is provided in the static class <a href="../api/Ventuz.Extension.VX.html">Ventuz.Extension.VX</a>. The <code>VX</code> class has several property getters to get the implementaion object of the API which provides methods to get or set values or to call a function. Some examples of such APIs are <code>IO</code>, <code>Project</code>, <code>Engine</code>, <code>Log</code>, <code>Renderer</code>, <code>Resources</code>, <code>UI</code>, <code>Designer</code> or <code>SceneBuilder</code>.</p>
+<p>Please note that not all APIs are available in all threads, contexts or phases (see also <a href="#threading">Threading</a> and <a href="#scene-phases">Scene Phases</a>). Also, certain interfaces are not available in <em>Ventuz Runtime</em> because they represent APIs to <em>Ventuz Designer</em>. Therefore, certain implementations of Vx classes are not used or created in <em>Ventuz Runtime</em> because they represent an extension without any effect in <em>Ventuz Runtime</em>, only in <em>Ventuz Designer</em>.</p>
+<p>Many Vx base classes (of type <code>VxBase</code>) provide local properties or methods. This are implementations for convenience since they only use the API calls provided in the <code>VX</code> interface. Almost all <code>VX</code> interface calls have the actual object as its first parameter (like a <code>this</code> pointer). The convenience accessors simply insert <code>this</code> when calling the API.</p>
+<h2 id="threading">Threading</h2>
+<p><em>Ventuz</em> is a real-time rendering engine that is based and databindings and fast evaluation of expressions and dependencies. Parallelization and multi-threading is very important to provide speed and liability.</p>
+<p>Whenever code from custom implementors is called you have to be aware in which thread you are and which APIs and functions are available and valid to be called. As long the implemented code is called synchroneously <em>Ventuz</em> takes care about the correct thread and object locking. But if you implement your own threads or if you use async tasks, you have to make sure that certain API calls are dispatched to the right thread. Otherwise you will faces dead-lock, exceptions or worst cases crashes. As an example, if any API to the <em>Ventuz Designer</em> is called it must be sure that this is execute on the main thread. The Vx framework provides multiple functions to synchronize such calls to the correct thread.</p>
+<p>Custom thread must be started and even more imported shutdown correctly because <em>Ventuz</em> has no control about them. Thus, implementing Vx code utilizing threads, tasks or async coding requires good experience and proper testing.</p>
+<h2 id="scene-phases">Scene Phases</h2>
+<p>A scene lives in multiple phases during its life-cycle and rendering. It is important to understant this different phases and being aware of when certain API calls are possible.</p>
+<h3 id="initializing">Initializing</h3>
+<p>Whenever <em>Ventuz</em> loads a scene into memory the handle to that scene is already available, but you can't access it in any ways until it was fully loaded.</p>
+<h3 id="disposed">Disposed</h3>
+<p>You may still hold a reference to a scene which was unloaded from memory. In this case this scene is in its <strong>Disposed Phase</strong>. Any call to its API will run into an <code>ObjectDisposedException</code></p>
+<h3 id="idle">Idle</h3>
+<p>If a scene is in <strong>Idle Phase</strong> you are able to access or modify its structure. You can find/create nodes, create bindings, read/write property values.</p>
+<p>Please note that modifications on the structure of a scene (nodes, links, bindings) will cause a re-calculation of certain optimizations in the background. Whenever <em>Ventuz Designer</em> modifies the scene (e.g. inserting a node) this calculation takes place. This calucation takes time and is usually <strong>not real-time capable</strong>. If Vx code want to modify the structure it should be either done in <em>Ventuz Designer</em> (building scenes) or if the scene is currently not renderered. Otherwise the renderer will stall and frames will be dropped. Reading the structure is ok and won't stall the renderer.</p>
+<p>Property values in Ventuz are store at the nodes, but the actual dependency between nodes are handled via bindings. So simply setting a value during the <strong>Validation Phase</strong> is not the right way of doing it. Transferring data from one node to another must be handled in the <em>Validation Phase</em> by properly implementing custom nodes. Setting property values is a modification of the scene and must therefore be done in the <strong>Idle Phase</strong>.</p>
+<p>Most the modification mathod in <code>Ventuz.Extension.VX.SceneBuilder</code> require the scene in <strong>Idle Phase</strong>.</p>
+<p>Custom Verbs of nodes are always executed in the <em>Idle Phase</em> because they are initiated from the user interface (GUI).</p>
+<h3 id="validation">Validation</h3>
+<p>The <strong>Validation Phase</strong> it the time when the <em>Ventuz Engine</em> processes all data withing a scene. First, values are generated, loaded or processed (e.g. Mover nodes, remoting commands, etc), then secondly all other nodes are processed by their dependencies to each other. In the <strong>Validation Phase</strong> only nodes are processed whose are marked as <em>Invalid</em>. Nodes turn into this state any bound property was marked as <em>Invalid</em> by its sending node. A <em>Mover</em> for example invalidates every frame and all connected noted will be invalid every frame too. The invalidation of a value is not only if a value of a property has changes. The inavlid state can also be given if a node says so. For custom nodes Vx provides an API call to invalidate nodes.</p>
+<p>In the <strong>Validation Phase</strong> you should not read or write any properties from any nodes (SceneBuilder API), because this would break the dependency system and cause to weirs behavior of the scene in rendering and latencies. Managing data between nodes must be implemented in the validation methods of custom nodes.</p>
+<p>During this phase, some API calls are available for creating resources (Texture, Geometries, ...), invalidate other nodes and more.</p>
+<h3 id="rendering">Rendering</h3>
+<p>After the <strong>Validation Phase</strong> the <strong>Rendering Phase</strong> follows as long the scene is part of the active scene tree in the rendering. Thus, a scene can be validated without rendering it. Within the rendering Phase a custom node can issue API calls that affects the rendering only, like <code>RenderText()</code> or <code>RenderMesh()</code>. In this phase you should not access the scene and/or call any validation APIs anymore.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

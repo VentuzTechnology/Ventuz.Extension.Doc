@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Rect </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Rect ">
+      
+      <meta name="description" content="Integer rectangle">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/VENTUZ_Logo_white.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ventuz.Vx.Rect">
+
+
+
+  <h1 id="Ventuz_Vx_Rect" data-uid="Ventuz.Vx.Rect" class="text-break">
+Struct Rect  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ventuz.html">Ventuz</a>.<a class="xref" href="Ventuz.Vx.html">Vx</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Integer rectangle</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Rect</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Ventuz_Vx_Rect__ctor_" data-uid="Ventuz.Vx.Rect.#ctor*"></a>
+
+  <h3 id="Ventuz_Vx_Rect__ctor_System_Drawing_Rectangle_" data-uid="Ventuz.Vx.Rect.#ctor(System.Drawing.Rectangle)">
+  Rect(Rectangle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect(Rectangle r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect__ctor_" data-uid="Ventuz.Vx.Rect.#ctor*"></a>
+
+  <h3 id="Ventuz_Vx_Rect__ctor_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Rect(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect(int X0, int Y0, int X1, int Y1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>X0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Y0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>X1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Ventuz_Vx_Rect_x0" data-uid="Ventuz.Vx.Rect.x0">
+  x0
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Left edge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int x0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Rect_x1" data-uid="Ventuz.Vx.Rect.x1">
+  x1
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Right edge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int x1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Rect_y0" data-uid="Ventuz.Vx.Rect.y0">
+  y0
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Top edge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int y0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_Rect_y1" data-uid="Ventuz.Vx.Rect.y1">
+  y1
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Bottom edge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int y1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ventuz_Vx_Rect_CenterX_" data-uid="Ventuz.Vx.Rect.CenterX*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_CenterX" data-uid="Ventuz.Vx.Rect.CenterX">
+  CenterX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CenterX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_CenterY_" data-uid="Ventuz.Vx.Rect.CenterY*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_CenterY" data-uid="Ventuz.Vx.Rect.CenterY">
+  CenterY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CenterY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_InvertEmpty_" data-uid="Ventuz.Vx.Rect.InvertEmpty*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_InvertEmpty" data-uid="Ventuz.Vx.Rect.InvertEmpty">
+  InvertEmpty
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create rectangle with x0,y0 set to max and x1,y1 set to min.
+This is useful when trying to find bounding boxes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect InvertEmpty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_IsEmpty_" data-uid="Ventuz.Vx.Rect.IsEmpty*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_IsEmpty" data-uid="Ventuz.Vx.Rect.IsEmpty">
+  IsEmpty
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>both corners of the rectangle are exactly the same</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_IsPositive_" data-uid="Ventuz.Vx.Rect.IsPositive*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_IsPositive" data-uid="Ventuz.Vx.Rect.IsPositive">
+  IsPositive
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>the area of the rectangle is not empty and the x1/y1 corner has larger values than the x0/y0 corner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_SizeX_" data-uid="Ventuz.Vx.Rect.SizeX*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_SizeX" data-uid="Ventuz.Vx.Rect.SizeX">
+  SizeX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SizeX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_SizeY_" data-uid="Ventuz.Vx.Rect.SizeY*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_SizeY" data-uid="Ventuz.Vx.Rect.SizeY">
+  SizeY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SizeY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ventuz_Vx_Rect_Coverage_" data-uid="Ventuz.Vx.Rect.Coverage*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Coverage_Ventuz_Vx_FRect__" data-uid="Ventuz.Vx.Rect.Coverage(Ventuz.Vx.FRect@)">
+  Coverage(in FRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find smallest integer rect that covers/encloses floating point rect completely</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect Coverage(in FRect r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Ventuz.Vx.FRect.html">FRect</a></dt>
+    <dd><p>floating point rect</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd><p>integer rect that closely encloses floating point rect, rounding towards outside.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Equals_" data-uid="Ventuz.Vx.Rect.Equals*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Equals_System_Object_" data-uid="Ventuz.Vx.Rect.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Equals_" data-uid="Ventuz.Vx.Rect.Equals*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Equals_Ventuz_Vx_Rect__" data-uid="Ventuz.Vx.Rect.Equals(Ventuz.Vx.Rect@)">
+  Equals(in Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(in Rect a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Extend_" data-uid="Ventuz.Vx.Rect.Extend*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Extend_System_Int32_" data-uid="Ventuz.Vx.Rect.Extend(System.Int32)">
+  Extend(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect Extend(int z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Extend_" data-uid="Ventuz.Vx.Rect.Extend*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Extend_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.Extend(System.Int32,System.Int32)">
+  Extend(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect Extend(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_FitAspect_" data-uid="Ventuz.Vx.Rect.FitAspect*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_FitAspect_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.FitAspect(System.Int32,System.Int32,System.Int32,System.Int32)">
+  FitAspect(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>create destination rectangle for blitting image into frame.
+if the image is smaller than the frame, it will be centered</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect FitAspect(int imagex, int imagey, int framex, int framey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>imagex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>imagey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>framex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>framey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd><p>position of image in frame</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_FitAspectMaxSize_" data-uid="Ventuz.Vx.Rect.FitAspectMaxSize*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_FitAspectMaxSize_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.FitAspectMaxSize(System.Int32,System.Int32,System.Int32,System.Int32)">
+  FitAspectMaxSize(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>create destination rectangle for blitting image into frame.
+if the image is smaller than the frame, it will be enlarger</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect FitAspectMaxSize(int imagex, int imagey, int framex, int framey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>imagex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>imagey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>framex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>framey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd><p>position of image in frame</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_FromFRect_" data-uid="Ventuz.Vx.Rect.FromFRect*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_FromFRect_Ventuz_Vx_FRect__" data-uid="Ventuz.Vx.Rect.FromFRect(Ventuz.Vx.FRect@)">
+  FromFRect(in FRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect FromFRect(in FRect r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Ventuz.Vx.FRect.html">FRect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_FromSize_" data-uid="Ventuz.Vx.Rect.FromSize*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_FromSize_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.FromSize(System.Int32,System.Int32)">
+  FromSize(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect FromSize(int XS, int YS)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>XS</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>YS</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_FromSize_" data-uid="Ventuz.Vx.Rect.FromSize*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_FromSize_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.FromSize(System.Int32,System.Int32,System.Int32,System.Int32)">
+  FromSize(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rect FromSize(int X0, int Y0, int XS, int YS)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>X0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Y0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>XS</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>YS</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_GetHashCode_" data-uid="Ventuz.Vx.Rect.GetHashCode*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_GetHashCode" data-uid="Ventuz.Vx.Rect.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Hit_" data-uid="Ventuz.Vx.Rect.Hit*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Hit_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.Hit(System.Int32,System.Int32)">
+  Hit(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Hit(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_IsCompletelyInside_" data-uid="Ventuz.Vx.Rect.IsCompletelyInside*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_IsCompletelyInside_Ventuz_Vx_Rect__" data-uid="Ventuz.Vx.Rect.IsCompletelyInside(Ventuz.Vx.Rect@)">
+  IsCompletelyInside(in Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompletelyInside(in Rect r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_IsPartiallyInside_" data-uid="Ventuz.Vx.Rect.IsPartiallyInside*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_IsPartiallyInside_Ventuz_Vx_Rect__" data-uid="Ventuz.Vx.Rect.IsPartiallyInside(Ventuz.Vx.Rect@)">
+  IsPartiallyInside(in Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPartiallyInside(in Rect r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Map_" data-uid="Ventuz.Vx.Rect.Map*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Map_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.Map(System.Int32,System.Int32)">
+  Map(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Map pixels from rectangle coordinates to 0..1 range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Map(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd><p>point in 0..1 range, with (x0,y0) mapped to (0,0) and (x1,y1) to (1,1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Map_" data-uid="Ventuz.Vx.Rect.Map*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Map_System_Single_System_Single_" data-uid="Ventuz.Vx.Rect.Map(System.Single,System.Single)">
+  Map(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Map pixels from rectangle coordinates to 0..1 range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Map(float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd><p>point in 0..1 range, with (x0,y0) mapped to (0,0) and (x1,y1) to (1,1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Map_" data-uid="Ventuz.Vx.Rect.Map*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Map_Ventuz_Vx_Vector2_" data-uid="Ventuz.Vx.Rect.Map(Ventuz.Vx.Vector2)">
+  Map(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Map pixels from rectangle coordinates to 0..1 range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Map(Vector2 a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd><p>point in rectangle coordinate system</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd><p>point in 0..1 range, with (x0,y0) mapped to (0,0) and (x1,y1) to (1,1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Move_" data-uid="Ventuz.Vx.Rect.Move*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Move_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.Move(System.Int32,System.Int32)">
+  Move(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect Move(int mx, int my)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>my</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Scale_" data-uid="Ventuz.Vx.Rect.Scale*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Scale_System_Single_System_Single_" data-uid="Ventuz.Vx.Rect.Scale(System.Single,System.Single)">
+  Scale(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect Scale(float sx, float sy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>sy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Set_" data-uid="Ventuz.Vx.Rect.Set*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Set_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Ventuz.Vx.Rect.Set(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Set(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(int X0, int Y0, int X1, int Y1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>X0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Y0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>X1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Sorted_" data-uid="Ventuz.Vx.Rect.Sorted*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Sorted" data-uid="Ventuz.Vx.Rect.Sorted">
+  Sorted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect Sorted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_SwapXY_" data-uid="Ventuz.Vx.Rect.SwapXY*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_SwapXY" data-uid="Ventuz.Vx.Rect.SwapXY">
+  SwapXY()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect SwapXY()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_ToString_" data-uid="Ventuz.Vx.Rect.ToString*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_ToString" data-uid="Ventuz.Vx.Rect.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_Unmap_" data-uid="Ventuz.Vx.Rect.Unmap*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_Unmap_Ventuz_Vx_Vector2_" data-uid="Ventuz.Vx.Rect.Unmap(Ventuz.Vx.Vector2)">
+  Unmap(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Map position in the 0..1 range to rectangle coordinate system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Unmap(Vector2 a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd><p>point in 0..1 range</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd><p>point in rectangle coordinates, with (0,0) mapped to (x0,y0) and (1,1) mapped to (x1,y1)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Ventuz_Vx_Rect_op_Equality_" data-uid="Ventuz.Vx.Rect.op_Equality*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_op_Equality_Ventuz_Vx_Rect__Ventuz_Vx_Rect__" data-uid="Ventuz.Vx.Rect.op_Equality(Ventuz.Vx.Rect@,Ventuz.Vx.Rect@)">
+  operator ==(in Rect, in Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(in Rect a, in Rect b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_Rect_op_Inequality_" data-uid="Ventuz.Vx.Rect.op_Inequality*"></a>
+
+  <h3 id="Ventuz_Vx_Rect_op_Inequality_Ventuz_Vx_Rect__Ventuz_Vx_Rect__" data-uid="Ventuz.Vx.Rect.op_Inequality(Ventuz.Vx.Rect@,Ventuz.Vx.Rect@)">
+  operator !=(in Rect, in Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(in Rect a, in Rect b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="Ventuz.Vx.Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2605 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IVxApiSceneBuilder </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IVxApiSceneBuilder ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/VENTUZ_Logo_white.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ventuz.Extension.IVxApiSceneBuilder">
+
+
+
+  <h1 id="Ventuz_Extension_IVxApiSceneBuilder" data-uid="Ventuz.Extension.IVxApiSceneBuilder" class="text-break">
+Interface IVxApiSceneBuilder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ventuz.html">Ventuz</a>.<a class="xref" href="Ventuz.Extension.html">Extension</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IVxApiSceneBuilder : IVxApi</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Ventuz.Extension.VxApiSceneModifyExt.html#Ventuz_Extension_VxApiSceneModifyExt_CreateNode__1_Ventuz_Extension_IVxApiSceneBuilder_Ventuz_Extension_IVxContainer_System_String_">VxApiSceneModifyExt.CreateNode&lt;T&gt;(IVxApiSceneBuilder, IVxContainer, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_AddListProperty_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.AddListProperty*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_AddListProperty__1_Ventuz_Extension_VxGroupPropertyList___0__System_Type_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.AddListProperty``1(Ventuz.Extension.VxGroupPropertyList{``0},System.Type)">
+  AddListProperty&lt;PG&gt;(VxGroupPropertyList&lt;PG&gt;, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxGroupProperty&lt;PG&gt; AddListProperty&lt;PG&gt;(VxGroupPropertyList&lt;PG&gt; p, Type newPG) where PG : VxPropertyGroup</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupPropertyList-1.html">VxGroupPropertyList</a>&lt;PG&gt;</dt>
+    <dd></dd>
+    <dt><code>newPG</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PG</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_BindMethod_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.BindMethod*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_BindMethod_Ventuz_Extension_VxMethod_Ventuz_Extension_VxEvent_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.BindMethod(Ventuz.Extension.VxMethod,Ventuz.Extension.VxEvent)">
+  BindMethod(VxMethod, VxEvent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BindMethod(VxMethod tgt, VxEvent src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tgt</code> <a class="xref" href="Ventuz.Extension.VxMethod.html">VxMethod</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="Ventuz.Extension.VxEvent.html">VxEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_BindProperty_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.BindProperty*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_BindProperty_Ventuz_Extension_VxProperty_Ventuz_Extension_VxProperty_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.BindProperty(Ventuz.Extension.VxProperty,Ventuz.Extension.VxProperty)">
+  BindProperty(VxProperty, VxProperty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BindProperty(VxProperty tgt, VxProperty src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tgt</code> <a class="xref" href="Ventuz.Extension.VxProperty.html">VxProperty</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="Ventuz.Extension.VxProperty.html">VxProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_CreateNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.CreateNode*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_CreateNode_System_Type_Ventuz_Extension_IVxContainer_System_String_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.CreateNode(System.Type,Ventuz.Extension.IVxContainer,System.String)">
+  CreateNode(Type, IVxContainer, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxNode CreateNode(Type type, IVxContainer container, string name = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_DeleteOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.DeleteOutput*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_DeleteOutput_Ventuz_Extension_VxOutputList_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.DeleteOutput(Ventuz.Extension.VxOutputList,System.Int32)">
+  DeleteOutput(VxOutputList, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteOutput(VxOutputList outputs, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutput*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutput_Ventuz_Extension_VxLayerOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutput(Ventuz.Extension.VxLayerOutput)">
+  EnumerateOutput(VxLayerOutput)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;VxLayerNode&gt; EnumerateOutput(VxLayerOutput layers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layers</code> <a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxLayerNode.html">VxLayerNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutput*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutput_Ventuz_Extension_VxOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutput(Ventuz.Extension.VxOutput)">
+  EnumerateOutput(VxOutput)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;VxHierarchyNode&gt; EnumerateOutput(VxOutput vxOutput)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxOutput</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxHierarchyNode.html">VxHierarchyNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutputs_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutputs*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutputs_Ventuz_Extension_VxOutputList_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutputs(Ventuz.Extension.VxOutputList)">
+  EnumerateOutputs(VxOutputList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;VxOutput&gt; EnumerateOutputs(VxOutputList outputs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetActive_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetActive*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetActive_Ventuz_Extension_VxPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetActive(Ventuz.Extension.VxPort)">
+  GetActive(VxPort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetActive(VxPort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetBlocked_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetBlocked*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetBlocked_Ventuz_Extension_VxLink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetBlocked(Ventuz.Extension.VxLink)">
+  GetBlocked(VxLink)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetBlocked(VxLink link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_Ventuz_Extension_VxLayerOutput_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild(Ventuz.Extension.VxLayerOutput,System.Int32)">
+  GetChild(VxLayerOutput, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxLayerNode GetChild(VxLayerOutput layers, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layers</code> <a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxLayerNode.html">VxLayerNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_Ventuz_Extension_VxOutput_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild(Ventuz.Extension.VxOutput,System.Int32)">
+  GetChild(VxOutput, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxHierarchyNode GetChild(VxOutput output, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxHierarchyNode.html">VxHierarchyNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetChildren_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChildren*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetChildren_Ventuz_Extension_VxLayerNode_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChildren(Ventuz.Extension.VxLayerNode,System.Int32)">
+  GetChildren(VxLayerNode, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxLayerOutput GetChildren(VxLayerNode layer, int index = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="Ventuz.Extension.VxLayerNode.html">VxLayerNode</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetCollapsed_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCollapsed*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetCollapsed_Ventuz_Extension_VxLink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCollapsed(Ventuz.Extension.VxLink)">
+  GetCollapsed(VxLink)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetCollapsed(VxLink link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetContainer_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetContainer*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetContainer_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetContainer(Ventuz.Extension.VxNode)">
+  GetContainer(VxNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVxContainer GetContainer(VxNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_Ventuz_Extension_VxLayerOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount(Ventuz.Extension.VxLayerOutput)">
+  GetCount(VxLayerOutput)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCount(VxLayerOutput layerList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerList</code> <a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_Ventuz_Extension_VxOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount(Ventuz.Extension.VxOutput)">
+  GetCount(VxOutput)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCount(VxOutput output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_Ventuz_Extension_VxOutputList_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount(Ventuz.Extension.VxOutputList)">
+  GetCount(VxOutputList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCount(VxOutputList outputList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputList</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetDisplayName_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetDisplayName*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetDisplayName_Ventuz_Extension_VxScene_System_Boolean_System_Boolean_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetDisplayName(Ventuz.Extension.VxScene,System.Boolean,System.Boolean)">
+  GetDisplayName(VxScene, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDisplayName(VxScene scene, bool withFolder = true, bool withNeedSave = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+    <dt><code>withFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>withNeedSave</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetEvent_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetEvent*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetEvent_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetEvent(Ventuz.Extension.VxMemberOwner,System.String)">
+  GetEvent(VxMemberOwner, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxEvent GetEvent(VxMemberOwner owner, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxEvent.html">VxEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetFromNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetFromNode*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetFromNode_Ventuz_Extension_VxLink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetFromNode(Ventuz.Extension.VxLink)">
+  GetFromNode(VxLink)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxHierarchyBaseNode GetFromNode(VxLink link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetGroupPropertyValue_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetGroupPropertyValue*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetGroupPropertyValue__1_Ventuz_Extension_VxGroupProperty___0__" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetGroupPropertyValue``1(Ventuz.Extension.VxGroupProperty{``0})">
+  GetGroupPropertyValue&lt;PG&gt;(VxGroupProperty&lt;PG&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PG GetGroupPropertyValue&lt;PG&gt;(VxGroupProperty&lt;PG&gt; p) where PG : VxPropertyGroup</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PG</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PG</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetID_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetID*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetID_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetID(Ventuz.Extension.VxNode)">
+  GetID(VxNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid GetID(VxNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetIID_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetIID*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetIID_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetIID(Ventuz.Extension.VxScene)">
+  GetIID(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetIID(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetIdentity_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetIdentity*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetIdentity_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetIdentity(Ventuz.Extension.VxScene)">
+  GetIdentity(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetIdentity(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetIndex_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetIndex*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetIndex_Ventuz_Extension_VxLink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetIndex(Ventuz.Extension.VxLink)">
+  GetIndex(VxLink)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetIndex(VxLink link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetLayers_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetLayers*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetLayers_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetLayers(Ventuz.Extension.VxScene)">
+  GetLayers(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxLayerBaseNode[] GetLayers(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxLayerBaseNode.html">VxLayerBaseNode</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetLinks_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetLinks*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetLinks_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetLinks(Ventuz.Extension.VxHierarchyBaseNode)">
+  GetLinks(VxHierarchyBaseNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxLink[] GetLinks(VxHierarchyBaseNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetListCount_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetListCount*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetListCount__1_Ventuz_Extension_VxGroupPropertyList___0__" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetListCount``1(Ventuz.Extension.VxGroupPropertyList{``0})">
+  GetListCount&lt;PG&gt;(VxGroupPropertyList&lt;PG&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetListCount&lt;PG&gt;(VxGroupPropertyList&lt;PG&gt; p) where PG : VxPropertyGroup</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupPropertyList-1.html">VxGroupPropertyList</a>&lt;PG&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PG</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetListProperty_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetListProperty*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetListProperty__1_Ventuz_Extension_VxGroupPropertyList___0__System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetListProperty``1(Ventuz.Extension.VxGroupPropertyList{``0},System.Int32)">
+  GetListProperty&lt;PG&gt;(VxGroupPropertyList&lt;PG&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxGroupProperty&lt;PG&gt; GetListProperty&lt;PG&gt;(VxGroupPropertyList&lt;PG&gt; p, int index) where PG : VxPropertyGroup</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupPropertyList-1.html">VxGroupPropertyList</a>&lt;PG&gt;</dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PG</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetMainContainer_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMainContainer*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetMainContainer_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMainContainer(Ventuz.Extension.VxScene)">
+  GetMainContainer(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxMainContainer GetMainContainer(VxScene vxScene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxScene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxMainContainer.html">VxMainContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetMemberName_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMemberName*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetMemberName_Ventuz_Extension_VxMember_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMemberName(Ventuz.Extension.VxMember)">
+  GetMemberName(VxMember)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetMemberName(VxMember vxMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxMember</code> <a class="xref" href="Ventuz.Extension.VxMember.html">VxMember</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetMemberStatus_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMemberStatus*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetMemberStatus_Ventuz_Extension_VxMember_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMemberStatus(Ventuz.Extension.VxMember)">
+  GetMemberStatus(VxMember)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxMemberStatus GetMemberStatus(VxMember vxMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxMember</code> <a class="xref" href="Ventuz.Extension.VxMember.html">VxMember</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxMemberStatus.html">VxMemberStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetMethod_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMethod*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetMethod_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetMethod(Ventuz.Extension.VxMemberOwner,System.String)">
+  GetMethod(VxMemberOwner, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxMethod GetMethod(VxMemberOwner owner, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxMethod.html">VxMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetName_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetName*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetName_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetName(Ventuz.Extension.VxNode)">
+  GetName(VxNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetName(VxNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetNeedSave_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetNeedSave*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetNeedSave_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetNeedSave(Ventuz.Extension.VxScene)">
+  GetNeedSave(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetNeedSave(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetNodes_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetNodes*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetNodes_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetNodes(Ventuz.Extension.VxScene)">
+  GetNodes(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxNode[] GetNodes(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutput*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetOutput_Ventuz_Extension_VxLink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutput(Ventuz.Extension.VxLink)">
+  GetOutput(VxLink)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxOutput GetOutput(VxLink link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutput*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetOutput_Ventuz_Extension_VxOutputList_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutput(Ventuz.Extension.VxOutputList,System.Int32)">
+  GetOutput(VxOutputList, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxOutput GetOutput(VxOutputList outputs, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetOutputName_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutputName*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetOutputName_Ventuz_Extension_VxOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutputName(Ventuz.Extension.VxOutput)">
+  GetOutputName(VxOutput)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetOutputName(VxOutput vxOutput)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxOutput</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetOutputs_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutputs*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetOutputs_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOutputs(Ventuz.Extension.VxHierarchyBaseNode)">
+  GetOutputs(VxHierarchyBaseNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxOutputList GetOutputs(VxHierarchyBaseNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPort*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetPort_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPort(Ventuz.Extension.VxScene)">
+  GetPort(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxPort GetPort(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetPortFlags_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPortFlags*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetPortFlags_Ventuz_Extension_VxPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPortFlags(Ventuz.Extension.VxPort)">
+  GetPortFlags(VxPort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxPortFlags GetPortFlags(VxPort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxPortFlags.html">VxPortFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetPortName_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPortName*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetPortName_Ventuz_Extension_VxPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPortName(Ventuz.Extension.VxPort)">
+  GetPortName(VxPort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetPortName(VxPort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetPortOrdinal_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPortOrdinal*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetPortOrdinal_Ventuz_Extension_VxPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPortOrdinal(Ventuz.Extension.VxPort)">
+  GetPortOrdinal(VxPort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetPortOrdinal(VxPort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetPorts_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPorts*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetPorts_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPorts(Ventuz.Extension.VxScene)">
+  GetPorts(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxPort[] GetPorts(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetProperty_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetProperty*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetProperty_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetProperty(Ventuz.Extension.VxMemberOwner,System.String)">
+  GetProperty(VxMemberOwner, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxBaseProperty GetProperty(VxMemberOwner owner, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxBaseProperty.html">VxBaseProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetPropertyValue_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPropertyValue*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetPropertyValue__1_Ventuz_Extension_VxReadOnlyProperty___0__" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetPropertyValue``1(Ventuz.Extension.VxReadOnlyProperty{``0})">
+  GetPropertyValue&lt;T&gt;(VxReadOnlyProperty&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T GetPropertyValue&lt;T&gt;(VxReadOnlyProperty&lt;T&gt; p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxReadOnlyProperty-1.html">VxReadOnlyProperty</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetRoot_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetRoot*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetRoot_Ventuz_Extension_IVxContainer_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetRoot(Ventuz.Extension.IVxContainer)">
+  GetRoot(IVxContainer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxHierarchyContainerRoot GetRoot(IVxContainer container)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxHierarchyContainerRoot.html">VxHierarchyContainerRoot</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetScene*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetScene_Ventuz_Extension_VxPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetScene(Ventuz.Extension.VxPort)">
+  GetScene(VxPort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxScene GetScene(VxPort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetSceneOfPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetSceneOfPort*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetSceneOfPort_Ventuz_Extension_VxPort_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetSceneOfPort(Ventuz.Extension.VxPort)">
+  GetSceneOfPort(VxPort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxScene GetSceneOfPort(VxPort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetToNode_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetToNode*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetToNode_Ventuz_Extension_VxLink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetToNode(Ventuz.Extension.VxLink)">
+  GetToNode(VxLink)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxHierarchyBaseNode GetToNode(VxLink link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetUri_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetUri*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetUri_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetUri(Ventuz.Extension.VxScene)">
+  GetUri(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Uri GetUri(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_InsertOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.InsertOutput*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_InsertOutput_Ventuz_Extension_VxOutputList_System_Int32_System_String_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.InsertOutput(Ventuz.Extension.VxOutputList,System.Int32,System.String)">
+  InsertOutput(VxOutputList, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxOutput InsertOutput(VxOutputList outputs, int index, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_IsValid_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.IsValid*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_IsValid_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.IsValid(Ventuz.Extension.VxScene)">
+  IsValid(VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsValid(VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_LinkTo_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.LinkTo*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_LinkTo_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxOutput_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.LinkTo(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxOutput,System.Int32)">
+  LinkTo(VxHierarchyBaseNode, VxOutput, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxLink LinkTo(VxHierarchyBaseNode node, VxOutput output, int index = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_ModifyAsync_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.ModifyAsync*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_ModifyAsync_Ventuz_Extension_VxSceneElement_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___" data-uid="Ventuz.Extension.IVxApiSceneBuilder.ModifyAsync(Ventuz.Extension.VxSceneElement,System.Action{Ventuz.Extension.VxScene},Ventuz.Extension.VxScene[])">
+  ModifyAsync(VxSceneElement, Action&lt;VxScene&gt;, params VxScene[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ModifyAsync(VxSceneElement sceneElement, Action&lt;VxScene&gt; sceneModificationAction, params VxScene[] scenesToRead)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneElement</code> <a class="xref" href="Ventuz.Extension.VxSceneElement.html">VxSceneElement</a></dt>
+    <dd></dd>
+    <dt><code>sceneModificationAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>scenesToRead</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetActive_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetActive*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetActive_Ventuz_Extension_VxPort_System_Boolean_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetActive(Ventuz.Extension.VxPort,System.Boolean)">
+  SetActive(VxPort, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetActive(VxPort port, bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetBlocked_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetBlocked*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetBlocked_Ventuz_Extension_VxLink_System_Boolean_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetBlocked(Ventuz.Extension.VxLink,System.Boolean)">
+  SetBlocked(VxLink, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetBlocked(VxLink link, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetCollapsed_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetCollapsed*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetCollapsed_Ventuz_Extension_VxLink_System_Boolean_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetCollapsed(Ventuz.Extension.VxLink,System.Boolean)">
+  SetCollapsed(VxLink, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetCollapsed(VxLink link, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetGroupPropertyValue_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetGroupPropertyValue*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetGroupPropertyValue__1_Ventuz_Extension_VxGroupProperty___0__System_Type_System_Boolean_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetGroupPropertyValue``1(Ventuz.Extension.VxGroupProperty{``0},System.Type,System.Boolean)">
+  SetGroupPropertyValue&lt;PG&gt;(VxGroupProperty&lt;PG&gt;, Type, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PG SetGroupPropertyValue&lt;PG&gt;(VxGroupProperty&lt;PG&gt; p, Type newPG, bool migrateData = true) where PG : VxPropertyGroup</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
+    <dd></dd>
+    <dt><code>newPG</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>migrateData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PG</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PG</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetName_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetName*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetName_Ventuz_Extension_VxNode_System_String_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetName(Ventuz.Extension.VxNode,System.String)">
+  SetName(VxNode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetName(VxNode node, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetNeedSave_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetNeedSave*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetNeedSave_Ventuz_Extension_VxScene_System_Boolean_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetNeedSave(Ventuz.Extension.VxScene,System.Boolean)">
+  SetNeedSave(VxScene, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetNeedSave(VxScene scene, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetOutputName_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetOutputName*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetOutputName_Ventuz_Extension_VxOutput_System_String_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetOutputName(Ventuz.Extension.VxOutput,System.String)">
+  SetOutputName(VxOutput, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetOutputName(VxOutput vxOutput, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxOutput</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetPropertyValue_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetPropertyValue*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetPropertyValue__1_Ventuz_Extension_VxProperty___0____0_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetPropertyValue``1(Ventuz.Extension.VxProperty{``0},``0)">
+  SetPropertyValue&lt;T&gt;(VxProperty&lt;T&gt;, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetPropertyValue&lt;T&gt;(VxProperty&lt;T&gt; p, T value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxProperty-1.html">VxProperty</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_SetScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetScene*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_SetScene_Ventuz_Extension_VxPort_Ventuz_Extension_VxScene_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.SetScene(Ventuz.Extension.VxPort,Ventuz.Extension.VxScene)">
+  SetScene(VxPort, VxScene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetScene(VxPort port, VxScene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
+    <dd></dd>
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_Unlink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.Unlink*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_Unlink_Ventuz_Extension_VxLink_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.Unlink(Ventuz.Extension.VxLink)">
+  Unlink(VxLink)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Unlink(VxLink link)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>link</code> <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

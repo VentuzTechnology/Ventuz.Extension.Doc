@@ -1,0 +1,2766 @@
+{
+  "source_base_path": "F:/ventuz_701_rols/Ventuz.Extension.Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.BoundingBoxType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.BoundingBoxType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.BoundingBoxType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.CallToJSExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.CallToJSExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.CallToJSExt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ColorGamma.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ColorGamma.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ColorGamma",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.Event.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.Event",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.HorizontalTextAlignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.HorizontalTextAlignment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.HorizontalTextAlignment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ICallToJS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ICallToJS.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ICallToJS",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ICustomResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ICustomResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ICustomResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ICustomResourceParameter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ICustomResourceParameter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ICustomResourceParameter<D>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IFontMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IFontMetrics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IFontMetrics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IFontMetricsResourceParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IFontMetricsResourceParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IFontMetricsResourceParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IIconIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IIconIndex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IIconIndex",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IIconTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IIconTag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IIconTag",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IMaterial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IMaterial",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IMesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IMesh.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IMesh",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IMeshFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IMeshFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IMeshFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IMeshResourceParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IMeshResourceParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IMeshResourceParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IPersistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IPersistence.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IPersistence",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IProxyResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IProxyResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IProxyResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IResourceParameter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IResourceParameter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IResourceParameter<R>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IResourceParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IResourceParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IResourceParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IText.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IText",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ITextRenderObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ITextRenderObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ITextRenderObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ITextResourceParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ITextResourceParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ITextResourceParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ITexture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ITexture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ITexture",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ITextureFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ITextureFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ITextureFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ITextureResourceParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ITextureResourceParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ITextureResourceParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.ITooltip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.ITooltip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.ITooltip",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IUsedUris.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IUsedUris.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IUsedUris",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVertex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVertex",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApi",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiDesigner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiDesigner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiDesigner",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiDesigner.yml\" sourcestartlinenumber=\"1\">This interface represents the designer api.\nAll provided methods are only available in the context of a running Ventuz Designer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiEngine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiEngine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiIO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiIO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiNodeValidation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiNodeValidation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiNodeValidation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiProject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiProject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiProject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiRenderer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiRenderer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiResources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiResources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiSceneBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiSceneBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiSceneBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiUiWindows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiUiWindows.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiUiWindows",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxContainer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxDataObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxDataObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxDataObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxGroupProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxGroupProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxGroupProperty",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxGroupPropertyList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxGroupPropertyList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxGroupPropertyList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxManagement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxManagement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxMenuEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxMenuEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxMenuEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxTaskProgress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxTaskProgress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxTaskProgress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.Misc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.Misc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.Misc",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.MonospaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.MonospaceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.MonospaceType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.RenderMeshAxisMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.RenderMeshAxisMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.RenderMeshAxisMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.RenderMeshDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.RenderMeshDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.RenderMeshDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.Subset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.Subset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.Subset",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.TextLayoutOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.TextLayoutOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.TextLayoutOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.TextWrapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.TextWrapping.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.TextWrapping",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.TextureFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.TextureFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.TextureFormat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VX.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VX.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VX",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VerbState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VerbState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VerbState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexFormat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexP.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexP",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexPC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexPC.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexPC",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexPN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexPN.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexPN",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexPNBCT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexPNBCT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexPNBCT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexPNBT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexPNBT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexPNBT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexPNT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexPNT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexPNT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VertexPT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VertexPT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VertexPT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VerticalTextAlignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VerticalTextAlignment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VerticalTextAlignment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxApiSceneModifyExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxApiSceneModifyExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxApiSceneModifyExt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxAssemblyAliasAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxAssemblyAliasAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxAssemblyAliasAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxBaseProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxBaseProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxBaseProperty",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxCategoriesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxCategoriesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxCategoriesAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxCategoryAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxCategoryAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxCategoryAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxContainerExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxContainerExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxContainerExt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxContentBaseNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxContentBaseNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxContentBaseNode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxContentContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxContentContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxContentContainer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxContentNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxContentNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxContentNode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDataObjectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDataObjectHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDataObjectHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDataObjectResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDataObjectResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDataObjectResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDataPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDataPool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDataPool",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDefaultValueAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDefaultValueAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDefaultValueAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDeferrablePropertyGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDeferrablePropertyGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDeferrablePropertyGroup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDescriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDescriptionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDescriptionAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDesignerWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDesignerWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDesignerWindow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDockSituation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDockSituation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDockSituation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDockableWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDockableWebView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDockableWebView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDockableWindow-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDockableWindow-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDockableWindow<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDockableWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDockableWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDockableWindow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxDynamicIconAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxDynamicIconAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxDynamicIconAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxEngineException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxEngineException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxEngineException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxFavoredAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxFavoredAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxFavoredAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxFlagGroupItemAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxFlagGroupItemAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxFlagGroupItemAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxFlagGroupNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxFlagGroupNameAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxFlagGroupNameAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxFloatingWindow-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxFloatingWindow-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxFloatingWindow<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxFloatingWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxFloatingWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxFloatingWindow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxGroupProperty-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxGroupProperty-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxGroupProperty<PG>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxGroupPropertyList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxGroupPropertyList-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxGroupPropertyList<PG>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxHelpUrlAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxHelpUrlAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxHelpUrlAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxHierarchyBaseNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxHierarchyBaseNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxHierarchyBaseNode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxHierarchyContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxHierarchyContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxHierarchyContainer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxHierarchyContainerRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxHierarchyContainerRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxHierarchyContainerRoot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxHierarchyNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxHierarchyNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxHierarchyNode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxIconAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxIconAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxIconAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxInitialOutputsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxInitialOutputsAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxInitialOutputsAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxInvalidContextException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxInvalidContextException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxInvalidContextException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxInvalidTypeAliasException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxInvalidTypeAliasException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxInvalidTypeAliasException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxInvalidTypeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxInvalidTypeException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxInvalidTypeException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxLabelAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxLabelAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxLabelAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxLayerBaseNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxLayerBaseNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxLayerBaseNode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxLayerContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxLayerContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxLayerContainer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxLayerNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxLayerNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxLayerNode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxLayerOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxLayerOutput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxLayerOutput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxLegacyNamesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxLegacyNamesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxLegacyNamesAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxLink.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxLink",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMainContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMainContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMainContainer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMainMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMainMenu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMainMenu",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxManagedObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxManagedObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxManagedObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxManagementExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxManagementExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxManagementExt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMember.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMember",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMemberAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMemberAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMemberAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMemberOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMemberOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMemberOwner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMemberStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMemberStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMemberStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMembersAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMembersAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMembersAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMenuAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMenuAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMenuAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMenuEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMenuEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMenuEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMetaDataAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMetaDataAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMetaDataAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMetaDataClassAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMetaDataClassAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMetaDataClassAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMethod",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxNode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxNodeExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxNodeExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxNodeExt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxNumericAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxNumericAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxNumericAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxNumericMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxNumericMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxNumericMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxOutput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxOutput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxOutputList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxOutputList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxOutputList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxPersistentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxPersistentData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxPersistentData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxPort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxPort.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxPort",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxPortFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxPortFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxPortFlags",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxProperty-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxProperty-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxProperty<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxProperty",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxPropertyGroup.VxPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxPropertyGroup.VxPreset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxPropertyGroup.VxPreset",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxPropertyGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxPropertyGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxPropertyGroup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxReadOnlyProperty-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxReadOnlyProperty-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxReadOnlyProperty<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxScene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxScene.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxScene",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSceneElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSceneElement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSceneEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSceneEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSceneExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSceneExt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxServiceBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxServiceBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxServiceBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSimpleService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSimpleService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSimpleService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxStringAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxStringAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxStringAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxStringType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxStringType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxStringType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxTabAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxTabAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxTabAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxToolBoxAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxToolBoxAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxToolBoxAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxTypeAliasAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxTypeAliasAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxTypeAliasAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxUiExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxUiExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxUiExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxUiStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxUiStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxUiStyle",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxUriAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxUriAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxUriAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxWebViewAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxWebViewAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxWebViewAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxWindowAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxWindowAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxWindowAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxWindowBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxWindowBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxWindowBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxWithAlphaAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxWithAlphaAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxWithAlphaAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Color4b.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Color4b.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Color4b",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.ColorConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.ColorConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.ColorConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.ColorPrimaries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.ColorPrimaries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.ColorPrimaries",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Vx.ColorPrimaries.yml\" sourcestartlinenumber=\"1\">Defines color primaries (red, green blue, white point) in CIE 1931 xy space</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.FRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.FRect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.FRect",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Vx.FRect.yml\" sourcestartlinenumber=\"1\">Floating point rectangle</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.MathStatic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.MathStatic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.MathStatic",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Matrix33.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Matrix33.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Matrix33",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Matrix33A.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Matrix33A.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Matrix33A",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Matrix33ST.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Matrix33ST.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Matrix33ST",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Matrix44.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Matrix44.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Matrix44",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Matrix44A.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Matrix44A.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Matrix44A",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Rect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Rect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Rect",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Vx.Rect.yml\" sourcestartlinenumber=\"1\">Integer rectangle</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Vector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Vector2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Vector2",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Vector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Vector3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Vector3",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Vector4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Vector4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Vector4",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Vector40.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Vector40.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Vector40",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.Vector41.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.Vector41.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx.Vector41",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Vx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Vx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Vx",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "guide/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "guide/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "guide/toc.html"
+        },
+        ".json": {
+          "relative_path": "guide/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_api_create_and_modifiy_scenes.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_api_create_and_modifiy_scenes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_api_custom_forms.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_api_custom_forms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_api_custom_nodes.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_api_custom_nodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_api_data_object_handler.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_api_data_object_handler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_api_main_menu.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_api_main_menu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_api_services.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_api_services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_attributes.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_how_does_ventuz_work.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_how_does_ventuz_work.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_how_to_develop.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_how_to_develop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_known_issues.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_known_issues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guide/vx_roadmap.md",
+      "output": {
+        ".html": {
+          "relative_path": "guide/vx_roadmap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/VENTUZ_Logo_white.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/VENTUZ_Logo_white.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "main/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "main/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

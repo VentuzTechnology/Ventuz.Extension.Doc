@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct ColorPrimaries </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct ColorPrimaries ">
+      
+      <meta name="description" content="Defines color primaries (red, green blue, white point) in CIE 1931 xy space">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/VENTUZ_Logo_white.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ventuz.Vx.ColorPrimaries">
+
+
+
+  <h1 id="Ventuz_Vx_ColorPrimaries" data-uid="Ventuz.Vx.ColorPrimaries" class="text-break">
+Struct ColorPrimaries  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ventuz.html">Ventuz</a>.<a class="xref" href="Ventuz.Vx.html">Vx</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines color primaries (red, green blue, white point) in CIE 1931 xy space</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct ColorPrimaries</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_ACES2065_1" data-uid="Ventuz.Vx.ColorPrimaries.ACES2065_1">
+  ACES2065_1
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the ACES 2065-1 color space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries ACES2065_1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_ACEScg" data-uid="Ventuz.Vx.ColorPrimaries.ACEScg">
+  ACEScg
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the ACEScg color space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries ACEScg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_BT470" data-uid="Ventuz.Vx.ColorPrimaries.BT470">
+  BT470
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the ITU Recommendation BT.470-6 color space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries BT470</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_BT601_525" data-uid="Ventuz.Vx.ColorPrimaries.BT601_525">
+  BT601_525
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the ITU Recommendation BT.601-7 color space for NTSC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries BT601_525</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_BT601_625" data-uid="Ventuz.Vx.ColorPrimaries.BT601_625">
+  BT601_625
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the ITU Recommendation BT.601-7 color space for PAL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries BT601_625</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_DCI_P3_D65" data-uid="Ventuz.Vx.ColorPrimaries.DCI_P3_D65">
+  DCI_P3_D65
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the DCI-P3 D65 (&quot;Display P3&quot;, SMPTE ST 432-1) color space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries DCI_P3_D65</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_DCI_P3_DCI" data-uid="Ventuz.Vx.ColorPrimaries.DCI_P3_DCI">
+  DCI_P3_DCI
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the DCI-P3 (SMPTE ST 431-2) color space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries DCI_P3_DCI</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_Rec2020" data-uid="Ventuz.Vx.ColorPrimaries.Rec2020">
+  Rec2020
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the ITU Recommendation BT.2020 and BT.2100-2 color space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries Rec2020</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_Rec709" data-uid="Ventuz.Vx.ColorPrimaries.Rec709">
+  Rec709
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Primaries for the ITU Recommendation BT.709-6 color space (also used for sRGB)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorPrimaries Rec709</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_b" data-uid="Ventuz.Vx.ColorPrimaries.b">
+  b
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 b</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_g" data-uid="Ventuz.Vx.ColorPrimaries.g">
+  g
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 g</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_r" data-uid="Ventuz.Vx.ColorPrimaries.r">
+  r
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 r</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_w" data-uid="Ventuz.Vx.ColorPrimaries.w">
+  w
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 w</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ventuz_Vx_ColorPrimaries_GetConversion_" data-uid="Ventuz.Vx.ColorPrimaries.GetConversion*"></a>
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_GetConversion_Ventuz_Vx_ColorPrimaries__" data-uid="Ventuz.Vx.ColorPrimaries.GetConversion(Ventuz.Vx.ColorPrimaries@)">
+  GetConversion(in ColorPrimaries)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a matrix for conversion to another color space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix33 GetConversion(in ColorPrimaries to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>to</code> <a class="xref" href="Ventuz.Vx.ColorPrimaries.html">ColorPrimaries</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix33.html">Matrix33</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_ColorPrimaries_GetK_" data-uid="Ventuz.Vx.ColorPrimaries.GetK*"></a>
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_GetK" data-uid="Ventuz.Vx.ColorPrimaries.GetK">
+  GetK()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the K vector (luma coefficients)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetK()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_ColorPrimaries_GetRGBToXYZ_" data-uid="Ventuz.Vx.ColorPrimaries.GetRGBToXYZ*"></a>
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_GetRGBToXYZ" data-uid="Ventuz.Vx.ColorPrimaries.GetRGBToXYZ">
+  GetRGBToXYZ()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a matrix for RGB to CIE XYZ conversion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix33 GetRGBToXYZ()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix33.html">Matrix33</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_ColorPrimaries_GetRGBToYUV_" data-uid="Ventuz.Vx.ColorPrimaries.GetRGBToYUV*"></a>
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_GetRGBToYUV_System_Single_System_Single_System_Single_System_Single_" data-uid="Ventuz.Vx.ColorPrimaries.GetRGBToYUV(System.Single,System.Single,System.Single,System.Single)">
+  GetRGBToYUV(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a 4x3 matrix for RGB to YUV conversion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix44A GetRGBToYUV(float minY, float maxY, float minUV, float maxUV)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>maxY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>minUV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>maxUV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix44A.html">Matrix44A</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_ColorPrimaries_GetXYZToRGB_" data-uid="Ventuz.Vx.ColorPrimaries.GetXYZToRGB*"></a>
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_GetXYZToRGB" data-uid="Ventuz.Vx.ColorPrimaries.GetXYZToRGB">
+  GetXYZToRGB()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a matrix for CIE XYZ to RGB conversion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix33 GetXYZToRGB()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Vx.Matrix33.html">Matrix33</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Vx_ColorPrimaries_GetYUVtoRGB_" data-uid="Ventuz.Vx.ColorPrimaries.GetYUVtoRGB*"></a>
+
+  <h3 id="Ventuz_Vx_ColorPrimaries_GetYUVtoRGB_System_Single_System_Single_System_Single_System_Single_" data-uid="Ventuz.Vx.ColorPrimaries.GetYUVtoRGB(System.Single,System.Single,System.Single,System.Single)">
+  GetYUVtoRGB(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get sort of a 4x3 matrix for YUV to RGB conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (Matrix33 mtx, Vector3 offset) GetYUVtoRGB(float minY, float maxY, float minUV, float maxUV)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>maxY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>minUV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>maxUV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="Ventuz.Vx.Matrix33.html">Matrix33</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-ventuz.vx.matrix33,ventuz.vx.vector3-.mtx">mtx</a>, <a class="xref" href="Ventuz.Vx.Vector3.html">Vector3</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-ventuz.vx.matrix33,ventuz.vx.vector3-.offset">offset</a>)</dt>
+    <dd><p>A 3x3 matrix and an offset. Subtract the offset from the YUV value first, then apply the matrix.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
