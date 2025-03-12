@@ -162,7 +162,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IIconIndex",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IIconIndex.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.IIconIndex\" data-throw-if-not-resolved=\"false\"></xref> can be implemented by vx-nodes (derived from <xref href=\"Ventuz.Extension.VxNode\" data-throw-if-not-resolved=\"false\"></xref>) to provide the current icon of the node.\nNodes can change their icon appearance depending on their status, for example. The icons to be indexed here must be declared by using the <xref href=\"Ventuz.Extension.VxIconAttribute\" data-throw-if-not-resolved=\"false\"></xref> with specified index.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -176,7 +176,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IIconTag",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IIconTag.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.IIconTag\" data-throw-if-not-resolved=\"false\"></xref> can be implemented by vx-property-groups (derived from <xref href=\"Ventuz.Extension.VxPropertyGroup\" data-throw-if-not-resolved=\"false\"></xref>) to provide an additional (short) text message drawn below the icon.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -246,7 +246,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IName.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.IName\" data-throw-if-not-resolved=\"false\"></xref> can be implemented by vx-nodes (derived from <xref href=\"Ventuz.Extension.VxNode\" data-throw-if-not-resolved=\"false\"></xref>) to provide a static name to the UI.\nThe user is not able to change the name of the node anymore if this interface is implemented.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -260,7 +260,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IPersistence",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IPersistence.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.IPersistence\" data-throw-if-not-resolved=\"false\"></xref> can be implemented by vx-nodes (derived from <xref href=\"Ventuz.Extension.VxNode\" data-throw-if-not-resolved=\"false\"></xref>) to handle additional data that are loaded and saved with the node.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -330,7 +330,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IStatus",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IStatus.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.IStatus\" data-throw-if-not-resolved=\"false\"></xref> can be implemented by vx-property-groups (derived from <xref href=\"Ventuz.Extension.VxPropertyGroup\" data-throw-if-not-resolved=\"false\"></xref>) to provide a text message describing the current status of the property group.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -428,7 +428,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.ITooltip",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.ITooltip.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.ITooltip\" data-throw-if-not-resolved=\"false\"></xref> can be implemented by vx-nodes (derived from <xref href=\"Ventuz.Extension.VxNode\" data-throw-if-not-resolved=\"false\"></xref>) to provide a tooltip text presented to the user.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -442,7 +442,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IUsedUris",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IUsedUris.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.IUsedUris\" data-throw-if-not-resolved=\"false\"></xref> can be implemented by vx-nodes (derived from <xref href=\"Ventuz.Extension.VxNode\" data-throw-if-not-resolved=\"false\"></xref>) to provide additional Uris (resources) that need to be included into an archive.\nIf a node utilized more Uris than stored in its properties, this interface allows to advise additional ones.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -470,7 +470,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApi",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApi.yml\" sourcestartlinenumber=\"1\">This interface is the base interface of all API interfaces and doesn't provide any members</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -484,7 +484,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiDesigner",
-      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiDesigner.yml\" sourcestartlinenumber=\"1\">This interface represents the designer api.\nAll provided methods are only available in the context of a running Ventuz Designer.</p>\n"
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiDesigner.yml\" sourcestartlinenumber=\"1\">This interface represents the designer api.\nAll provided methods are only available in the context of a running Designer.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -526,7 +526,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiLog",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiLog.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ventuz.Extension.IVxApiLog\" data-throw-if-not-resolved=\"false\"></xref> interface is used to log messages.\nLog message can provide a sender that helps to navigate to if the use clicks on a message</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -638,7 +638,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxDataObject",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxDataObject.yml\" sourcestartlinenumber=\"1\">The interface <xref href=\"Ventuz.Extension.IVxDataObject\" data-throw-if-not-resolved=\"false\"></xref> is a simple bridge to <xref href=\"System.Windows.Forms.IDataObject\" data-throw-if-not-resolved=\"false\"></xref> extended by some Vx related properties.\nAn implementation of this interface is passed to the Probe and Create methods of a <xref href=\"Ventuz.Extension.VxDataObjectHandler\" data-throw-if-not-resolved=\"false\"></xref>.<br>\n<strong>The members of this interface can only be accessed from the main thread!</strong></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -680,7 +680,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxManagement",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxManagement.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ventuz.Extension.IVxManagement\" data-throw-if-not-resolved=\"false\"></xref> interface provides general functions of the VX API</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -708,7 +708,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxTaskProgress",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxTaskProgress.yml\" sourcestartlinenumber=\"1\">The async methods of <xref href=\"Ventuz.Extension.VxDataObjectHandler\" data-throw-if-not-resolved=\"false\"></xref> receives an instance of this interface to handle the async operation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -750,7 +750,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.RenderMeshAxisMode",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.RenderMeshAxisMode.yml\" sourcestartlinenumber=\"1\">Describes how the use the Axis in <xref href=\"Ventuz.Extension.RenderMeshDetails\" data-throw-if-not-resolved=\"false\"></xref> if a mesh is rendered.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -764,7 +764,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.RenderMeshDetails",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.RenderMeshDetails.yml\" sourcestartlinenumber=\"1\">This structure describes how and where a mesh shall be rendered.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -834,7 +834,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VX",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VX.yml\" sourcestartlinenumber=\"1\">The VX class stores all raw API interfaces. Vx developers can call/use these interfaces directly.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -848,7 +848,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VerbState",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VerbState.yml\" sourcestartlinenumber=\"1\">If a verb of a vx node is probed, the verb method must return the state of this verb.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1128,7 +1128,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxDataObjectHandler",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxDataObjectHandler.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ventuz.Extension.VxDataObjectHandler\" data-throw-if-not-resolved=\"false\"></xref> represents the VX-API to handle clipboard data for drag'n'drop and copy/paste operations in Designer.<br>\nImplementation must override the <xref href=\"Ventuz.Extension.VxDataObjectHandler.Probe(Ventuz.Extension.IVxDataObject)\" data-throw-if-not-resolved=\"false\"></xref> method to test if the data in the dataObject can be processed.\nSynchronous and Asynchronous method must implement the import or conversion of the data in the required result specified by <xref href=\"Ventuz.Extension.VxDataObjectResult\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1142,7 +1142,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxDataObjectResult",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxDataObjectResult.yml\" sourcestartlinenumber=\"1\">Represents all different result type a <xref href=\"Ventuz.Extension.VxDataObjectHandler\" data-throw-if-not-resolved=\"false\"></xref> can handle.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1212,7 +1212,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxDesignerWindow",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxDesignerWindow.yml\" sourcestartlinenumber=\"1\">This class contain static fields with the IDs of all knows windows in Designer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1226,7 +1226,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxDockSituation",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxDockSituation.yml\" sourcestartlinenumber=\"1\">Describe the way a dockable window currently appears on screen</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1240,7 +1240,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxDockableWebView",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxDockableWebView.yml\" sourcestartlinenumber=\"1\">This is the base class used for custom dockable a web view. It hosts a WebView2 control.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1254,7 +1254,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxDockableWindow<T>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxDockableWindow-1.yml\" sourcestartlinenumber=\"1\">This is the base class used for custom dockable windows. The generic parameter T defines the class type of the form this window hosts.\n<remarks>Deriving from this class required the <xref href=\"Ventuz.Extension.VxWindowAttribute\" data-throw-if-not-resolved=\"false\"></xref> to assign a unique ID to the window.</remarks></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1268,7 +1268,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxDockableWindow",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxDockableWindow.yml\" sourcestartlinenumber=\"1\">This is the base class for all dockable window classes of the VX-API</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1380,7 +1380,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxFloatingWindow<T>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxFloatingWindow-1.yml\" sourcestartlinenumber=\"1\">This is the base class used for custom floating forms.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1394,7 +1394,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxFloatingWindow",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxFloatingWindow.yml\" sourcestartlinenumber=\"1\">This is the base class used for custom floating forms.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1688,7 +1688,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxMainMenu",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMainMenu.yml\" sourcestartlinenumber=\"1\">This class represents the VX-API for main menus in Designer. The class should be decorated with <xref href=\"Ventuz.Extension.VxMenuAttribute\" data-throw-if-not-resolved=\"false\"></xref> and/or <xref href=\"Ventuz.Extension.VxIconAttribute\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1772,7 +1772,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxMemberStatus",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMemberStatus.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ventuz.Extension.VxMemberStatus\" data-throw-if-not-resolved=\"false\"></xref> gives technical information about a member. Members are found at nodes and property groups.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1814,7 +1814,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxMenuEntry",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMenuEntry.yml\" sourcestartlinenumber=\"1\">The class represents a menu entry used in Designer. For example a <xref href=\"Ventuz.Extension.VxMainMenu\" data-throw-if-not-resolved=\"false\"></xref> provides a list of such menu entries to describe the main menu.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1954,7 +1954,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxPersistentData",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxPersistentData.yml\" sourcestartlinenumber=\"1\">This class us used to load and save additional data with a node. (See <xref href=\"Ventuz.Extension.IPersistence\" data-throw-if-not-resolved=\"false\"></xref>).\nData is managed as a simple key-value-pair dictionary.\nSupported types are: bool, byte, sbyte, short, ushort, int, uint, long, ulong, float, double, decimal and string</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2122,7 +2122,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxServiceBase",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxServiceBase.yml\" sourcestartlinenumber=\"1\">This is the base class for all Vx-Services. Do not use!</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2136,7 +2136,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxSimpleService",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSimpleService.yml\" sourcestartlinenumber=\"1\">A <xref href=\"Ventuz.Extension.VxSimpleService\" data-throw-if-not-resolved=\"false\"></xref> represent the VX-API for simple Services. A service is a class that is created once the Vx code is initialized and stopped if it is uninitialized.\nVx doe only create a single instance of simple services and starts/stops them accordingly.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2220,7 +2220,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxUiExtension",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxUiExtension.yml\" sourcestartlinenumber=\"1\">Base class of all UI Extension classes provided by the VX-API</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2234,7 +2234,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxUiStyle",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxUiStyle.yml\" sourcestartlinenumber=\"1\">This structure contain helpful information about the current UI style like name of the color scheme and its colors.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2290,7 +2290,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxWindowBase",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxWindowBase.yml\" sourcestartlinenumber=\"1\">This base class is used for all custom window classes of the VX-API. It contains a reference to the control it hosts (window)</p>\n"
     },
     {
       "type": "ManagedReference",

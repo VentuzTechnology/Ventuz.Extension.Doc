@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxSimpleService ">
       
-      
+      <meta name="description" content="A  represent the VX-API for simple Services. A service is a class that is created once the Vx code is initialized and stopped if it is uninitialized. Vx doe only create a single instance of simple services and starts/stops them accordingly.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,9 @@ Class VxSimpleService
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A <a class="xref" href="Ventuz.Extension.VxSimpleService.html">VxSimpleService</a> represent the VX-API for simple Services. A service is a class that is created once the Vx code is initialized and stopped if it is uninitialized.
+Vx doe only create a single instance of simple services and starts/stops them accordingly.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -149,6 +151,10 @@ Class VxSimpleService
 
 
 
+  <h2 id="Ventuz_Extension_VxSimpleService_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Services are ver1y useful to manage centralized data within a single Vx module. A service could for example maintain a connection to a database and provide data to custom nodes.
+It is very important that a service stops correctly and releases and disposed all required resources like file handled, threads or hardware devices.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -192,7 +198,8 @@ Class VxSimpleService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if the service should start. It is very important that a service stops correctly and releases and disposed all required resources like file handled, threads or hardware devices.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -218,7 +225,8 @@ Class VxSimpleService
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if the service should stop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

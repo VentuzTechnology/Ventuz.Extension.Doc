@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxDockableWindow&lt;T&gt; ">
       
-      
+      <meta name="description" content="This is the base class used for custom dockable windows. The generic parameter T defines the class type of the form this window hosts. Deriving from this class required the  to assign a unique ID to the window.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,9 @@ Class VxDockableWindow&lt;T&gt;
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This is the base class used for custom dockable windows. The generic parameter T defines the class type of the form this window hosts.
+<remarks>Deriving from this class required the <a class="xref" href="Ventuz.Extension.VxWindowAttribute.html">VxWindowAttribute</a> to assign a unique ID to the window.</remarks></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +111,8 @@ Class VxDockableWindow&lt;T&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Type of the Form which is hosted by this dockable window. T must be of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.form">Form</a></p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -134,9 +137,6 @@ Class VxDockableWindow&lt;T&gt;
       <a class="xref" href="Ventuz.Extension.VxDockableWindow.html#Ventuz_Extension_VxDockableWindow_OnDockSituationChanged_Ventuz_Extension_VxDockSituation_System_Boolean_">VxDockableWindow.OnDockSituationChanged(VxDockSituation, bool)</a>
     </div>
     <div>
-      <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase___SetControl_System_Windows_Forms_Control_">VxWindowBase.__SetControl(Control)</a>
-    </div>
-    <div>
       <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase_OnControlCreated_System_Windows_Forms_Control_">VxWindowBase.OnControlCreated(Control)</a>
     </div>
     <div>
@@ -144,6 +144,9 @@ Class VxDockableWindow&lt;T&gt;
     </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnUIStyleChanged">VxUiExtension.OnUIStyleChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__">VxUiExtension.OnSelectionChanged(IEnumerable&lt;VxBase&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -169,6 +172,12 @@ Class VxDockableWindow&lt;T&gt;
   </dd></dl>
 
 
+
+  <h2 id="Ventuz_Extension_VxDockableWindow_1_examples">Examples</h2>
+  <pre><code class="lang-csharp">[VxWindow("B5009177-636C-4698-A803-66A63444E830", "Label of MyDockableForm1", Description = "Description of MyDockableForm1")]
+public class MyDockableForm1 : VxDockableWindow&lt;Form1&gt;
+{
+}</code></pre>
 
 
 
@@ -214,7 +223,8 @@ Class VxDockableWindow&lt;T&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the control (Form) of type T</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,7 +255,8 @@ Class VxDockableWindow&lt;T&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the type of the hosted control</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

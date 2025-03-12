@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxWindowBase ">
       
-      
+      <meta name="description" content="This base class is used for all custom window classes of the VX-API. It contains a reference to the control it hosts (window)">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxWindowBase
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This base class is used for all custom window classes of the VX-API. It contains a reference to the control it hosts (window)</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -135,6 +136,9 @@ Class VxWindowBase
     </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnUIStyleChanged">VxUiExtension.OnUIStyleChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__">VxUiExtension.OnSelectionChanged(IEnumerable&lt;VxBase&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -175,7 +179,8 @@ Class VxWindowBase
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Do not create instances of this class manually</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,7 +210,8 @@ Class VxWindowBase
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the control this windows hosts</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -236,7 +242,8 @@ Class VxWindowBase
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the type of the hosted control</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -271,42 +278,12 @@ Class VxWindowBase
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>When overwritten this window is notified if the actual hosted control was created</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnControlCreated(Control control)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>control</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control">Control</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_VxWindowBase___SetControl_" data-uid="Ventuz.Extension.VxWindowBase.__SetControl*"></a>
-
-  <h3 id="Ventuz_Extension_VxWindowBase___SetControl_System_Windows_Forms_Control_" data-uid="Ventuz.Extension.VxWindowBase.__SetControl(System.Windows.Forms.Control)">
-  __SetControl(Control)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void __SetControl(Control control)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

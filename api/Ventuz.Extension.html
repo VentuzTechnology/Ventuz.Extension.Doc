@@ -108,7 +108,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VX.html">VX</a></dt>
-      <dd></dd>
+      <dd><p>The VX class stores all raw API interfaces. Vx developers can call/use these interfaces directly.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxApiSceneModifyExt.html">VxApiSceneModifyExt</a></dt>
@@ -152,7 +153,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a></dt>
-      <dd></dd>
+      <dd><p>The <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a> represents the VX-API to handle clipboard data for drag'n'drop and copy/paste operations in Designer.<br>
+Implementation must override the <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html#Ventuz_Extension_VxDataObjectHandler_Probe_Ventuz_Extension_IVxDataObject_">Probe(IVxDataObject)</a> method to test if the data in the dataObject can be processed.
+Synchronous and Asynchronous method must implement the import or conversion of the data in the required result specified by <a class="xref" href="Ventuz.Extension.VxDataObjectResult.html">VxDataObjectResult</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDefaultValueAttribute.html">VxDefaultValueAttribute</a></dt>
@@ -168,19 +172,24 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDesignerWindow.html">VxDesignerWindow</a></dt>
-      <dd></dd>
+      <dd><p>This class contain static fields with the IDs of all knows windows in Designer</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDockableWebView.html">VxDockableWebView</a></dt>
-      <dd></dd>
+      <dd><p>This is the base class used for custom dockable a web view. It hosts a WebView2 control.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDockableWindow.html">VxDockableWindow</a></dt>
-      <dd></dd>
+      <dd><p>This is the base class for all dockable window classes of the VX-API</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDockableWindow-1.html">VxDockableWindow&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>This is the base class used for custom dockable windows. The generic parameter T defines the class type of the form this window hosts.
+<remarks>Deriving from this class required the <a class="xref" href="Ventuz.Extension.VxWindowAttribute.html">VxWindowAttribute</a> to assign a unique ID to the window.</remarks></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDynamicIconAttribute.html">VxDynamicIconAttribute</a></dt>
@@ -212,11 +221,13 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxFloatingWindow.html">VxFloatingWindow</a></dt>
-      <dd></dd>
+      <dd><p>This is the base class used for custom floating forms.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxFloatingWindow-1.html">VxFloatingWindow&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>This is the base class used for custom floating forms.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxGroupPropertyList-1.html">VxGroupPropertyList&lt;PG&gt;</a></dt>
@@ -300,7 +311,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxMainMenu.html">VxMainMenu</a></dt>
-      <dd></dd>
+      <dd><p>This class represents the VX-API for main menus in Designer. The class should be decorated with <a class="xref" href="Ventuz.Extension.VxMenuAttribute.html">VxMenuAttribute</a> and/or <a class="xref" href="Ventuz.Extension.VxIconAttribute.html">VxIconAttribute</a></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxManagedObject.html">VxManagedObject</a></dt>
@@ -332,7 +344,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxMenuEntry.html">VxMenuEntry</a></dt>
-      <dd></dd>
+      <dd><p>The class represents a menu entry used in Designer. For example a <a class="xref" href="Ventuz.Extension.VxMainMenu.html">VxMainMenu</a> provides a list of such menu entries to describe the main menu.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxMetaDataAttribute.html">VxMetaDataAttribute</a></dt>
@@ -368,7 +381,10 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxPersistentData.html">VxPersistentData</a></dt>
-      <dd></dd>
+      <dd><p>This class us used to load and save additional data with a node. (See <a class="xref" href="Ventuz.Extension.IPersistence.html">IPersistence</a>).
+Data is managed as a simple key-value-pair dictionary.
+Supported types are: bool, byte, sbyte, short, ushort, int, uint, long, ulong, float, double, decimal and string</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></dt>
@@ -408,11 +424,14 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxServiceBase.html">VxServiceBase</a></dt>
-      <dd></dd>
+      <dd><p>This is the base class for all Vx-Services. Do not use!</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxSimpleService.html">VxSimpleService</a></dt>
-      <dd></dd>
+      <dd><p>A <a class="xref" href="Ventuz.Extension.VxSimpleService.html">VxSimpleService</a> represent the VX-API for simple Services. A service is a class that is created once the Vx code is initialized and stopped if it is uninitialized.
+Vx doe only create a single instance of simple services and starts/stops them accordingly.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxStringAttribute.html">VxStringAttribute</a></dt>
@@ -432,7 +451,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxUiExtension.html">VxUiExtension</a></dt>
-      <dd></dd>
+      <dd><p>Base class of all UI Extension classes provided by the VX-API</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxUriAttribute.html">VxUriAttribute</a></dt>
@@ -448,7 +468,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxWindowBase.html">VxWindowBase</a></dt>
-      <dd></dd>
+      <dd><p>This base class is used for all custom window classes of the VX-API. It contains a reference to the control it hosts (window)</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxWithAlphaAttribute.html">VxWithAlphaAttribute</a></dt>
@@ -459,7 +480,8 @@ Structs
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.RenderMeshDetails.html">RenderMeshDetails</a></dt>
-      <dd></dd>
+      <dd><p>This structure describes how and where a mesh shall be rendered.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.Subset.html">Subset</a></dt>
@@ -495,7 +517,8 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxUiStyle.html">VxUiStyle</a></dt>
-      <dd></dd>
+      <dd><p>This structure contain helpful information about the current UI style like name of the color scheme and its colors.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
@@ -522,11 +545,14 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IIconIndex.html">IIconIndex</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.IIconIndex.html">IIconIndex</a> can be implemented by vx-nodes (derived from <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>) to provide the current icon of the node.
+Nodes can change their icon appearance depending on their status, for example. The icons to be indexed here must be declared by using the <a class="xref" href="Ventuz.Extension.VxIconAttribute.html">VxIconAttribute</a> with specified index.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IIconTag.html">IIconTag</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.IIconTag.html">IIconTag</a> can be implemented by vx-property-groups (derived from <a class="xref" href="Ventuz.Extension.VxPropertyGroup.html">VxPropertyGroup</a>) to provide an additional (short) text message drawn below the icon.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IMaterial.html">IMaterial</a></dt>
@@ -546,11 +572,14 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IName.html">IName</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.IName.html">IName</a> can be implemented by vx-nodes (derived from <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>) to provide a static name to the UI.
+The user is not able to change the name of the node anymore if this interface is implemented.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IPersistence.html">IPersistence</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.IPersistence.html">IPersistence</a> can be implemented by vx-nodes (derived from <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>) to handle additional data that are loaded and saved with the node.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IProxyResource.html">IProxyResource</a></dt>
@@ -570,7 +599,8 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IStatus.html">IStatus</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.IStatus.html">IStatus</a> can be implemented by vx-property-groups (derived from <a class="xref" href="Ventuz.Extension.VxPropertyGroup.html">VxPropertyGroup</a>) to provide a text message describing the current status of the property group.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IText.html">IText</a></dt>
@@ -598,11 +628,14 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.ITooltip.html">ITooltip</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.ITooltip.html">ITooltip</a> can be implemented by vx-nodes (derived from <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>) to provide a tooltip text presented to the user.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IUsedUris.html">IUsedUris</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.IUsedUris.html">IUsedUris</a> can be implemented by vx-nodes (derived from <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>) to provide additional Uris (resources) that need to be included into an archive.
+If a node utilized more Uris than stored in its properties, this interface allows to advise additional ones.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVertex.html">IVertex</a></dt>
@@ -610,12 +643,13 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxApi.html">IVxApi</a></dt>
-      <dd></dd>
+      <dd><p>This interface is the base interface of all API interfaces and doesn't provide any members</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxApiDesigner.html">IVxApiDesigner</a></dt>
       <dd><p>This interface represents the designer api.
-All provided methods are only available in the context of a running Ventuz Designer.</p>
+All provided methods are only available in the context of a running Designer.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -628,7 +662,9 @@ All provided methods are only available in the context of a running Ventuz Desig
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxApiLog.html">IVxApiLog</a></dt>
-      <dd></dd>
+      <dd><p>The <a class="xref" href="Ventuz.Extension.IVxApiLog.html">IVxApiLog</a> interface is used to log messages.
+Log message can provide a sender that helps to navigate to if the use clicks on a message</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxApiNodeValidation.html">IVxApiNodeValidation</a></dt>
@@ -660,7 +696,10 @@ All provided methods are only available in the context of a running Ventuz Desig
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-      <dd></dd>
+      <dd><p>The interface <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a> is a simple bridge to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.idataobject">IDataObject</a> extended by some Vx related properties.
+An implementation of this interface is passed to the Probe and Create methods of a <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a>.<br>
+<strong>The members of this interface can only be accessed from the main thread!</strong></p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxGroupProperty.html">IVxGroupProperty</a></dt>
@@ -672,7 +711,8 @@ All provided methods are only available in the context of a running Ventuz Desig
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxManagement.html">IVxManagement</a></dt>
-      <dd></dd>
+      <dd><p>The <a class="xref" href="Ventuz.Extension.IVxManagement.html">IVxManagement</a> interface provides general functions of the VX API</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxMenuEntry.html">IVxMenuEntry</a></dt>
@@ -680,7 +720,8 @@ All provided methods are only available in the context of a running Ventuz Desig
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-      <dd></dd>
+      <dd><p>The async methods of <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a> receives an instance of this interface to handle the async operation.</p>
+</dd>
     </dl>
     <h3 id="enums">
 Enums
@@ -703,7 +744,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.RenderMeshAxisMode.html">RenderMeshAxisMode</a></dt>
-      <dd></dd>
+      <dd><p>Describes how the use the Axis in <a class="xref" href="Ventuz.Extension.RenderMeshDetails.html">RenderMeshDetails</a> if a mesh is rendered.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.TextWrapping.html">TextWrapping</a></dt>
@@ -715,7 +757,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VerbState.html">VerbState</a></dt>
-      <dd></dd>
+      <dd><p>If a verb of a vx node is probed, the verb method must return the state of this verb.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VertexFormat.html">VertexFormat</a></dt>
@@ -727,7 +770,8 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDataObjectResult.html">VxDataObjectResult</a></dt>
-      <dd></dd>
+      <dd><p>Represents all different result type a <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a> can handle.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDataPool.html">VxDataPool</a></dt>
@@ -735,11 +779,13 @@ Enums
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxDockSituation.html">VxDockSituation</a></dt>
-      <dd></dd>
+      <dd><p>Describe the way a dockable window currently appears on screen</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxMemberStatus.html">VxMemberStatus</a></dt>
-      <dd></dd>
+      <dd><p>The <a class="xref" href="Ventuz.Extension.VxMemberStatus.html">VxMemberStatus</a> gives technical information about a member. Members are found at nodes and property groups.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxNumericMode.html">VxNumericMode</a></dt>

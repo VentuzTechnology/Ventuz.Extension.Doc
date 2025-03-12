@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxUiExtension ">
       
-      
+      <meta name="description" content="Base class of all UI Extension classes provided by the VX-API">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxUiExtension
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base class of all UI Extension classes provided by the VX-API</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -169,7 +170,8 @@ Class VxUiExtension
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>When overwritten this method is called whenever a scene received a scene event. See <a class="xref" href="Ventuz.Extension.VxSceneEvent.html">VxSceneEvent</a> for more information about available events.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -179,9 +181,45 @@ Class VxUiExtension
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The scene this event belongs to</p>
+</dd>
     <dt><code>e</code> <a class="xref" href="Ventuz.Extension.VxSceneEvent.html">VxSceneEvent</a></dt>
-    <dd></dd>
+    <dd><p>The event that occurred for the scene</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxUiExtension_OnSelectionChanged_" data-uid="Ventuz.Extension.VxUiExtension.OnSelectionChanged*"></a>
+
+  <h3 id="Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__" data-uid="Ventuz.Extension.VxUiExtension.OnSelectionChanged(System.Collections.Generic.IEnumerable{Ventuz.Extension.VxBase})">
+  OnSelectionChanged(IEnumerable&lt;VxBase&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When overwritten this method is called if the user selects any item in the UI.
+This can be nodes and other items. A good practice is to iterate throw the elements of <code class="paramref">selection</code> and filter by the types of interest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSelectionChanged(IEnumerable&lt;VxBase&gt; selection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Ventuz.Extension.VxBase.html">VxBase</a>&gt;</dt>
+    <dd><p>null if no items are selected or a list of selected items (nodes)</p>
+</dd>
   </dl>
 
 
@@ -202,7 +240,8 @@ Class VxUiExtension
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>When overwritten this method is called if the UI style changed. For example, if the user switch from light to dark style.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

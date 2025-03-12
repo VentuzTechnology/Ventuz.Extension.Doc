@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxTaskProgress ">
       
-      
+      <meta name="description" content="The async methods of  receives an instance of this interface to handle the async operation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Interface IVxTaskProgress
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The async methods of <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a> receives an instance of this interface to handle the async operation.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -127,7 +128,8 @@ Interface IVxTaskProgress
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the CancellationToken to cancel a running operation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -162,7 +164,8 @@ Interface IVxTaskProgress
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Send any progress to the UI</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -172,11 +175,14 @@ Interface IVxTaskProgress
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Message of the progress</p>
+</dd>
     <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Current position in progress. Must be lower than max</p>
+</dd>
     <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The max position in the progress.</p>
+</dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxDataObject ">
       
-      
+      <meta name="description" content="The interface  is a simple bridge to  extended by some Vx related properties. An implementation of this interface is passed to the Probe and Create methods of a . The members of this interface can only be accessed from the main thread!">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,10 @@ Interface IVxDataObject
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The interface <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a> is a simple bridge to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.idataobject">IDataObject</a> extended by some Vx related properties.
+An implementation of this interface is passed to the Probe and Create methods of a <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a>.<br>
+<strong>The members of this interface can only be accessed from the main thread!</strong></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -127,7 +130,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns true if any progress message was received</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -158,7 +162,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the container this operation is probed or executed. Container is NULL if the operation is on scene level.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -189,7 +194,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns true if the operation is a drag'n'drop operation. False if it is a copy/paste operation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -220,7 +226,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the combination requested results. For example Hierarchy node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -255,7 +262,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the data associated with the specified data format</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,15 +273,18 @@ Interface IVxDataObject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The format of the data to retrieve. See <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dataformats">DataFormats</a>for predefined formats</p>
+</dd>
     <dt><code>autoConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true to convert the data to the specified format; otherwise, false.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>The data associated with the specified format, or null.</p>
+</dd>
   </dl>
 
 
@@ -293,7 +304,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether data stored in this instance is associated with the specified format, using a Boolean value to determine whether to convert the data to the format</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -303,15 +315,18 @@ Interface IVxDataObject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The format for which to check. See <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dataformats">DataFormats</a>for predefined formats</p>
+</dd>
     <dt><code>autoConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true to determine whether data stored in this instance can be converted to the specified format; false to check whether the data is in the specified format.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true if the data is in, or can be converted to, the specified format; otherwise, false.</p>
+</dd>
   </dl>
 
 
@@ -331,7 +346,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether data stored in this instance is associated with the specified type T, using a Boolean value to determine whether to convert the data to the format</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -342,13 +358,15 @@ Interface IVxDataObject
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true if the data is in, or can be converted to, the specified format; otherwise, false.</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type for which to check</p>
+</dd>
   </dl>
 
 
@@ -367,7 +385,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the data associated with the specified data type T</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -378,13 +397,15 @@ Interface IVxDataObject
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The data associated with the specified type, or default of T</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The format of the data to retrieve</p>
+</dd>
   </dl>
 
 
@@ -403,7 +424,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets available OLE formats in the data object. See <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.dataformats">DataFormats</a>for predefined formats.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -413,13 +435,15 @@ Interface IVxDataObject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>autoConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true to retrieve all formats that data stored in this instance is associated with or can be converted to; false to retrieve only native data formats.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>An array of the names that represents a list of all formats that are supported by the data stored in this object</p>
+</dd>
   </dl>
 
 
@@ -439,7 +463,8 @@ Interface IVxDataObject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Call this method to report any progress on async processing of the operation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -449,9 +474,11 @@ Interface IVxDataObject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Text message</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Progress value between 0 and 100</p>
+</dd>
   </dl>
 
 

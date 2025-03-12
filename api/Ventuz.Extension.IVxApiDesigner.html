@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxApiDesigner ">
       
-      <meta name="description" content="This interface represents the designer api. All provided methods are only available in the context of a running Ventuz Designer.">
+      <meta name="description" content="This interface represents the designer api. All provided methods are only available in the context of a running Designer.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -98,7 +98,7 @@ Interface IVxApiDesigner
   </div>
 
   <div class="markdown summary"><p>This interface represents the designer api.
-All provided methods are only available in the context of a running Ventuz Designer.</p>
+All provided methods are only available in the context of a running Designer.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -129,7 +129,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Close a scene in Designer. Optionally query the user to save the scene if it was modified.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -139,9 +140,11 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>Scene to close</p>
+</dd>
     <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>If true, the user is queried to save the scene if the scene was modified</p>
+</dd>
   </dl>
 
 
@@ -162,7 +165,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a new scene and optionally opens it in Designer. An optional lambda action can be provided to create the initial nodes in this scene.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -172,17 +176,21 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>buildSceneAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>If specified, this action is called to build the scene</p>
+</dd>
     <dt><code>nameTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>An optional name template, default its &quot;New&quot;. The template will also create an increasing number if it already exists (&quot;New1&quot;, &quot;New2&quot;, ...)</p>
+</dd>
     <dt><code>withLayer3D</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>If set to true, the new scene will contain a default 3D layer. Default is true</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The created scene</p>
+</dd>
   </dl>
 
 
@@ -202,7 +210,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Exports a scene into a scene archive (vza)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -212,11 +221,14 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>Scene to be exported</p>
+</dd>
     <dt><code>uri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
-    <dd></dd>
+    <dd><p>File to store the archive. A user dialog is shown to select and output file.</p>
+</dd>
     <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>If true the user can selected the files and resources to be included in the archive. If false all referenced resources will be included.</p>
+</dd>
   </dl>
 
 
@@ -237,7 +249,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Exports a scene into a presentation (vza)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -247,11 +260,14 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>Scene to be exported</p>
+</dd>
     <dt><code>uri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
-    <dd></dd>
+    <dd><p>File to store the archive. A user dialog is shown to select and output file.</p>
+</dd>
     <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>If true the user can selected the files and resources to be included in the presentation archive. If false all referenced resources will be included.</p>
+</dd>
   </dl>
 
 
@@ -272,7 +288,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the currently active container within the currently active scene</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -283,7 +300,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
-    <dd></dd>
+    <dd><p>The currently active container of the currently active scene</p>
+</dd>
   </dl>
 
 
@@ -303,7 +321,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the currently active scene in Designer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -314,7 +333,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The currently active scene in Designer or NULL if Designer has no scene open</p>
+</dd>
   </dl>
 
 
@@ -334,7 +354,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get all open scenes. Open scenes are loaded of course.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -345,7 +366,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>[]</dt>
-    <dd></dd>
+    <dd><p>Array of scenes open in Designer</p>
+</dd>
   </dl>
 
 
@@ -365,7 +387,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the current UI style</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -376,7 +399,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxUiStyle.html">VxUiStyle</a></dt>
-    <dd></dd>
+    <dd><p>Current UI style</p>
+</dd>
   </dl>
 
 
@@ -396,7 +420,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Imports an archive from file into the project. User gets optionally queried if files need to be overwritten. The imported scene is optionally opened in Designer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -406,17 +431,21 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>uri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
-    <dd></dd>
+    <dd><p>Uri of the archive to import</p>
+</dd>
     <dt><code>openScene</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Open the scene in Designer after import if set to true</p>
+</dd>
     <dt><code>queryUser</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Queries the user to overwrite files if set to true</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The imported scene</p>
+</dd>
   </dl>
 
 
@@ -436,7 +465,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Test if a given scene is open in Designer</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -446,13 +476,15 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>Scene to be tested</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true if scene is open in Designer</p>
+</dd>
   </dl>
 
 
@@ -472,7 +504,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Load and open a scene in Designer. If a scene with the same identity is already loaded the Designer will use the existing one.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -482,13 +515,15 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>identity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The identity of the scene to be loaded, (lower case filename without extension)</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The loaded scene or the existing scene with same identity</p>
+</dd>
   </dl>
 
 
@@ -508,7 +543,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Navigates the user interface to a node. If required the currently active scene is switched and the property editor select the node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -518,13 +554,15 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
-    <dd></dd>
+    <dd><p>Node to navigate to</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true if the navigation was successful</p>
+</dd>
   </dl>
 
 
@@ -544,7 +582,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Opens a scene in Designer. The scene must be loaded into memory before. If another scene with the same identity is already opened this call does nothing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -554,7 +593,8 @@ All provided methods are only available in the context of a running Ventuz Desig
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The scene to open (activate) in Designer</p>
+</dd>
   </dl>
 
 

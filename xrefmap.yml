@@ -8395,12 +8395,24 @@ references:
   commentId: F:Ventuz.Extension.VxSceneEvent.ActivateSceneInDesigner
   fullName: Ventuz.Extension.VxSceneEvent.ActivateSceneInDesigner
   nameWithType: VxSceneEvent.ActivateSceneInDesigner
+- uid: Ventuz.Extension.VxSceneEvent.Modified
+  name: Modified
+  href: api/Ventuz.Extension.VxSceneEvent.html#Ventuz_Extension_VxSceneEvent_Modified
+  commentId: F:Ventuz.Extension.VxSceneEvent.Modified
+  fullName: Ventuz.Extension.VxSceneEvent.Modified
+  nameWithType: VxSceneEvent.Modified
 - uid: Ventuz.Extension.VxSceneEvent.None
   name: None
   href: api/Ventuz.Extension.VxSceneEvent.html#Ventuz_Extension_VxSceneEvent_None
   commentId: F:Ventuz.Extension.VxSceneEvent.None
   fullName: Ventuz.Extension.VxSceneEvent.None
   nameWithType: VxSceneEvent.None
+- uid: Ventuz.Extension.VxSceneEvent.PipeIndicesChanged
+  name: PipeIndicesChanged
+  href: api/Ventuz.Extension.VxSceneEvent.html#Ventuz_Extension_VxSceneEvent_PipeIndicesChanged
+  commentId: F:Ventuz.Extension.VxSceneEvent.PipeIndicesChanged
+  fullName: Ventuz.Extension.VxSceneEvent.PipeIndicesChanged
+  nameWithType: VxSceneEvent.PipeIndicesChanged
 - uid: Ventuz.Extension.VxSceneEvent.SceneAdded
   name: SceneAdded
   href: api/Ventuz.Extension.VxSceneEvent.html#Ventuz_Extension_VxSceneEvent_SceneAdded
@@ -8437,24 +8449,6 @@ references:
   commentId: T:Ventuz.Extension.VxServiceBase
   fullName: Ventuz.Extension.VxServiceBase
   nameWithType: VxServiceBase
-- uid: Ventuz.Extension.VxServiceBase.#ctor
-  name: VxServiceBase()
-  href: api/Ventuz.Extension.VxServiceBase.html#Ventuz_Extension_VxServiceBase__ctor
-  commentId: M:Ventuz.Extension.VxServiceBase.#ctor
-  name.vb: New()
-  fullName: Ventuz.Extension.VxServiceBase.VxServiceBase()
-  fullName.vb: Ventuz.Extension.VxServiceBase.New()
-  nameWithType: VxServiceBase.VxServiceBase()
-  nameWithType.vb: VxServiceBase.New()
-- uid: Ventuz.Extension.VxServiceBase.#ctor*
-  name: VxServiceBase
-  href: api/Ventuz.Extension.VxServiceBase.html#Ventuz_Extension_VxServiceBase__ctor_
-  commentId: Overload:Ventuz.Extension.VxServiceBase.#ctor
-  name.vb: New
-  fullName: Ventuz.Extension.VxServiceBase.VxServiceBase
-  fullName.vb: Ventuz.Extension.VxServiceBase.New
-  nameWithType: VxServiceBase.VxServiceBase
-  nameWithType.vb: VxServiceBase.New
 - uid: Ventuz.Extension.VxSimpleService
   name: VxSimpleService
   href: api/Ventuz.Extension.VxSimpleService.html
@@ -8839,6 +8833,21 @@ references:
   commentId: Overload:Ventuz.Extension.VxUiExtension.OnSceneEvent
   fullName: Ventuz.Extension.VxUiExtension.OnSceneEvent
   nameWithType: VxUiExtension.OnSceneEvent
+- uid: Ventuz.Extension.VxUiExtension.OnSelectionChanged(System.Collections.Generic.IEnumerable{Ventuz.Extension.VxBase})
+  name: OnSelectionChanged(IEnumerable<VxBase>)
+  href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__
+  commentId: M:Ventuz.Extension.VxUiExtension.OnSelectionChanged(System.Collections.Generic.IEnumerable{Ventuz.Extension.VxBase})
+  name.vb: OnSelectionChanged(IEnumerable(Of VxBase))
+  fullName: Ventuz.Extension.VxUiExtension.OnSelectionChanged(System.Collections.Generic.IEnumerable<Ventuz.Extension.VxBase>)
+  fullName.vb: Ventuz.Extension.VxUiExtension.OnSelectionChanged(System.Collections.Generic.IEnumerable(Of Ventuz.Extension.VxBase))
+  nameWithType: VxUiExtension.OnSelectionChanged(IEnumerable<VxBase>)
+  nameWithType.vb: VxUiExtension.OnSelectionChanged(IEnumerable(Of VxBase))
+- uid: Ventuz.Extension.VxUiExtension.OnSelectionChanged*
+  name: OnSelectionChanged
+  href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_
+  commentId: Overload:Ventuz.Extension.VxUiExtension.OnSelectionChanged
+  fullName: Ventuz.Extension.VxUiExtension.OnSelectionChanged
+  nameWithType: VxUiExtension.OnSelectionChanged
 - uid: Ventuz.Extension.VxUiExtension.OnUIStyleChanged
   name: OnUIStyleChanged()
   href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnUIStyleChanged
@@ -8917,6 +8926,18 @@ references:
   commentId: Overload:Ventuz.Extension.VxUiStyle.MainWindowBackground
   fullName: Ventuz.Extension.VxUiStyle.MainWindowBackground
   nameWithType: VxUiStyle.MainWindowBackground
+- uid: Ventuz.Extension.VxUiStyle.Scheme
+  name: Scheme
+  href: api/Ventuz.Extension.VxUiStyle.html#Ventuz_Extension_VxUiStyle_Scheme
+  commentId: P:Ventuz.Extension.VxUiStyle.Scheme
+  fullName: Ventuz.Extension.VxUiStyle.Scheme
+  nameWithType: VxUiStyle.Scheme
+- uid: Ventuz.Extension.VxUiStyle.Scheme*
+  name: Scheme
+  href: api/Ventuz.Extension.VxUiStyle.html#Ventuz_Extension_VxUiStyle_Scheme_
+  commentId: Overload:Ventuz.Extension.VxUiStyle.Scheme
+  fullName: Ventuz.Extension.VxUiStyle.Scheme
+  nameWithType: VxUiStyle.Scheme
 - uid: Ventuz.Extension.VxUiStyle.Selection
   name: Selection
   href: api/Ventuz.Extension.VxUiStyle.html#Ventuz_Extension_VxUiStyle_Selection
@@ -9436,18 +9457,6 @@ references:
   commentId: Overload:Ventuz.Extension.VxWindowBase.OnControlCreated
   fullName: Ventuz.Extension.VxWindowBase.OnControlCreated
   nameWithType: VxWindowBase.OnControlCreated
-- uid: Ventuz.Extension.VxWindowBase.__SetControl(System.Windows.Forms.Control)
-  name: __SetControl(Control)
-  href: api/Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase___SetControl_System_Windows_Forms_Control_
-  commentId: M:Ventuz.Extension.VxWindowBase.__SetControl(System.Windows.Forms.Control)
-  fullName: Ventuz.Extension.VxWindowBase.__SetControl(System.Windows.Forms.Control)
-  nameWithType: VxWindowBase.__SetControl(Control)
-- uid: Ventuz.Extension.VxWindowBase.__SetControl*
-  name: __SetControl
-  href: api/Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase___SetControl_
-  commentId: Overload:Ventuz.Extension.VxWindowBase.__SetControl
-  fullName: Ventuz.Extension.VxWindowBase.__SetControl
-  nameWithType: VxWindowBase.__SetControl
 - uid: Ventuz.Extension.VxWithAlphaAttribute
   name: VxWithAlphaAttribute
   href: api/Ventuz.Extension.VxWithAlphaAttribute.html

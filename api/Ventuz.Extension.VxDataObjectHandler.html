@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxDataObjectHandler ">
       
-      
+      <meta name="description" content="The  represents the VX-API to handle clipboard data for drag&#39;n&#39;drop and copy/paste operations in Designer. Implementation must override the  method to test if the data in the dataObject can be processed. Synchronous and Asynchronous method must implement the import or conversion of the data in the required result specified by">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,10 @@ Class VxDataObjectHandler
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a> represents the VX-API to handle clipboard data for drag'n'drop and copy/paste operations in Designer.<br>
+Implementation must override the <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html#Ventuz_Extension_VxDataObjectHandler_Probe_Ventuz_Extension_IVxDataObject_">Probe(IVxDataObject)</a> method to test if the data in the dataObject can be processed.
+Synchronous and Asynchronous method must implement the import or conversion of the data in the required result specified by <a class="xref" href="Ventuz.Extension.VxDataObjectResult.html">VxDataObjectResult</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -130,6 +133,9 @@ Class VxDataObjectHandler
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnUIStyleChanged">VxUiExtension.OnUIStyleChanged()</a>
     </div>
     <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__">VxUiExtension.OnSelectionChanged(IEnumerable&lt;VxBase&gt;)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
     <div>
@@ -154,7 +160,42 @@ Class VxDataObjectHandler
 
 
 
+  <h2 id="Ventuz_Extension_VxDataObjectHandler_examples">Examples</h2>
+  <pre><code class="lang-csharp">// This example implements a simple import/conversion from text (string) into a BlockText Content Node.
 
+[VxLabel("My Data Handler")]
+[VxDescription("My Data Handler Description")]
+public class MyDataHandler : VxDataObjectHandler
+{
+    public override VxDataObjectResult Probe(IVxDataObject dataObject)
+    {
+        // test if there is a string available
+        if ( dataObject.GetDataPresent&lt;string&gt;() )
+            // yes, we can create a content node from it
+            return VxDataObjectResult.ContentNode;
+
+        return VxDataObjectResult.None;
+    }
+
+    protected override VxContentBaseNode CreateContentNode(IVxDataObject dataObject, IVxTaskProgress progress)
+    {
+        if ( dataObject.GetDataPresent&lt;string&gt;() &amp;&amp; dataObject.GetData&lt;string&gt;() is string str )
+        {
+            var blockText = dataObject.Container.CreateNode&lt;Intrinsic.Text.BlockText&gt;();
+            blockText.Text = str;
+            blockText.LineAlignment = StringAlignment.Center;
+            return blockText;
+        }
+        return null;
+    }
+}</code></pre>
+
+
+  <h2 id="Ventuz_Extension_VxDataObjectHandler_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>WARNING: If the sync Create method return null the async methods are called. If the async methods are implemented you have to make sure not accessing the dataObject anymore after any await.
+The dataObject can only be accessed by the calling thread! After awaiting any other async operation the thread may change! Therefore make sure to collect all required data from the dataObject
+before awaiting tasks and switching threads! Also make sure to implement a proper cancellation by using the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> provided by <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a>.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -198,7 +239,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if a Content Node should be created based on the dataObject</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -208,15 +250,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxContentBaseNode.html">VxContentBaseNode</a></dt>
-    <dd></dd>
+    <dd><p>The created node or null if import was not possible</p>
+</dd>
   </dl>
 
 
@@ -236,7 +281,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html#Ventuz_Extension_VxDataObjectHandler_CreateContentNode_Ventuz_Extension_IVxDataObject_Ventuz_Extension_IVxTaskProgress_">CreateContentNode(IVxDataObject, IVxTaskProgress)</a> returned null. An async implementation of importing/converting data can be implemented here. Please read the remarks in <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -246,15 +292,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ventuz.Extension.VxContentBaseNode.html">VxContentBaseNode</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Task that performs the operation</p>
+</dd>
   </dl>
 
 
@@ -274,7 +323,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if a Hierarchy Node should be created based on the dataObject</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -284,15 +334,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
-    <dd></dd>
+    <dd><p>The created node or null if import was not possible</p>
+</dd>
   </dl>
 
 
@@ -312,7 +365,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html#Ventuz_Extension_VxDataObjectHandler_CreateHierarchyNode_Ventuz_Extension_IVxDataObject_Ventuz_Extension_IVxTaskProgress_">CreateHierarchyNode(IVxDataObject, IVxTaskProgress)</a> returned null. An async implementation of importing/converting data can be implemented here. Please read the remarks in <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -322,15 +376,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Task that performs the operation</p>
+</dd>
   </dl>
 
 
@@ -350,7 +407,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if a Layer should be created based on the dataObject</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -360,15 +418,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxLayerBaseNode.html">VxLayerBaseNode</a></dt>
-    <dd></dd>
+    <dd><p>The created layer or null if import was not possible</p>
+</dd>
   </dl>
 
 
@@ -388,7 +449,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html#Ventuz_Extension_VxDataObjectHandler_CreateLayer_Ventuz_Extension_IVxDataObject_Ventuz_Extension_IVxTaskProgress_">CreateLayer(IVxDataObject, IVxTaskProgress)</a> returned null. An async implementation of importing/converting data can be implemented here. Please read the remarks in <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -398,15 +460,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ventuz.Extension.VxLayerBaseNode.html">VxLayerBaseNode</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Task that performs the operation</p>
+</dd>
   </dl>
 
 
@@ -426,7 +491,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if a Scene should be created based on the dataObject</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -436,15 +502,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The created layer or null if import was not possible</p>
+</dd>
   </dl>
 
 
@@ -464,7 +533,8 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called if <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html#Ventuz_Extension_VxDataObjectHandler_CreateScene_Ventuz_Extension_IVxDataObject_Ventuz_Extension_IVxTaskProgress_">CreateScene(IVxDataObject, IVxTaskProgress)</a> returned null. An async implementation of importing/converting data can be implemented here. Please read the remarks in <a class="xref" href="Ventuz.Extension.VxDataObjectHandler.html">VxDataObjectHandler</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -474,15 +544,18 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The dataObject describing the data</p>
+</dd>
     <dt><code>progress</code> <a class="xref" href="Ventuz.Extension.IVxTaskProgress.html">IVxTaskProgress</a></dt>
-    <dd></dd>
+    <dd><p>API to report progress</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Task that performs the operation</p>
+</dd>
   </dl>
 
 
@@ -502,7 +575,9 @@ Class VxDataObjectHandler
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The UI calls this method to probe if the dataObject contains data to be imported or converted into the required result.
+Implementors examine the dataObject and return a combination of <a class="xref" href="Ventuz.Extension.VxDataObjectResult.html">VxDataObjectResult</a> flags for the result ist can handle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -512,13 +587,15 @@ Class VxDataObjectHandler
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataObject</code> <a class="xref" href="Ventuz.Extension.IVxDataObject.html">IVxDataObject</a></dt>
-    <dd></dd>
+    <dd><p>The data object for the drag'n'drop or copy/paste operation</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxDataObjectResult.html">VxDataObjectResult</a></dt>
-    <dd></dd>
+    <dd><p>A combination of results this implementation can handle</p>
+</dd>
   </dl>
 
 

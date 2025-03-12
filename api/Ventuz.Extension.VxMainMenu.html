@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxMainMenu ">
       
-      
+      <meta name="description" content="This class represents the VX-API for main menus in Designer. The class should be decorated with  and/or">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxMainMenu
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class represents the VX-API for main menus in Designer. The class should be decorated with <a class="xref" href="Ventuz.Extension.VxMenuAttribute.html">VxMenuAttribute</a> and/or <a class="xref" href="Ventuz.Extension.VxIconAttribute.html">VxIconAttribute</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -136,6 +137,9 @@ Class VxMainMenu
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnUIStyleChanged">VxUiExtension.OnUIStyleChanged()</a>
     </div>
     <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__">VxUiExtension.OnSelectionChanged(IEnumerable&lt;VxBase&gt;)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
     <div>
@@ -159,6 +163,81 @@ Class VxMainMenu
   </dd></dl>
 
 
+
+  <h2 id="Ventuz_Extension_VxMainMenu_examples">Examples</h2>
+  <pre><code class="lang-csharp">// This example returns a dynamically created list a entries everytime OnOpening is called:
+
+[VxMenu("MyMainMenu", "Description of MyMainMenu")]
+[VxIcon("VxDocPrj.MainIcon.svg")]
+public class MyMainMenu : VxMainMenu
+{
+    public override IEnumerable&lt;VxMenuEntry&gt; OnOpening() 
+    {
+        // return a dynamic list of entries
+        yield return new VxMenuEntry("Item 1") { Tag = "A"};
+        yield return new VxMenuEntry("Item 2") { Tag = "B"};
+        yield return new VxMenuEntry("Item 3") { Tag = "C"};
+    }
+
+    public override void OnAnyEntryClicked(VxMenuEntry vxEntry)
+    {
+        switch( vxEntry.Tag as string )
+        {
+            case "A": 
+                // do something
+                break;
+
+            case "B": 
+                // do something
+                break;
+
+            case "C": 
+                // do something else
+                break;
+        }
+    }
+
+}</code></pre>
+
+  <pre><code class="lang-csharp">// This example creates the sub entries only once, stores them in local fields and updates them when OnOpening is called:
+
+[VxMenu("MyMainMenu", "Description of MyMainMenu")]
+[VxIcon("VxDocPrj.MainIcon.svg")]
+public class MyMainMenu : VxMainMenu
+{
+    VxMenuEntry[] entries;
+    VxMenuEntry entry1;
+    VxMenuEntry entry2;
+
+    public override IEnumerable&lt;VxMenuEntry&gt; OnOpening() 
+    {
+        if( entries == null ) 
+        {
+            entry1 = new VxMenuEntry("Item 1");
+            entry2 = new VxMenuEntry("Item 1");
+            entries = new VxMenuEntry[]} { entry1, entry2 };
+        }
+
+        // update items on current state
+        entry1.Enabled = false; 
+        entry2.Enabled = true;
+
+        return entries;
+    }
+
+    public override void OnAnyEntryClicked(VxMenuEntry vxEntry)
+    {
+        if( vxEntry == entry1 )
+        {
+            // do something
+        }
+        else if( vxEntry == entry2 )
+        {
+            // do something else
+        }
+    }
+
+}</code></pre>
 
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxDockableWindow ">
       
-      
+      <meta name="description" content="This is the base class for all dockable window classes of the VX-API">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxDockableWindow
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This is the base class for all dockable window classes of the VX-API</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -132,9 +133,6 @@ Class VxDockableWindow
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase___SetControl_System_Windows_Forms_Control_">VxWindowBase.__SetControl(Control)</a>
-    </div>
-    <div>
       <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase_OnControlCreated_System_Windows_Forms_Control_">VxWindowBase.OnControlCreated(Control)</a>
     </div>
     <div>
@@ -148,6 +146,9 @@ Class VxDockableWindow
     </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnUIStyleChanged">VxUiExtension.OnUIStyleChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__">VxUiExtension.OnSelectionChanged(IEnumerable&lt;VxBase&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -218,7 +219,8 @@ Class VxDockableWindow
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method is called whenever the dock situation of this dockable window changes</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -228,9 +230,11 @@ Class VxDockableWindow
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dockSituation</code> <a class="xref" href="Ventuz.Extension.VxDockSituation.html">VxDockSituation</a></dt>
-    <dd></dd>
+    <dd><p>New dock situation</p>
+</dd>
     <dt><code>isOpen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>True if the window is open</p>
+</dd>
   </dl>
 
 

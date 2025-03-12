@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum RenderMeshAxisMode ">
       
-      
+      <meta name="description" content="Describes how the use the Axis in  if a mesh is rendered.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -98,7 +98,8 @@ Enum RenderMeshAxisMode
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Describes how the use the Axis in <a class="xref" href="Ventuz.Extension.RenderMeshDetails.html">RenderMeshDetails</a> if a mesh is rendered.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -118,16 +119,20 @@ Enum RenderMeshAxisMode
   <dl class="parameters">
     <dt id="Ventuz_Extension_RenderMeshAxisMode_Absolute"><code>Absolute = 2</code></dt>
   
-  <dd></dd>
+  <dd><p>The matrix in the Axis field will be directly applied as world matrix</p>
+</dd>
     <dt id="Ventuz_Extension_RenderMeshAxisMode_DoNotRender"><code>DoNotRender = 3</code></dt>
   
-  <dd></dd>
+  <dd><p>The mesh is not rendered at all</p>
+</dd>
     <dt id="Ventuz_Extension_RenderMeshAxisMode_Identity"><code>Identity = 0</code></dt>
   
-  <dd></dd>
+  <dd><p>The Axis field is ignored and the an identity matrix is used.</p>
+</dd>
     <dt id="Ventuz_Extension_RenderMeshAxisMode_Relative"><code>Relative = 1</code></dt>
   
-  <dd></dd>
+  <dd><p>The matrix in the Axis field will be multiplied to the current axis in the tree</p>
+</dd>
   </dl>
 
 

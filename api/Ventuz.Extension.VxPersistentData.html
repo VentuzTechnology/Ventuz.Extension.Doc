@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxPersistentData ">
       
-      
+      <meta name="description" content="This class us used to load and save additional data with a node. (See ). Data is managed as a simple key-value-pair dictionary. Supported types are: bool, byte, sbyte, short, ushort, int, uint, long, ulong, float, double, decimal and string">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,10 @@ Class VxPersistentData
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This class us used to load and save additional data with a node. (See <a class="xref" href="Ventuz.Extension.IPersistence.html">IPersistence</a>).
+Data is managed as a simple key-value-pair dictionary.
+Supported types are: bool, byte, sbyte, short, ushort, int, uint, long, ulong, float, double, decimal and string</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -189,7 +192,8 @@ Class VxPersistentData
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get or set the version of the contained data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -224,7 +228,8 @@ Class VxPersistentData
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Add (save) additional data to be stored.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -234,16 +239,19 @@ Class VxPersistentData
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name (key) of the data</p>
+</dd>
     <dt><code>value</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The value of the data of type T</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of the data to be stored</p>
+</dd>
   </dl>
 
 
@@ -262,7 +270,8 @@ Class VxPersistentData
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get (load) additional data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -272,21 +281,25 @@ Class VxPersistentData
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name (key) of the data</p>
+</dd>
     <dt><code>defaultValue</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The default value to be return if the key is not present or is of wrong type</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The value of the data if present</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of the data to be loaded</p>
+</dd>
   </dl>
 
 
@@ -305,7 +318,8 @@ Class VxPersistentData
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get (load) additional data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -315,19 +329,22 @@ Class VxPersistentData
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name (key) of the data</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The value of the data if present</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of the data to be loaded</p>
+</dd>
   </dl>
 
 
@@ -336,6 +353,15 @@ Class VxPersistentData
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd><p>If the given key is not present</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>If the given key is present but of different type</p>
+</dd>
+  </dl>
 
 
 

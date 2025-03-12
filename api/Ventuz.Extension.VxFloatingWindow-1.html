@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxFloatingWindow&lt;T&gt; ">
       
-      
+      <meta name="description" content="This is the base class used for custom floating forms.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxFloatingWindow&lt;T&gt;
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>This is the base class used for custom floating forms.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,8 @@ Class VxFloatingWindow&lt;T&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of the Control to be hosted as a floating window. Must be of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control">Control</a></p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -134,9 +136,6 @@ Class VxFloatingWindow&lt;T&gt;
       <a class="xref" href="Ventuz.Extension.VxFloatingWindow.html#Ventuz_Extension_VxFloatingWindow_OnVisibilityChanged_System_Boolean_">VxFloatingWindow.OnVisibilityChanged(bool)</a>
     </div>
     <div>
-      <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase___SetControl_System_Windows_Forms_Control_">VxWindowBase.__SetControl(Control)</a>
-    </div>
-    <div>
       <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase_OnControlCreated_System_Windows_Forms_Control_">VxWindowBase.OnControlCreated(Control)</a>
     </div>
     <div>
@@ -144,6 +143,9 @@ Class VxFloatingWindow&lt;T&gt;
     </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnUIStyleChanged">VxUiExtension.OnUIStyleChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__">VxUiExtension.OnSelectionChanged(IEnumerable&lt;VxBase&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -170,7 +172,17 @@ Class VxFloatingWindow&lt;T&gt;
 
 
 
+  <h2 id="Ventuz_Extension_VxFloatingWindow_1_examples">Examples</h2>
+  <pre><code class="lang-csharp">[VxWindow("1917BC62-1D0F-45FB-ADE8-1917BC62EDD6", "Label of MyFloatingForm1", Description = "Description of MyFloatingForm1")]
+public class MyFloatingForm1 : VxFloatingWindow&lt;Form1&gt;;
+{
+}</code></pre>
 
+
+  <h2 id="Ventuz_Extension_VxFloatingWindow_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Floating form are not dockable, but are also managed in the window layout and workspaces of the Designer.
+They are handled as a direct child window but displayed in the correct UI style.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -214,7 +226,8 @@ Class VxFloatingWindow&lt;T&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the control of type T</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,7 +258,8 @@ Class VxFloatingWindow&lt;T&gt;
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the type of the hosted control</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
