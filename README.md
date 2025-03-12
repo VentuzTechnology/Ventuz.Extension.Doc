@@ -1,2 +1,2 @@
 # Ventuz.Extension.Doc
-This repository is hosting the public documenation of Ventuz.Extension.
+This repository is hosting the public documentation of Ventuz.Extension.
