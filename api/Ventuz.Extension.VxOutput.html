@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxOutput ">
       
-      
+      <meta name="description" content="Represents an output of a Hierarchy Node. To get the outputs of a Hierarchy Node, see  and extension method">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxOutput
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents an output of a Hierarchy Node. To get the outputs of a Hierarchy Node, see <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a> and extension method <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetOutputs_Ventuz_Extension_VxHierarchyBaseNode_">GetOutputs(VxHierarchyBaseNode)</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -130,6 +131,9 @@ Class VxOutput
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
@@ -196,7 +200,8 @@ Class VxOutput
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of hierarchy nodes linked to this output</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -227,7 +232,8 @@ Class VxOutput
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the name ouf the output</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -262,7 +268,8 @@ Class VxOutput
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the Hierarchy node linked to this output at the given zero based index</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -272,13 +279,15 @@ Class VxOutput
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index to get the linked hierarchy node</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxHierarchyNode.html">VxHierarchyNode</a></dt>
-    <dd></dd>
+    <dd><p>The hierarchy node at the given index</p>
+</dd>
   </dl>
 
 
@@ -288,6 +297,12 @@ Class VxOutput
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>If the given index is out of range</p>
+</dd>
+  </dl>
 
 
 
@@ -298,7 +313,8 @@ Class VxOutput
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates through all hierarchy nodes linked to this output</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -309,7 +325,8 @@ Class VxOutput
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxHierarchyNode.html">VxHierarchyNode</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Enumerator of linked hierarchy nodes</p>
+</dd>
   </dl>
 
 
@@ -329,7 +346,8 @@ Class VxOutput
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Links a node to this output at the given index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -339,9 +357,11 @@ Class VxOutput
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxHierarchyNode.html">VxHierarchyNode</a></dt>
-    <dd></dd>
+    <dd><p>Node to link to this output</p>
+</dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index to link the node before. If index is -1 or equal to the number of linked nodes the node will be added to the end of the output</p>
+</dd>
   </dl>
 
 
@@ -351,6 +371,9 @@ Class VxOutput
 
 
 
+  <h4 class="section" id="Ventuz_Extension_VxOutput_LinkTo_Ventuz_Extension_VxHierarchyNode_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When linking nodes together avoid recursions and make sure all nodes are in the same <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></p>
+</div>
 
 
 

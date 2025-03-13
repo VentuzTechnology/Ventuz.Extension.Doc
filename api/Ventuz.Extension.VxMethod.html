@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxMethod ">
       
-      
+      <meta name="description" content="Represents a Method. Methods can be bound to events or called manually by code and/or UI">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxMethod
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a Method. Methods can be bound to events or called manually by code and/or UI</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -128,7 +129,13 @@ Class VxMethod
       <a class="xref" href="Ventuz.Extension.VxMember.html#Ventuz_Extension_VxMember_Name">VxMember.Name</a>
     </div>
     <div>
+      <a class="xref" href="Ventuz.Extension.VxMember.html#Ventuz_Extension_VxMember_Owner">VxMember.Owner</a>
+    </div>
+    <div>
       <a class="xref" href="Ventuz.Extension.VxMember.html#Ventuz_Extension_VxMember_Status">VxMember.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -196,7 +203,9 @@ Class VxMethod
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Binds the method to an event. Method can be bound to multiple events.
+If a method is bound to the same event multiple times a trigger of this event will also call the method multiple times.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -206,7 +215,8 @@ Class VxMethod
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>source</code> <a class="xref" href="Ventuz.Extension.VxEvent.html">VxEvent</a></dt>
-    <dd></dd>
+    <dd><p>The event to bind to</p>
+</dd>
   </dl>
 
 
@@ -227,7 +237,8 @@ Class VxMethod
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calls this method programmatically. The same happen is user click the event in UI</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -237,9 +248,11 @@ Class VxMethod
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>arg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>An integer argument passed to the method. Default is 0</p>
+</dd>
     <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
-    <dd></dd>
+    <dd><p>The number of render cycles the call should be delayed.</p>
+</dd>
   </dl>
 
 

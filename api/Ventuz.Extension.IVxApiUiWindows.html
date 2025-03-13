@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxApiUiWindows ">
       
-      
+      <meta name="description" content="User interface API">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Interface IVxApiUiWindows
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>User interface API</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -127,7 +128,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>get the name of the current window layout</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -162,7 +164,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the window by ID</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -172,13 +175,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>id of the window</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxWindowBase.html">VxWindowBase</a></dt>
-    <dd></dd>
+    <dd><p>Window or null</p>
+</dd>
   </dl>
 
 
@@ -198,7 +203,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the ID of the window that hosts the control or form</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -208,13 +214,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>control</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control">Control</a></dt>
-    <dd></dd>
+    <dd><p>control or form to search</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>ID or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid.empty">Empty</a> if not found</p>
+</dd>
   </dl>
 
 
@@ -234,7 +242,9 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the display name of a window layout by its technical name.
+See also <a class="xref" href="Ventuz.Extension.IVxApiUiWindows.html#Ventuz_Extension_IVxApiUiWindows_GetWindowLayouts">GetWindowLayouts()</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -244,13 +254,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>technical name of the window layout</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The display name (user name) of the window layout</p>
+</dd>
   </dl>
 
 
@@ -270,7 +282,9 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the technical names of the available window layouts.
+See also <a class="xref" href="Ventuz.Extension.IVxApiUiWindows.html#Ventuz_Extension_IVxApiUiWindows_GetWindowLayoutDisplayName_System_String_">GetWindowLayoutDisplayName(string)</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -301,7 +315,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets window visibility by ID</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -311,13 +326,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>ID of the window</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>Visibility of the window or null if the window was not found</p>
+</dd>
   </dl>
 
 
@@ -337,7 +354,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets window visibility by type</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -348,13 +366,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>Visibility of the window or null if the window was not found</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Type of the window (Vx implementation)</p>
+</dd>
   </dl>
 
 
@@ -373,7 +393,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the window by type</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -384,13 +405,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>Window or null</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Type of the Vx implementation of a window</p>
+</dd>
   </dl>
 
 
@@ -409,7 +432,9 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the display name of a window layout by its technical name.
+See also <a class="xref" href="Ventuz.Extension.IVxApiUiWindows.html#Ventuz_Extension_IVxApiUiWindows_GetWindowLayouts">GetWindowLayouts()</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -419,9 +444,11 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>technical name of the window layout</p>
+</dd>
     <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>New display name</p>
+</dd>
   </dl>
 
 
@@ -442,7 +469,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets window visibility by ID</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -452,15 +480,18 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>ID of the window</p>
+</dd>
     <dt><code>visible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true visible, false invisible</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>The new visibility of the window or null if the window was not found</p>
+</dd>
   </dl>
 
 
@@ -480,7 +511,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets window visibility by type</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -490,19 +522,22 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>visible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true visible, false invisible</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>The new visibility of the window or null if the window was not found</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Type of the window (Vx implementation)</p>
+</dd>
   </dl>
 
 
@@ -521,7 +556,9 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Switches the activate window layout.
+See also <a class="xref" href="Ventuz.Extension.IVxApiUiWindows.html#Ventuz_Extension_IVxApiUiWindows_GetWindowLayouts">GetWindowLayouts()</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -531,13 +568,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>technical name of the layout to activate</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>True if the switch was successful. False otherwise.</p>
+</dd>
   </dl>
 
 
@@ -557,7 +596,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Toggles the visibility of a window by ID</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -567,13 +607,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>ID of the window</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>The new visibility of the window or null if the window was not found</p>
+</dd>
   </dl>
 
 
@@ -593,7 +635,8 @@ Interface IVxApiUiWindows
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Toggles the visibility of a window by type</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -604,13 +647,15 @@ Interface IVxApiUiWindows
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>The new visibility of the window or null if the window was not found</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Type of the window (Vx implementation)</p>
+</dd>
   </dl>
 
 

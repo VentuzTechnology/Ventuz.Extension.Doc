@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxLink ">
       
-      
+      <meta name="description" content="A  represents the actual position of a hierarchy node in the hierarchy tree. Layer are actual also hierarchy nodes therefor are child layers of a layer also linked to each other. A VxLink points from a  () owned by a  to a node () A hierarchy node can be linked zero, one or multiple times. If a hierarchy is not linked it appears in the &amp;quot;unlinked nodes&amp;quot; area of the Hierarchy Editor in Designer. Unlinked nodes are validated, but never rendered.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,12 @@ Class VxLink
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A <a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a> represents the actual position of a hierarchy node in the hierarchy tree.
+Layer are actual also hierarchy nodes therefor are child layers of a layer also linked to each other.
+A VxLink points from a <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a> (<a class="xref" href="Ventuz.Extension.VxLink.html#Ventuz_Extension_VxLink_FromOutput">FromOutput</a>) owned by a <a class="xref" href="Ventuz.Extension.VxLink.html#Ventuz_Extension_VxLink_FromNode">FromNode</a> to a node (<a class="xref" href="Ventuz.Extension.VxLink.html#Ventuz_Extension_VxLink_ToNode">ToNode</a>)
+A hierarchy node can be linked zero, one or multiple times. If a hierarchy is not linked it appears in the &quot;unlinked nodes&quot; area of the Hierarchy Editor in Designer.
+Unlinked nodes are validated, but never rendered.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -123,6 +128,9 @@ Class VxLink
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
@@ -189,7 +197,8 @@ Class VxLink
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get or sets the blocked state of the link. The renderer will not continue rendering (traversing) at this link if set to true (blocked).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -220,7 +229,8 @@ Class VxLink
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get or sets the collapsed/expanded state of the link. The link appears collapsed in Designer. This does not affect the rendering and validation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -251,7 +261,8 @@ Class VxLink
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the node this link comes from</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -282,7 +293,8 @@ Class VxLink
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the output this link comes from</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -313,7 +325,8 @@ Class VxLink
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the index within the <a class="xref" href="Ventuz.Extension.VxLink.html#Ventuz_Extension_VxLink_FromOutput">FromOutput</a> this link comes from</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -344,7 +357,8 @@ Class VxLink
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the node this link point to.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -379,7 +393,8 @@ Class VxLink
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes this link. If the last link of a node was removed it will appear 'unlinked' in Designer</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

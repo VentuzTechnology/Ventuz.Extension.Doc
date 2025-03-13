@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxPort ">
       
-      
+      <meta name="description" content="A  represented a Scene Port. It can host other scenes and/or implements the Template engine.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxPort
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A <a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a> represented a Scene Port. It can host other scenes and/or implements the Template engine.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -123,6 +124,9 @@ Class VxPort
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
@@ -189,7 +193,9 @@ Class VxPort
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or set the activate state of a port. Inactive ports can host a scene. This scene is not validated and therefore do not require much CPU/GPU power to be there.
+In order to save performance it is a good practice to deactivate ports to hide their hosted scenes if they are not required.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -220,7 +226,8 @@ Class VxPort
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the flags about type and state of the port</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -251,7 +258,8 @@ Class VxPort
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of the port</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -282,7 +290,8 @@ Class VxPort
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the zero based ordinal number of the port. This number is used to address the port via Remoting</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -313,7 +322,8 @@ Class VxPort
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get or sets the scene currently hosted by this port</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

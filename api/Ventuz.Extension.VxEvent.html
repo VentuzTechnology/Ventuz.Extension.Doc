@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxEvent ">
       
-      
+      <meta name="description" content="Represents an Event">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Class VxEvent
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents an Event</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -128,7 +129,13 @@ Class VxEvent
       <a class="xref" href="Ventuz.Extension.VxMember.html#Ventuz_Extension_VxMember_Name">VxMember.Name</a>
     </div>
     <div>
+      <a class="xref" href="Ventuz.Extension.VxMember.html#Ventuz_Extension_VxMember_Owner">VxMember.Owner</a>
+    </div>
+    <div>
       <a class="xref" href="Ventuz.Extension.VxMember.html#Ventuz_Extension_VxMember_Status">VxMember.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -196,7 +203,9 @@ Class VxEvent
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The event will be fired and scheduled to trigger all connected <a class="xref" href="Ventuz.Extension.VxMethod.html">VxMethod</a>s.
+The event can carry an integer argument and can be delayed by a number of render cycles.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -206,9 +215,11 @@ Class VxEvent
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>arg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>An integer argument carried by the event. This argument arrives at all triggered methods. Default is 0</p>
+</dd>
     <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
-    <dd></dd>
+    <dd><p>The number of render cycles this event should be delayed. This help to break event recursions</p>
+</dd>
   </dl>
 
 

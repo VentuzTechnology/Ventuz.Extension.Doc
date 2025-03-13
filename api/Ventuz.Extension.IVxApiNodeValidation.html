@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxApiNodeValidation ">
       
-      
+      <meta name="description" content="API for node Validation. This API is only available in Validation context">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Interface IVxApiNodeValidation
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>API for node Validation. This API is only available in Validation context</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -127,7 +128,10 @@ Interface IVxApiNodeValidation
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the pipe index of a node. The pipe index is determined by the scene this node belong to.
+<br><b>This call is only valid in Node Validation Context</b></p>
+<table><thead><tr></tr></thead><tbody><tr><td class="term">Null</td><td class="description">index is unknown</td></tr><tr><td class="term">greater or equal than zero</td><td class="description">node is active in pipe index (n)</td></tr><tr><td class="term">lower than zero</td><td class="description">node was active in pipe index (-n - 1)</td></tr></tbody></table>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -162,7 +166,9 @@ Interface IVxApiNodeValidation
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calls a method programmatically. The same happen is user click the event in UI
+<br><b>This call is only valid in Node Validation Context</b></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -172,11 +178,14 @@ Interface IVxApiNodeValidation
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>method</code> <a class="xref" href="Ventuz.Extension.VxMethod.html">VxMethod</a></dt>
-    <dd></dd>
+    <dd><p>Method to be called</p>
+</dd>
     <dt><code>arg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>An integer argument passed to the method. Default is 0</p>
+</dd>
     <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
-    <dd></dd>
+    <dd><p>The number of render cycles the call should be delayed.</p>
+</dd>
   </dl>
 
 
@@ -197,7 +206,10 @@ Interface IVxApiNodeValidation
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The event will be fired and scheduled to trigger all connected <a class="xref" href="Ventuz.Extension.VxMethod.html">VxMethod</a>s.
+The event can carry an integer argument and can be delayed by a number of render cycles.
+<br><b>This call is only valid in Node Validation Context</b></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -207,11 +219,14 @@ Interface IVxApiNodeValidation
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>ev</code> <a class="xref" href="Ventuz.Extension.VxEvent.html">VxEvent</a></dt>
-    <dd></dd>
+    <dd><p>Th event to be triggered</p>
+</dd>
     <dt><code>arg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>An integer argument carried by the event. This argument arrives at all triggered methods</p>
+</dd>
     <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
-    <dd></dd>
+    <dd><p>The number of render cycles this event should be delayed. This help to break event recursions</p>
+</dd>
   </dl>
 
 
@@ -232,7 +247,9 @@ Interface IVxApiNodeValidation
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invalidates a node on all properties. All validation methods will be called during next validation.
+<br><b>This call is only valid in Node Validation Context</b></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -258,7 +275,9 @@ Interface IVxApiNodeValidation
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invalidates the validation group for a certain property. All affected validation methods that will be called during next validation.
+<br><b>This call is only valid in Node Validation Context</b></p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -289,7 +308,8 @@ Interface IVxApiNodeValidation
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets additional options for the an output of the current layer node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -299,19 +319,24 @@ Interface IVxApiNodeValidation
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Zero based index of the output</p>
+</dd>
     <dt><code>blocked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>if specified, sets to blocked state of the output</p>
+</dd>
     <dt><code>opacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-    <dd></dd>
+    <dd><p>if specified, sets the opacity value of the output</p>
+</dd>
     <dt><code>order</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd></dd>
+    <dd><p>if specified, sets the rendering order ordinal for the output</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true if the operation was successful</p>
+</dd>
   </dl>
 
 
@@ -331,7 +356,8 @@ Interface IVxApiNodeValidation
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets additional options for the an output of the current hierarchy node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -341,21 +367,27 @@ Interface IVxApiNodeValidation
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Zero based index of the output</p>
+</dd>
     <dt><code>blocked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd></dd>
+    <dd><p>if specified, sets to blocked state of the output</p>
+</dd>
     <dt><code>alpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
-    <dd></dd>
+    <dd><p>if specified, sets the alpha value of the output</p>
+</dd>
     <dt><code>axis</code> <a class="xref" href="Ventuz.Vx.Matrix44A.html">Matrix44A</a>?</dt>
-    <dd></dd>
+    <dd><p>if specified sets a local axis of the output</p>
+</dd>
     <dt><code>order</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd></dd>
+    <dd><p>if specified, sets the rendering order ordinal for the output</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true if the operation was successful</p>
+</dd>
   </dl>
 
 

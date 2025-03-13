@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxApiProject ">
       
-      
+      <meta name="description" content="Project API gives access to the current project and engine">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Interface IVxApiProject
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Project API gives access to the current project and engine</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -127,7 +128,8 @@ Interface IVxApiProject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>All loaded scenes in memory are closed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -153,7 +155,10 @@ Interface IVxApiProject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Closes the scene. This will not necessarily result in the scene disappearing from memory because other entities
+like Remoting or the Template engine may using it. Optionally the full scene tree below this scene can be closed at well,
+means all scene assigned  to any port within this scene will be closes recursively too.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -163,9 +168,11 @@ Interface IVxApiProject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>Scene to be closed</p>
+</dd>
     <dt><code>fullTree</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Close also all nested scenes.</p>
+</dd>
   </dl>
 
 
@@ -186,7 +193,8 @@ Interface IVxApiProject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a scene in memory. (scene is not opened in Designer. Use <a class="xref" href="Ventuz.Extension.IVxApiDesigner.html">IVxApiDesigner</a> for this.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -196,15 +204,18 @@ Interface IVxApiProject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>nameTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>An optional name template, default its &quot;New&quot;. The template will also create an increasing number if it already exists (&quot;New1&quot;, &quot;New2&quot;, ...)</p>
+</dd>
     <dt><code>withLayer3D</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>If set to true, the new scene will contain a default 3D layer. Default is true</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The new scene</p>
+</dd>
   </dl>
 
 
@@ -224,7 +235,8 @@ Interface IVxApiProject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all loaded scenes in memory</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -235,7 +247,8 @@ Interface IVxApiProject
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a>[]</dt>
-    <dd></dd>
+    <dd><p>Array of all loaded scenes in memory</p>
+</dd>
   </dl>
 
 
@@ -255,7 +268,9 @@ Interface IVxApiProject
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Load a scene. (scene is not opened in Designer. Use <a class="xref" href="Ventuz.Extension.IVxApiDesigner.html">IVxApiDesigner</a> for this.
+Scenes can be loaded multiple times. Multiple instances of scenes have the same <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_Identity">Identity</a> but different <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_IID">IID</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -265,13 +280,15 @@ Interface IVxApiProject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>identity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The identity of the scene to be loaded, (lower case filename without extension)</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>The loaded scene</p>
+</dd>
   </dl>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxApiEngine ">
       
-      
+      <meta name="description" content="General Engine API gives access to the general information.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,8 @@ Interface IVxApiEngine
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>General Engine API gives access to the general information.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -127,7 +128,11 @@ Interface IVxApiEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the current cluster clock the main thread is currently processing.
+Please note that only the main thread is advancing this clock.
+Getting the current clock value from a worker thread is not usable for any synchronization tasks.
+See also <a class="xref" href="Ventuz.Extension.IVxApiEngine.html#Ventuz_Extension_IVxApiEngine_IsMainThread">IsMainThread</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -158,7 +163,8 @@ Interface IVxApiEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>True if the calling thread is the main thread.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -193,7 +199,11 @@ Interface IVxApiEngine
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the current time base of the renderer expressed in numerator and denominator.
+A timebase of 59.94fps for example is expressed as 60000/1001.
+To convert the current cluster clock into a time in seconds use:</p>
+<pre><code class="lang-csharp">var ccInSeconds = (double)clusterClock * numerator / denominator</code></pre>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -203,9 +213,11 @@ Interface IVxApiEngine
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>numerator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>numerator of the timebase</p>
+</dd>
     <dt><code>denominator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>denominator of the timebase (mostly 1000 or 1001)</p>
+</dd>
   </dl>
 
 

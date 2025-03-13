@@ -54,20 +54,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.Event.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.Event.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.Event",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.HorizontalTextAlignment.yml",
       "output": {
         ".html": {
@@ -498,7 +484,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiEngine",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiEngine.yml\" sourcestartlinenumber=\"1\">General Engine API gives access to the general information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -512,7 +498,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiIO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiIO.yml\" sourcestartlinenumber=\"1\">Input/Output API</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -530,6 +516,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxApiManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.IVxApiManagement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.IVxApiManagement",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiManagement.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ventuz.Extension.IVxApiManagement\" data-throw-if-not-resolved=\"false\"></xref> interface provides general functions of the VX API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.IVxApiNodeValidation.yml",
       "output": {
         ".html": {
@@ -540,7 +540,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiNodeValidation",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiNodeValidation.yml\" sourcestartlinenumber=\"1\">API for node Validation. This API is only available in Validation context</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -554,7 +554,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiProject",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiProject.yml\" sourcestartlinenumber=\"1\">Project API gives access to the current project and engine</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -596,7 +596,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiSceneBuilder",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiSceneBuilder.yml\" sourcestartlinenumber=\"1\">SceneBuilder API. Scene elements accessed by this API must be owned by a scene in Idle State.\nUsw the <xref href=\"Ventuz.Extension.VxScene.Modify(System.Action%7bVentuz.Extension.VxScene%7d%2cVentuz.Extension.VxScene%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref> method to schedule modifications not only to the right thread but also ensure the scene(s) to be in right state.\n<br>See also <a href=\"../guide/vx_how_to_develop.html#threading\">../guide/vx_how_to_develop.html#threading</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -610,7 +610,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiUiWindows",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiUiWindows.yml\" sourcestartlinenumber=\"1\">User interface API</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -624,7 +624,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxContainer",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxContainer.yml\" sourcestartlinenumber=\"1\">Marker interface for containers</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -670,17 +670,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.IVxManagement.yml",
+      "source_relative_path": "guide/api/Ventuz.Extension.IVxHierarchyContainer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ventuz.Extension.IVxManagement.html"
+          "relative_path": "api/Ventuz.Extension.IVxHierarchyContainer.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Ventuz.Extension.IVxManagement",
-      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxManagement.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ventuz.Extension.IVxManagement\" data-throw-if-not-resolved=\"false\"></xref> interface provides general functions of the VX API</p>\n"
+      "Title": "Ventuz.Extension.IVxHierarchyContainer",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxHierarchyContainer.yml\" sourcestartlinenumber=\"1\">Marker interface for hierarchy containers</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -978,20 +978,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.VxApiSceneModifyExt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.VxApiSceneModifyExt.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.VxApiSceneModifyExt",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxAssemblyAliasAttribute.yml",
       "output": {
         ".html": {
@@ -1062,20 +1048,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.VxContainerExt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.VxContainerExt.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.VxContainerExt",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxContentBaseNode.yml",
       "output": {
         ".html": {
@@ -1086,7 +1058,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxContentBaseNode",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxContentBaseNode.yml\" sourcestartlinenumber=\"1\">Represents a general content node\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1100,7 +1072,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxContentContainer",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxContentContainer.yml\" sourcestartlinenumber=\"1\">Base class for content containers.\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1114,6 +1086,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxContentNode",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxContentNode.yml\" sourcestartlinenumber=\"1\">Represents a common content node. Use this class as a base for custom content nodes\nSee also <a href=\"../guide/vx_api_custom_nodes.html#content-nodes\">Content Nodes</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxConvenienceExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxConvenienceExt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxConvenienceExt",
       "Summary": null
     },
     {
@@ -1310,7 +1296,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxEvent",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxEvent.yml\" sourcestartlinenumber=\"1\">Represents an Event</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1450,7 +1436,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxHierarchyBaseNode",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxHierarchyBaseNode.yml\" sourcestartlinenumber=\"1\">Represents a general hierarchy node\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1464,7 +1450,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxHierarchyContainer",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxHierarchyContainer.yml\" sourcestartlinenumber=\"1\">Represents a hierarchy container.\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1478,7 +1464,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxHierarchyContainerRoot",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxHierarchyContainerRoot.yml\" sourcestartlinenumber=\"1\">Represents the root node of a hierarchy container\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1492,7 +1478,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxHierarchyNode",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxHierarchyNode.yml\" sourcestartlinenumber=\"1\">Represents a common hierarchy node. Use this class as a base for custom hierarchy nodes\nSee also <a href=\"../guide/vx_api_custom_nodes.html#hierarchy-nodes\">Hierarchy Nodes</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1521,6 +1507,20 @@
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxInitialOutputsAttribute",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxInternalObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxInternalObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxInternalObject",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxInternalObject.yml\" sourcestartlinenumber=\"1\">Represents an internal object that is not accessible by Vx-API yet.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1590,7 +1590,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxLayerBaseNode",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxLayerBaseNode.yml\" sourcestartlinenumber=\"1\">Represents a general layer node\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1604,7 +1604,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxLayerContainer",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxLayerContainer.yml\" sourcestartlinenumber=\"1\">Represents a layer container.\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1618,20 +1618,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxLayerNode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.VxLayerOutput.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.VxLayerOutput.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.VxLayerOutput",
       "Summary": null
     },
     {
@@ -1660,7 +1646,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxLink",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxLink.yml\" sourcestartlinenumber=\"1\">A <xref href=\"Ventuz.Extension.VxLink\" data-throw-if-not-resolved=\"false\"></xref> represents the actual position of a hierarchy node in the hierarchy tree.\nLayer are actual also hierarchy nodes therefor are child layers of a layer also linked to each other.\nA VxLink points from a <xref href=\"Ventuz.Extension.VxOutput\" data-throw-if-not-resolved=\"false\"></xref> (<xref href=\"Ventuz.Extension.VxLink.FromOutput\" data-throw-if-not-resolved=\"false\"></xref>) owned by a <xref href=\"Ventuz.Extension.VxLink.FromNode\" data-throw-if-not-resolved=\"false\"></xref> to a node (<xref href=\"Ventuz.Extension.VxLink.ToNode\" data-throw-if-not-resolved=\"false\"></xref>)\nA hierarchy node can be linked zero, one or multiple times. If a hierarchy is not linked it appears in the &quot;unlinked nodes&quot; area of the Hierarchy Editor in Designer.\nUnlinked nodes are validated, but never rendered.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1674,7 +1660,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxMainContainer",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMainContainer.yml\" sourcestartlinenumber=\"1\">Represents a main container of a scene. This is a special container, doesn't have any parent and usually contains layers only.\n<br><b>No custom vx-implementation possible yet!</b></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1702,21 +1688,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxManagedObject",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.VxManagementExt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.VxManagementExt.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.VxManagementExt",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxManagedObject.yml\" sourcestartlinenumber=\"1\">Instances of type <xref href=\"Ventuz.Extension.VxManagedObject\" data-throw-if-not-resolved=\"false\"></xref> are managed by the Vx-engine.\nThe vs developer should never call the constructor of this type of objects.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1730,7 +1702,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxMember",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMember.yml\" sourcestartlinenumber=\"1\">Base class of all members. Members are owned by a <xref href=\"Ventuz.Extension.VxMemberOwner\" data-throw-if-not-resolved=\"false\"></xref>, usually nodes and property groups.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1758,7 +1730,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxMemberOwner",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMemberOwner.yml\" sourcestartlinenumber=\"1\">This is the base class of elements that can own members such as properties.\n<xref href=\"Ventuz.Extension.VxNode\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Ventuz.Extension.VxPropertyGroup\" data-throw-if-not-resolved=\"false\"></xref> own members, for example.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1856,7 +1828,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxMethod",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMethod.yml\" sourcestartlinenumber=\"1\">Represents a Method. Methods can be bound to events or called manually by code and/or UI</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1870,21 +1842,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxNode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.VxNodeExt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.VxNodeExt.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.VxNodeExt",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxNode.yml\" sourcestartlinenumber=\"1\">Base class for all nodes.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1926,7 +1884,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxOutput",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxOutput.yml\" sourcestartlinenumber=\"1\">Represents an output of a Hierarchy Node. To get the outputs of a Hierarchy Node, see <xref href=\"Ventuz.Extension.VxOutputList\" data-throw-if-not-resolved=\"false\"></xref> and extension method <xref href=\"Ventuz.Extension.VxConvenienceExt.GetOutputs(Ventuz.Extension.VxHierarchyBaseNode)\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1940,7 +1898,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxOutputList",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxOutputList.yml\" sourcestartlinenumber=\"1\">Every <xref href=\"Ventuz.Extension.VxHierarchyBaseNode\" data-throw-if-not-resolved=\"false\"></xref> can have zero, one or multiple outputs. The <xref href=\"Ventuz.Extension.VxOutputList\" data-throw-if-not-resolved=\"false\"></xref> represents a list of this outputs.\nTo retrieve this list call extension method <xref href=\"Ventuz.Extension.VxConvenienceExt.GetOutputs(Ventuz.Extension.VxHierarchyBaseNode)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1968,7 +1926,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxPort",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxPort.yml\" sourcestartlinenumber=\"1\">A <xref href=\"Ventuz.Extension.VxPort\" data-throw-if-not-resolved=\"false\"></xref> represented a Scene Port. It can host other scenes and/or implements the Template engine.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1982,7 +1940,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxPortFlags",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxPortFlags.yml\" sourcestartlinenumber=\"1\">Flags for <xref href=\"Ventuz.Extension.VxPort\" data-throw-if-not-resolved=\"false\"></xref> describing type and state.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2066,7 +2024,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxScene",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxScene.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ventuz.Extension.VxScene\" data-throw-if-not-resolved=\"false\"></xref> object represents a Scene. A scene contains layers and nodes, animations and business logic to render graphics.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2080,7 +2038,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxSceneElement",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSceneElement.yml\" sourcestartlinenumber=\"1\">A <xref href=\"Ventuz.Extension.VxSceneElement\" data-throw-if-not-resolved=\"false\"></xref> is the base class for all elements of a scene (nodes, ports, properties, etc)</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2094,21 +2052,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxSceneEvent",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneExt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.VxSceneExt.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.VxSceneExt",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSceneEvent.yml\" sourcestartlinenumber=\"1\">Scene event type used in <xref href=\"Ventuz.Extension.VxUiExtension.OnSceneEvent(Ventuz.Extension.VxScene%2cVentuz.Extension.VxSceneEvent)\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",

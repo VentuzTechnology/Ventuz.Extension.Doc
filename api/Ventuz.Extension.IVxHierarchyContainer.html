@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VxApiSceneModifyExt </title>
+      <title>Interface IVxHierarchyContainer </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VxApiSceneModifyExt ">
+      <meta name="title" content="Interface IVxHierarchyContainer ">
       
-      
+      <meta name="description" content="Marker interface for hierarchy containers">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ventuz.Extension.VxApiSceneModifyExt">
+        <article data-uid="Ventuz.Extension.IVxHierarchyContainer">
 
 
 
-  <h1 id="Ventuz_Extension_VxApiSceneModifyExt" data-uid="Ventuz.Extension.VxApiSceneModifyExt" class="text-break">
-Class VxApiSceneModifyExt  
+  <h1 id="Ventuz_Extension_IVxHierarchyContainer" data-uid="Ventuz.Extension.IVxHierarchyContainer" class="text-break">
+Interface IVxHierarchyContainer  
   </h1>
 
   <div class="facts text-secondary">
@@ -97,101 +97,40 @@ Class VxApiSceneModifyExt
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Marker interface for hierarchy containers</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class VxApiSceneModifyExt</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IVxHierarchyContainer : IVxContainer</code></pre>
   </div>
 
 
 
 
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">VxApiSceneModifyExt</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
+  <div>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateNodeAfter__1_Ventuz_Extension_IVxContainer_Ventuz_Extension_VxHierarchyBaseNode_System_String_">VxConvenienceExt.CreateNodeAfter&lt;T&gt;(IVxContainer, VxHierarchyBaseNode, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateNodeBefore__1_Ventuz_Extension_IVxContainer_Ventuz_Extension_VxHierarchyBaseNode_System_String_">VxConvenienceExt.CreateNodeBefore&lt;T&gt;(IVxContainer, VxHierarchyBaseNode, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateNodeBehind__1_Ventuz_Extension_IVxContainer_Ventuz_Extension_VxHierarchyBaseNode_System_String_">VxConvenienceExt.CreateNodeBehind&lt;T&gt;(IVxContainer, VxHierarchyBaseNode, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateNode__1_Ventuz_Extension_IVxContainer_System_String_">VxConvenienceExt.CreateNode&lt;T&gt;(IVxContainer, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetRoot_Ventuz_Extension_IVxHierarchyContainer_">VxConvenienceExt.GetRoot(IVxHierarchyContainer)</a>
+  </div>
   </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Ventuz_Extension_VxApiSceneModifyExt_CreateNode_" data-uid="Ventuz.Extension.VxApiSceneModifyExt.CreateNode*"></a>
-
-  <h3 id="Ventuz_Extension_VxApiSceneModifyExt_CreateNode__1_Ventuz_Extension_IVxApiSceneBuilder_Ventuz_Extension_IVxContainer_System_String_" data-uid="Ventuz.Extension.VxApiSceneModifyExt.CreateNode``1(Ventuz.Extension.IVxApiSceneBuilder,Ventuz.Extension.IVxContainer,System.String)">
-  CreateNode&lt;T&gt;(IVxApiSceneBuilder, IVxContainer, string)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T CreateNode&lt;T&gt;(this IVxApiSceneBuilder api, IVxContainer container, string name = null) where T : VxNode</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>api</code> <a class="xref" href="Ventuz.Extension.IVxApiSceneBuilder.html">IVxApiSceneBuilder</a></dt>
-    <dd></dd>
-    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
-    <dd></dd>
-    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
 
 
 

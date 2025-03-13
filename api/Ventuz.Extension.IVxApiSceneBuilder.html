@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IVxApiSceneBuilder ">
       
-      
+      <meta name="description" content="SceneBuilder API. Scene elements accessed by this API must be owned by a scene in Idle State. Usw the  method to schedule modifications not only to the right thread but also ensure the scene(s) to be in right state. See also ../guide/vx_how_to_develop.html#threading">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,10 @@ Interface IVxApiSceneBuilder
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>SceneBuilder API. Scene elements accessed by this API must be owned by a scene in Idle State.
+Usw the <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_Modify_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___">Modify(Action&lt;VxScene&gt;, params VxScene[])</a> method to schedule modifications not only to the right thread but also ensure the scene(s) to be in right state.
+<br>See also <a href="../guide/vx_how_to_develop.html#threading">../guide/vx_how_to_develop.html#threading</a></p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -115,7 +118,7 @@ Interface IVxApiSceneBuilder
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="Ventuz.Extension.VxApiSceneModifyExt.html#Ventuz_Extension_VxApiSceneModifyExt_CreateNode__1_Ventuz_Extension_IVxApiSceneBuilder_Ventuz_Extension_IVxContainer_System_String_">VxApiSceneModifyExt.CreateNode&lt;T&gt;(IVxApiSceneBuilder, IVxContainer, string)</a>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateNode__1_Ventuz_Extension_IVxApiSceneBuilder_Ventuz_Extension_IVxContainer_System_String_">VxConvenienceExt.CreateNode&lt;T&gt;(IVxApiSceneBuilder, IVxContainer, string)</a>
   </div>
   </dd></dl>
 
@@ -134,7 +137,9 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends a new property group property to the end of the list and set its value instance.
+Setting a property group actually happens by type. A new instance of PG is created and used as new value instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -144,21 +149,25 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupPropertyList-1.html">VxGroupPropertyList</a>&lt;PG&gt;</dt>
-    <dd></dd>
+    <dd><p>Property to get the property from</p>
+</dd>
     <dt><code>newPG</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
+    <dd><p>Type of the new PG value. This type must be equal to PG or a derived class from PG. If newPG is null the value instance is set to null</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
-    <dd></dd>
+    <dd><p>New value instance or null</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>PG</code></dt>
-    <dd></dd>
+    <dd><p>Type of the property group this list manages</p>
+</dd>
   </dl>
 
 
@@ -177,7 +186,9 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Binds the method to an event. Method can be bound to multiple events.
+If a method is bound to the same event multiple times a trigger of this event will also call the method multiple times.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -187,9 +198,11 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tgt</code> <a class="xref" href="Ventuz.Extension.VxMethod.html">VxMethod</a></dt>
-    <dd></dd>
+    <dd><p>The method to bind</p>
+</dd>
     <dt><code>src</code> <a class="xref" href="Ventuz.Extension.VxEvent.html">VxEvent</a></dt>
-    <dd></dd>
+    <dd><p>The event to bind to</p>
+</dd>
   </dl>
 
 
@@ -243,7 +256,9 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new node of the specified type within a container.
+Make sure that the type of the node must match the container.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -253,17 +268,21 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
+    <dd><p>Type of the node</p>
+</dd>
     <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
-    <dd></dd>
+    <dd><p>Container to insert the new node</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>optional name for the node</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
-    <dd></dd>
+    <dd><p>Created node</p>
+</dd>
   </dl>
 
 
@@ -283,7 +302,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an output at the given zero based index. All previously nodes linked to the deleted output will be unlinked - no deleted!</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -293,47 +313,13 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
-    <dd></dd>
+    <dd><p>The output list to delete the output from</p>
+</dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index of the output to remove.</p>
+</dd>
   </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutput*"></a>
-
-  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_EnumerateOutput_Ventuz_Extension_VxLayerOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutput(Ventuz.Extension.VxLayerOutput)">
-  EnumerateOutput(VxLayerOutput)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerator&lt;VxLayerNode&gt; EnumerateOutput(VxLayerOutput layers)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>layers</code> <a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxLayerNode.html">VxLayerNode</a>&gt;</dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -352,7 +338,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates through all hierarchy nodes linked to an output</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -362,13 +349,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>vxOutput</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The output to enumerate the nodes</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxHierarchyNode.html">VxHierarchyNode</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Enumerator of linked hierarchy nodes</p>
+</dd>
   </dl>
 
 
@@ -388,7 +377,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates all outputs</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -398,13 +388,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
-    <dd></dd>
+    <dd><p>Output list to enumerate the outputs from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Enumerator of outputs</p>
+</dd>
   </dl>
 
 
@@ -491,68 +483,34 @@ Interface IVxApiSceneBuilder
 
   <a id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild*"></a>
 
-  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_Ventuz_Extension_VxLayerOutput_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild(Ventuz.Extension.VxLayerOutput,System.Int32)">
-  GetChild(VxLayerOutput, int)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">VxLayerNode GetChild(VxLayerOutput layers, int index)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>layers</code> <a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
-    <dd></dd>
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Ventuz.Extension.VxLayerNode.html">VxLayerNode</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild*"></a>
-
   <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetChild_Ventuz_Extension_VxOutput_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChild(Ventuz.Extension.VxOutput,System.Int32)">
   GetChild(VxOutput, int)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the Hierarchy node linked to an output at the given zero based index</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">VxHierarchyNode GetChild(VxOutput output, int index)</code></pre>
+    <pre><code class="lang-csharp hljs">VxHierarchyNode GetChild(VxOutput vxOutput, int index)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>output</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dt><code>vxOutput</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd><p>The output to get the node from</p>
+</dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index to get the linked hierarchy node</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxHierarchyNode.html">VxHierarchyNode</a></dt>
-    <dd></dd>
+    <dd><p>The hierarchy node at the given index</p>
+</dd>
   </dl>
 
 
@@ -562,44 +520,12 @@ Interface IVxApiSceneBuilder
 
 
 
-
-
-
-  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetChildren_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChildren*"></a>
-
-  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetChildren_Ventuz_Extension_VxLayerNode_System_Int32_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetChildren(Ventuz.Extension.VxLayerNode,System.Int32)">
-  GetChildren(VxLayerNode, int)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">VxLayerOutput GetChildren(VxLayerNode layer, int index = 0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
+  <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><code>layer</code> <a class="xref" href="Ventuz.Extension.VxLayerNode.html">VxLayerNode</a></dt>
-    <dd></dd>
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>If the given index is out of range</p>
+</dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
 
 
 
@@ -646,7 +572,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the container of a node. A node always belongs to a container.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -656,49 +583,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
-    <dd></dd>
+    <dd><p>Node to get the container for</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount*"></a>
-
-  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetCount_Ventuz_Extension_VxLayerOutput_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetCount(Ventuz.Extension.VxLayerOutput)">
-  GetCount(VxLayerOutput)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int GetCount(VxLayerOutput layerList)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>layerList</code> <a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The container this nodes belongs to</p>
+</dd>
   </dl>
 
 
@@ -718,7 +611,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of hierarchy nodes linked to an output</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -754,7 +648,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of outputs in an output list of a hierarchy node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -770,7 +665,8 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of outputs</p>
+</dd>
   </dl>
 
 
@@ -830,7 +726,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get an event by name</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -840,15 +737,18 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>owner</code> <a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></dt>
-    <dd></dd>
+    <dd><p>The owner to get an event from</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of the event to get</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxEvent.html">VxEvent</a></dt>
-    <dd></dd>
+    <dd><p>The found event or null if not found</p>
+</dd>
   </dl>
 
 
@@ -904,7 +804,9 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the current value of a property group. The value is actually an instance of the type PG or null.
+If the current value doesn't match the PF type, null is returned!</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -914,19 +816,22 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
-    <dd></dd>
+    <dd><p>The property to get the value instance from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">PG</span></dt>
-    <dd></dd>
+    <dd><p>Value instance of type PG or null. If the current value doesn't match the PG type, null is returned</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>PG</code></dt>
-    <dd></dd>
+    <dd><p>Type of the property group. If the current value doesn't match the PG type, null is returned</p>
+</dd>
   </dl>
 
 
@@ -945,7 +850,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the ID of a node. Every node within a scne of a unique ID (unique with the scene)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -955,13 +861,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
-    <dd></dd>
+    <dd><p>Node to get the ID</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
+    <dd><p>TheID of the node</p>
+</dd>
   </dl>
 
 
@@ -1089,7 +997,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all layers hosted in a scene, regardless of their containment, order or visibility.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1099,13 +1008,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>Scene to get all layers from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxLayerBaseNode.html">VxLayerBaseNode</a>[]</dt>
-    <dd></dd>
+    <dd><p>Array of all layers</p>
+</dd>
   </dl>
 
 
@@ -1161,7 +1072,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of property group properties in a property group list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1171,19 +1083,22 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupPropertyList-1.html">VxGroupPropertyList</a>&lt;PG&gt;</dt>
-    <dd></dd>
+    <dd><p>Property to get the count from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Number of property group properties</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>PG</code></dt>
-    <dd></dd>
+    <dd><p>Type of the property group this list manages</p>
+</dd>
   </dl>
 
 
@@ -1202,7 +1117,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the property group property at a given index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1212,21 +1128,25 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupPropertyList-1.html">VxGroupPropertyList</a>&lt;PG&gt;</dt>
-    <dd></dd>
+    <dd><p>Property to get the property from</p>
+</dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Zero based index of the property</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
-    <dd></dd>
+    <dd><p>The property group property</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>PG</code></dt>
-    <dd></dd>
+    <dd><p>Type of the property group this list manages</p>
+</dd>
   </dl>
 
 
@@ -1235,6 +1155,12 @@ Interface IVxApiSceneBuilder
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>If index was outside range (0-Count)</p>
+</dd>
+  </dl>
 
 
 
@@ -1281,7 +1207,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of a member</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1291,13 +1218,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>vxMember</code> <a class="xref" href="Ventuz.Extension.VxMember.html">VxMember</a></dt>
-    <dd></dd>
+    <dd><p>Member to get the name</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of the member</p>
+</dd>
   </dl>
 
 
@@ -1317,7 +1246,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the status of a member</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1327,13 +1257,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>vxMember</code> <a class="xref" href="Ventuz.Extension.VxMember.html">VxMember</a></dt>
-    <dd></dd>
+    <dd><p>Member to get the status</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxMemberStatus.html">VxMemberStatus</a></dt>
-    <dd></dd>
+    <dd><p>Status of the member</p>
+</dd>
   </dl>
 
 
@@ -1353,7 +1285,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get a method by name</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1363,15 +1296,18 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>owner</code> <a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></dt>
-    <dd></dd>
+    <dd><p>The owner to get an method from</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of the method to get</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxMethod.html">VxMethod</a></dt>
-    <dd></dd>
+    <dd><p>The found method or null if not found</p>
+</dd>
   </dl>
 
 
@@ -1391,7 +1327,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of a node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1401,13 +1338,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
-    <dd></dd>
+    <dd><p>Node to get the name from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of the node</p>
+</dd>
   </dl>
 
 
@@ -1463,7 +1402,9 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all nodes hosted in a scene, regardless of their containment, order or visibility.
+Be aware that this list may contain ten thousands of nodes. Use this method with care.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1473,13 +1414,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a></dt>
-    <dd></dd>
+    <dd><p>Scene to get all nodes from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>[]</dt>
-    <dd></dd>
+    <dd><p>Array of all nodes</p>
+</dd>
   </dl>
 
 
@@ -1535,7 +1478,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the output of an output list of a hierarchy node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1545,15 +1489,18 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
-    <dd></dd>
+    <dd><p>The output list to get the output from</p>
+</dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Zero based index of the output to get</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The output</p>
+</dd>
   </dl>
 
 
@@ -1563,6 +1510,12 @@ Interface IVxApiSceneBuilder
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>If index is not in the valid range.</p>
+</dd>
+  </dl>
 
 
 
@@ -1573,7 +1526,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the name of an output of a hierarchy node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1583,13 +1537,15 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>vxOutput</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The output to get the name from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the output</p>
+</dd>
   </dl>
 
 
@@ -1626,6 +1582,45 @@ Interface IVxApiSceneBuilder
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_IVxApiSceneBuilder_GetOwner_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOwner*"></a>
+
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetOwner_Ventuz_Extension_VxMember_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetOwner(Ventuz.Extension.VxMember)">
+  GetOwner(VxMember)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the owner of a member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VxMemberOwner GetOwner(VxMember vxMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxMember</code> <a class="xref" href="Ventuz.Extension.VxMember.html">VxMember</a></dt>
+    <dd><p>The member to get the owner from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></dt>
+    <dd><p>The owner of the member</p>
+</dd>
   </dl>
 
 
@@ -1825,7 +1820,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get a property by name</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1835,15 +1831,18 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>owner</code> <a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></dt>
-    <dd></dd>
+    <dd><p>The owner to get a property from</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of the property to get</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxBaseProperty.html">VxBaseProperty</a></dt>
-    <dd></dd>
+    <dd><p>The found property or null if not found</p>
+</dd>
   </dl>
 
 
@@ -1863,7 +1862,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the value of a property</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1873,19 +1873,22 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxReadOnlyProperty-1.html">VxReadOnlyProperty</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The property to get the value from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The currect value of the property</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Type of the value. Must match the actual type of the property</p>
+</dd>
   </dl>
 
 
@@ -1894,33 +1897,42 @@ Interface IVxApiSceneBuilder
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>If T doesn't match the actual type of the property</p>
+</dd>
+  </dl>
 
 
 
   <a id="Ventuz_Extension_IVxApiSceneBuilder_GetRoot_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetRoot*"></a>
 
-  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetRoot_Ventuz_Extension_IVxContainer_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetRoot(Ventuz.Extension.IVxContainer)">
-  GetRoot(IVxContainer)
+  <h3 id="Ventuz_Extension_IVxApiSceneBuilder_GetRoot_Ventuz_Extension_IVxHierarchyContainer_" data-uid="Ventuz.Extension.IVxApiSceneBuilder.GetRoot(Ventuz.Extension.IVxHierarchyContainer)">
+  GetRoot(IVxHierarchyContainer)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the root of a hierarchy container.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">VxHierarchyContainerRoot GetRoot(IVxContainer container)</code></pre>
+    <pre><code class="lang-csharp hljs">VxHierarchyContainerRoot GetRoot(IVxHierarchyContainer container)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
-    <dd></dd>
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxHierarchyContainer.html">IVxHierarchyContainer</a></dt>
+    <dd><p>Container to get the root from</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxHierarchyContainerRoot.html">VxHierarchyContainerRoot</a></dt>
-    <dd></dd>
+    <dd><p>The root or null</p>
+</dd>
   </dl>
 
 
@@ -2084,7 +2096,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserts a new output to a output list before this given index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2094,17 +2107,21 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>outputs</code> <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></dt>
-    <dd></dd>
+    <dd><p>The output list to insert a new output</p>
+</dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index the new output should be inserted before. If index is lower than .1 or equal to the number of outputs in list the new output will be added to the end of the list</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Optional name of the output.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The new output</p>
+</dd>
   </dl>
 
 
@@ -2339,7 +2356,9 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set property value. Setting a property group actually happens by type. A new instance of PG is created and used as new value instance.
+Optionally data from the old value instance can be migrated - means imported by matching name and type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2349,23 +2368,28 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxGroupProperty-1.html">VxGroupProperty</a>&lt;PG&gt;</dt>
-    <dd></dd>
+    <dd><p>The property to set the value instance to</p>
+</dd>
     <dt><code>newPG</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
+    <dd><p>Type of the new PG value. This type must be equal to PG or a derived class from PG. If newPG is null the value instance is set to null</p>
+</dd>
     <dt><code>migrateData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>true to migrate data from old value instance by name and type</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">PG</span></dt>
-    <dd></dd>
+    <dd><p>New value instance or null</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>PG</code></dt>
-    <dd></dd>
+    <dd><p>Type of the new value instance</p>
+</dd>
   </dl>
 
 
@@ -2384,7 +2408,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the name of a node. Some nodes have static names (<a class="xref" href="Ventuz.Extension.IName.html">IName</a>). Setting their names won't have any effect.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2394,9 +2419,11 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
-    <dd></dd>
+    <dd><p>Node to set the name for</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>new name</p>
+</dd>
   </dl>
 
 
@@ -2450,7 +2477,8 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set the name of an output of a hierarchy node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2460,9 +2488,11 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>vxOutput</code> <a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The output to set the name</p>
+</dd>
     <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>new name of the output</p>
+</dd>
   </dl>
 
 
@@ -2483,7 +2513,10 @@ Interface IVxApiSceneBuilder
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set the value of a property.
+Please have in mind that value set to property are not coerced within values ranges and values.
+Therefore be careful setting value. A node could handle invalid values incorrectly and cause weird behavior or crashes!</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2493,16 +2526,19 @@ Interface IVxApiSceneBuilder
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="Ventuz.Extension.VxProperty-1.html">VxProperty</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The property to set the value to</p>
+</dd>
     <dt><code>value</code> <span class="xref">T</span></dt>
-    <dd></dd>
+    <dd><p>The new value to set</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Type of the value. Must match the actual type of the property</p>
+</dd>
   </dl>
 
 
@@ -2511,6 +2547,12 @@ Interface IVxApiSceneBuilder
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>If T doesn't match the actual type of the property</p>
+</dd>
+  </dl>
 
 
 

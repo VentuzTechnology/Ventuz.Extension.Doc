@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VxNodeExt </title>
+      <title>Class VxConvenienceExt </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VxNodeExt ">
+      <meta name="title" content="Class VxConvenienceExt ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ventuz.Extension.VxNodeExt">
+        <article data-uid="Ventuz.Extension.VxConvenienceExt">
 
 
 
-  <h1 id="Ventuz_Extension_VxNodeExt" data-uid="Ventuz.Extension.VxNodeExt" class="text-break">
-Class VxNodeExt  
+  <h1 id="Ventuz_Extension_VxConvenienceExt" data-uid="Ventuz.Extension.VxConvenienceExt" class="text-break">
+Class VxConvenienceExt  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class VxNodeExt
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class VxNodeExt</code></pre>
+    <pre><code class="lang-csharp hljs">public static class VxConvenienceExt</code></pre>
   </div>
 
 
@@ -111,7 +111,7 @@ Class VxNodeExt
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">VxNodeExt</span></div>
+      <div><span class="xref">VxConvenienceExt</span></div>
     </dd>
   </dl>
 
@@ -152,9 +152,9 @@ Class VxNodeExt
 </h2>
 
 
-  <a id="Ventuz_Extension_VxNodeExt_Add_" data-uid="Ventuz.Extension.VxNodeExt.Add*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_Add_" data-uid="Ventuz.Extension.VxConvenienceExt.Add*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_Add_Ventuz_Extension_VxOutputList_System_String_" data-uid="Ventuz.Extension.VxNodeExt.Add(Ventuz.Extension.VxOutputList,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_Add_Ventuz_Extension_VxOutputList_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.Add(Ventuz.Extension.VxOutputList,System.String)">
   Add(VxOutputList, string)
   
   </h3>
@@ -190,10 +190,10 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetChildren_" data-uid="Ventuz.Extension.VxNodeExt.GetChildren*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_CreateNodeAfter_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeAfter*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetChildren_Ventuz_Extension_VxLayerNode_System_Int32_" data-uid="Ventuz.Extension.VxNodeExt.GetChildren(Ventuz.Extension.VxLayerNode,System.Int32)">
-  GetChildren(VxLayerNode, int)
+  <h3 id="Ventuz_Extension_VxConvenienceExt_CreateNodeAfter__1_Ventuz_Extension_IVxContainer_Ventuz_Extension_VxHierarchyBaseNode_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeAfter``1(Ventuz.Extension.IVxContainer,Ventuz.Extension.VxHierarchyBaseNode,System.String)">
+  CreateNodeAfter&lt;T&gt;(IVxContainer, VxHierarchyBaseNode, string)
   
   </h3>
 
@@ -201,20 +201,28 @@ Class VxNodeExt
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static VxLayerOutput GetChildren(this VxLayerNode layer, int index = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T CreateNodeAfter&lt;T&gt;(this IVxContainer container, VxHierarchyBaseNode node, string name = null) where T : VxHierarchyBaseNode</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>layer</code> <a class="xref" href="Ventuz.Extension.VxLayerNode.html">VxLayerNode</a></dt>
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
     <dd></dd>
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Ventuz.Extension.VxLayerOutput.html">VxLayerOutput</a></dt>
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
     <dd></dd>
   </dl>
 
@@ -227,10 +235,187 @@ Class VxNodeExt
 
 
 
+  <a id="Ventuz_Extension_VxConvenienceExt_CreateNodeBefore_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeBefore*"></a>
 
-  <a id="Ventuz_Extension_VxNodeExt_GetContainer_" data-uid="Ventuz.Extension.VxNodeExt.GetContainer*"></a>
+  <h3 id="Ventuz_Extension_VxConvenienceExt_CreateNodeBefore__1_Ventuz_Extension_IVxContainer_Ventuz_Extension_VxHierarchyBaseNode_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeBefore``1(Ventuz.Extension.IVxContainer,Ventuz.Extension.VxHierarchyBaseNode,System.String)">
+  CreateNodeBefore&lt;T&gt;(IVxContainer, VxHierarchyBaseNode, string)
+  
+  </h3>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetContainer_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.VxNodeExt.GetContainer(Ventuz.Extension.VxNode)">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CreateNodeBefore&lt;T&gt;(this IVxContainer container, VxHierarchyBaseNode node, string name = null) where T : VxHierarchyBaseNode</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_CreateNodeBehind_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeBehind*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_CreateNodeBehind__1_Ventuz_Extension_IVxContainer_Ventuz_Extension_VxHierarchyBaseNode_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeBehind``1(Ventuz.Extension.IVxContainer,Ventuz.Extension.VxHierarchyBaseNode,System.String)">
+  CreateNodeBehind&lt;T&gt;(IVxContainer, VxHierarchyBaseNode, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CreateNodeBehind&lt;T&gt;(this IVxContainer container, VxHierarchyBaseNode node, string name = null) where T : VxHierarchyBaseNode</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_CreateNode_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNode*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_CreateNode__1_Ventuz_Extension_IVxApiSceneBuilder_Ventuz_Extension_IVxContainer_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNode``1(Ventuz.Extension.IVxApiSceneBuilder,Ventuz.Extension.IVxContainer,System.String)">
+  CreateNode&lt;T&gt;(IVxApiSceneBuilder, IVxContainer, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CreateNode&lt;T&gt;(this IVxApiSceneBuilder api, IVxContainer container, string name = null) where T : VxNode</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>api</code> <a class="xref" href="Ventuz.Extension.IVxApiSceneBuilder.html">IVxApiSceneBuilder</a></dt>
+    <dd></dd>
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_CreateNode_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNode*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_CreateNode__1_Ventuz_Extension_IVxContainer_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNode``1(Ventuz.Extension.IVxContainer,System.String)">
+  CreateNode&lt;T&gt;(IVxContainer, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CreateNode&lt;T&gt;(this IVxContainer container, string name = null) where T : VxNode</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_GetContainer_" data-uid="Ventuz.Extension.VxConvenienceExt.GetContainer*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetContainer_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.VxConvenienceExt.GetContainer(Ventuz.Extension.VxNode)">
   GetContainer(VxNode)
   
   </h3>
@@ -264,9 +449,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetCount_" data-uid="Ventuz.Extension.VxNodeExt.GetCount*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetCount_" data-uid="Ventuz.Extension.VxConvenienceExt.GetCount*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetCount_Ventuz_Extension_VxOutputList_" data-uid="Ventuz.Extension.VxNodeExt.GetCount(Ventuz.Extension.VxOutputList)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetCount_Ventuz_Extension_VxOutputList_" data-uid="Ventuz.Extension.VxConvenienceExt.GetCount(Ventuz.Extension.VxOutputList)">
   GetCount(VxOutputList)
   
   </h3>
@@ -300,9 +485,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetEnumerator_" data-uid="Ventuz.Extension.VxNodeExt.GetEnumerator*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetEnumerator_" data-uid="Ventuz.Extension.VxConvenienceExt.GetEnumerator*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetEnumerator_Ventuz_Extension_VxOutputList_" data-uid="Ventuz.Extension.VxNodeExt.GetEnumerator(Ventuz.Extension.VxOutputList)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetEnumerator_Ventuz_Extension_VxOutputList_" data-uid="Ventuz.Extension.VxConvenienceExt.GetEnumerator(Ventuz.Extension.VxOutputList)">
   GetEnumerator(VxOutputList)
   
   </h3>
@@ -336,9 +521,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetEvent_" data-uid="Ventuz.Extension.VxNodeExt.GetEvent*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetEvent_" data-uid="Ventuz.Extension.VxConvenienceExt.GetEvent*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetEvent_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxNodeExt.GetEvent(Ventuz.Extension.VxMemberOwner,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetEvent_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.GetEvent(Ventuz.Extension.VxMemberOwner,System.String)">
   GetEvent(VxMemberOwner, string)
   
   </h3>
@@ -374,9 +559,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetID_" data-uid="Ventuz.Extension.VxNodeExt.GetID*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetID_" data-uid="Ventuz.Extension.VxConvenienceExt.GetID*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetID_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.VxNodeExt.GetID(Ventuz.Extension.VxNode)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetID_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.VxConvenienceExt.GetID(Ventuz.Extension.VxNode)">
   GetID(VxNode)
   
   </h3>
@@ -410,9 +595,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetLinks_" data-uid="Ventuz.Extension.VxNodeExt.GetLinks*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetLinks_" data-uid="Ventuz.Extension.VxConvenienceExt.GetLinks*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetLinks_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxNodeExt.GetLinks(Ventuz.Extension.VxHierarchyBaseNode)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetLinks_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxConvenienceExt.GetLinks(Ventuz.Extension.VxHierarchyBaseNode)">
   GetLinks(VxHierarchyBaseNode)
   
   </h3>
@@ -446,9 +631,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetMethod_" data-uid="Ventuz.Extension.VxNodeExt.GetMethod*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetMethod_" data-uid="Ventuz.Extension.VxConvenienceExt.GetMethod*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetMethod_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxNodeExt.GetMethod(Ventuz.Extension.VxMemberOwner,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetMethod_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.GetMethod(Ventuz.Extension.VxMemberOwner,System.String)">
   GetMethod(VxMemberOwner, string)
   
   </h3>
@@ -484,9 +669,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetName_" data-uid="Ventuz.Extension.VxNodeExt.GetName*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetName_" data-uid="Ventuz.Extension.VxConvenienceExt.GetName*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetName_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.VxNodeExt.GetName(Ventuz.Extension.VxNode)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetName_Ventuz_Extension_VxNode_" data-uid="Ventuz.Extension.VxConvenienceExt.GetName(Ventuz.Extension.VxNode)">
   GetName(VxNode)
   
   </h3>
@@ -520,9 +705,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetOutput_" data-uid="Ventuz.Extension.VxNodeExt.GetOutput*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetOutput_" data-uid="Ventuz.Extension.VxConvenienceExt.GetOutput*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetOutput_Ventuz_Extension_VxOutputList_System_Int32_" data-uid="Ventuz.Extension.VxNodeExt.GetOutput(Ventuz.Extension.VxOutputList,System.Int32)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetOutput_Ventuz_Extension_VxOutputList_System_Int32_" data-uid="Ventuz.Extension.VxConvenienceExt.GetOutput(Ventuz.Extension.VxOutputList,System.Int32)">
   GetOutput(VxOutputList, int)
   
   </h3>
@@ -558,9 +743,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetOutputs_" data-uid="Ventuz.Extension.VxNodeExt.GetOutputs*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetOutputs_" data-uid="Ventuz.Extension.VxConvenienceExt.GetOutputs*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetOutputs_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxNodeExt.GetOutputs(Ventuz.Extension.VxHierarchyBaseNode)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetOutputs_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxConvenienceExt.GetOutputs(Ventuz.Extension.VxHierarchyBaseNode)">
   GetOutputs(VxHierarchyBaseNode)
   
   </h3>
@@ -594,9 +779,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetProperty_" data-uid="Ventuz.Extension.VxNodeExt.GetProperty*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetProperty_" data-uid="Ventuz.Extension.VxConvenienceExt.GetProperty*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetProperty_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxNodeExt.GetProperty(Ventuz.Extension.VxMemberOwner,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetProperty_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.GetProperty(Ventuz.Extension.VxMemberOwner,System.String)">
   GetProperty(VxMemberOwner, string)
   
   </h3>
@@ -632,9 +817,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetPropertyGroupList_" data-uid="Ventuz.Extension.VxNodeExt.GetPropertyGroupList*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetPropertyGroupList_" data-uid="Ventuz.Extension.VxConvenienceExt.GetPropertyGroupList*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetPropertyGroupList__1_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxNodeExt.GetPropertyGroupList``1(Ventuz.Extension.VxMemberOwner,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetPropertyGroupList__1_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.GetPropertyGroupList``1(Ventuz.Extension.VxMemberOwner,System.String)">
   GetPropertyGroupList&lt;PG&gt;(VxMemberOwner, string)
   
   </h3>
@@ -675,9 +860,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_GetPropertyGroup_" data-uid="Ventuz.Extension.VxNodeExt.GetPropertyGroup*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetPropertyGroup_" data-uid="Ventuz.Extension.VxConvenienceExt.GetPropertyGroup*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_GetPropertyGroup__1_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxNodeExt.GetPropertyGroup``1(Ventuz.Extension.VxMemberOwner,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetPropertyGroup__1_Ventuz_Extension_VxMemberOwner_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.GetPropertyGroup``1(Ventuz.Extension.VxMemberOwner,System.String)">
   GetPropertyGroup&lt;PG&gt;(VxMemberOwner, string)
   
   </h3>
@@ -718,9 +903,86 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_Insert_" data-uid="Ventuz.Extension.VxNodeExt.Insert*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_GetRoot_" data-uid="Ventuz.Extension.VxConvenienceExt.GetRoot*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_Insert_Ventuz_Extension_VxOutputList_System_Int32_System_String_" data-uid="Ventuz.Extension.VxNodeExt.Insert(Ventuz.Extension.VxOutputList,System.Int32,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetRoot_Ventuz_Extension_IVxHierarchyContainer_" data-uid="Ventuz.Extension.VxConvenienceExt.GetRoot(Ventuz.Extension.IVxHierarchyContainer)">
+  GetRoot(IVxHierarchyContainer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VxHierarchyContainerRoot GetRoot(this IVxHierarchyContainer container)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxHierarchyContainer.html">IVxHierarchyContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxHierarchyContainerRoot.html">VxHierarchyContainerRoot</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_GetService_" data-uid="Ventuz.Extension.VxConvenienceExt.GetService*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_GetService__1_Ventuz_Extension_IVxApiManagement_" data-uid="Ventuz.Extension.VxConvenienceExt.GetService``1(Ventuz.Extension.IVxApiManagement)">
+  GetService&lt;T&gt;(IVxApiManagement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetService&lt;T&gt;(this IVxApiManagement scene) where T : VxServiceBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <a class="xref" href="Ventuz.Extension.IVxApiManagement.html">IVxApiManagement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_Insert_" data-uid="Ventuz.Extension.VxConvenienceExt.Insert*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_Insert_Ventuz_Extension_VxOutputList_System_Int32_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.Insert(Ventuz.Extension.VxOutputList,System.Int32,System.String)">
   Insert(VxOutputList, int, string)
   
   </h3>
@@ -758,9 +1020,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_LinkAfter_" data-uid="Ventuz.Extension.VxNodeExt.LinkAfter*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_LinkAfter_" data-uid="Ventuz.Extension.VxConvenienceExt.LinkAfter*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_LinkAfter_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxNodeExt.LinkAfter(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxHierarchyBaseNode)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_LinkAfter_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxConvenienceExt.LinkAfter(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxHierarchyBaseNode)">
   LinkAfter(VxHierarchyBaseNode, VxHierarchyBaseNode)
   
   </h3>
@@ -796,9 +1058,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_LinkBefore_" data-uid="Ventuz.Extension.VxNodeExt.LinkBefore*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_LinkBefore_" data-uid="Ventuz.Extension.VxConvenienceExt.LinkBefore*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_LinkBefore_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxNodeExt.LinkBefore(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxHierarchyBaseNode)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_LinkBefore_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxHierarchyBaseNode_" data-uid="Ventuz.Extension.VxConvenienceExt.LinkBefore(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxHierarchyBaseNode)">
   LinkBefore(VxHierarchyBaseNode, VxHierarchyBaseNode)
   
   </h3>
@@ -834,9 +1096,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_LinkBehind_" data-uid="Ventuz.Extension.VxNodeExt.LinkBehind*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_LinkBehind_" data-uid="Ventuz.Extension.VxConvenienceExt.LinkBehind*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_LinkBehind_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxHierarchyBaseNode_System_Int32_" data-uid="Ventuz.Extension.VxNodeExt.LinkBehind(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxHierarchyBaseNode,System.Int32)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_LinkBehind_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxHierarchyBaseNode_System_Int32_" data-uid="Ventuz.Extension.VxConvenienceExt.LinkBehind(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxHierarchyBaseNode,System.Int32)">
   LinkBehind(VxHierarchyBaseNode, VxHierarchyBaseNode, int)
   
   </h3>
@@ -874,9 +1136,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_Navigate_" data-uid="Ventuz.Extension.VxNodeExt.Navigate*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_Navigate_" data-uid="Ventuz.Extension.VxConvenienceExt.Navigate*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_Navigate_Ventuz_Extension_VxNode_System_String_" data-uid="Ventuz.Extension.VxNodeExt.Navigate(Ventuz.Extension.VxNode,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_Navigate_Ventuz_Extension_VxNode_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.Navigate(Ventuz.Extension.VxNode,System.String)">
   Navigate(VxNode, string)
   
   </h3>
@@ -907,9 +1169,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_RemoveAt_" data-uid="Ventuz.Extension.VxNodeExt.RemoveAt*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_RemoveAt_" data-uid="Ventuz.Extension.VxConvenienceExt.RemoveAt*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_RemoveAt_Ventuz_Extension_VxOutputList_System_Int32_" data-uid="Ventuz.Extension.VxNodeExt.RemoveAt(Ventuz.Extension.VxOutputList,System.Int32)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_RemoveAt_Ventuz_Extension_VxOutputList_System_Int32_" data-uid="Ventuz.Extension.VxConvenienceExt.RemoveAt(Ventuz.Extension.VxOutputList,System.Int32)">
   RemoveAt(VxOutputList, int)
   
   </h3>
@@ -940,9 +1202,9 @@ Class VxNodeExt
 
 
 
-  <a id="Ventuz_Extension_VxNodeExt_SetName_" data-uid="Ventuz.Extension.VxNodeExt.SetName*"></a>
+  <a id="Ventuz_Extension_VxConvenienceExt_SetName_" data-uid="Ventuz.Extension.VxConvenienceExt.SetName*"></a>
 
-  <h3 id="Ventuz_Extension_VxNodeExt_SetName_Ventuz_Extension_VxNode_System_String_" data-uid="Ventuz.Extension.VxNodeExt.SetName(Ventuz.Extension.VxNode,System.String)">
+  <h3 id="Ventuz_Extension_VxConvenienceExt_SetName_Ventuz_Extension_VxNode_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.SetName(Ventuz.Extension.VxNode,System.String)">
   SetName(VxNode, string)
   
   </h3>

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class VxOutputList ">
       
-      
+      <meta name="description" content="Every  can have zero, one or multiple outputs. The  represents a list of this outputs. To retrieve this list call extension method .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,9 @@ Class VxOutputList
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Every <a class="xref" href="Ventuz.Extension.VxHierarchyBaseNode.html">VxHierarchyBaseNode</a> can have zero, one or multiple outputs. The <a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a> represents a list of this outputs.
+To retrieve this list call extension method <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetOutputs_Ventuz_Extension_VxHierarchyBaseNode_">GetOutputs(VxHierarchyBaseNode)</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -131,6 +133,9 @@ Class VxOutputList
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
     <div>
@@ -154,22 +159,22 @@ Class VxOutputList
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="Ventuz.Extension.VxNodeExt.html#Ventuz_Extension_VxNodeExt_Add_Ventuz_Extension_VxOutputList_System_String_">VxNodeExt.Add(VxOutputList, string)</a>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Add_Ventuz_Extension_VxOutputList_System_String_">VxConvenienceExt.Add(VxOutputList, string)</a>
   </div>
   <div>
-      <a class="xref" href="Ventuz.Extension.VxNodeExt.html#Ventuz_Extension_VxNodeExt_GetCount_Ventuz_Extension_VxOutputList_">VxNodeExt.GetCount(VxOutputList)</a>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetCount_Ventuz_Extension_VxOutputList_">VxConvenienceExt.GetCount(VxOutputList)</a>
   </div>
   <div>
-      <a class="xref" href="Ventuz.Extension.VxNodeExt.html#Ventuz_Extension_VxNodeExt_GetEnumerator_Ventuz_Extension_VxOutputList_">VxNodeExt.GetEnumerator(VxOutputList)</a>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetEnumerator_Ventuz_Extension_VxOutputList_">VxConvenienceExt.GetEnumerator(VxOutputList)</a>
   </div>
   <div>
-      <a class="xref" href="Ventuz.Extension.VxNodeExt.html#Ventuz_Extension_VxNodeExt_GetOutput_Ventuz_Extension_VxOutputList_System_Int32_">VxNodeExt.GetOutput(VxOutputList, int)</a>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetOutput_Ventuz_Extension_VxOutputList_System_Int32_">VxConvenienceExt.GetOutput(VxOutputList, int)</a>
   </div>
   <div>
-      <a class="xref" href="Ventuz.Extension.VxNodeExt.html#Ventuz_Extension_VxNodeExt_Insert_Ventuz_Extension_VxOutputList_System_Int32_System_String_">VxNodeExt.Insert(VxOutputList, int, string)</a>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Insert_Ventuz_Extension_VxOutputList_System_Int32_System_String_">VxConvenienceExt.Insert(VxOutputList, int, string)</a>
   </div>
   <div>
-      <a class="xref" href="Ventuz.Extension.VxNodeExt.html#Ventuz_Extension_VxNodeExt_RemoveAt_Ventuz_Extension_VxOutputList_System_Int32_">VxNodeExt.RemoveAt(VxOutputList, int)</a>
+      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_RemoveAt_Ventuz_Extension_VxOutputList_System_Int32_">VxConvenienceExt.RemoveAt(VxOutputList, int)</a>
   </div>
   </dd></dl>
 
@@ -218,7 +223,8 @@ Class VxOutputList
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of outputs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -249,7 +255,8 @@ Class VxOutputList
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the output at the specified zero based index</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -259,7 +266,8 @@ Class VxOutputList
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index</p>
+</dd>
   </dl>
 
 
@@ -268,13 +276,20 @@ Class VxOutputList
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The output at specified index</p>
+</dd>
   </dl>
 
 
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></dt>
+    <dd><p>If the index is out of range</p>
+</dd>
+  </dl>
 
 
 
@@ -289,7 +304,8 @@ Class VxOutputList
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a new output to the end of the list</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -299,13 +315,15 @@ Class VxOutputList
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Optional name of the output.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The new output</p>
+</dd>
   </dl>
 
 
@@ -325,7 +343,8 @@ Class VxOutputList
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerates all outputs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -336,7 +355,8 @@ Class VxOutputList
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Enumerator of outputs</p>
+</dd>
   </dl>
 
 
@@ -356,7 +376,8 @@ Class VxOutputList
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserts a new output before this given index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -366,15 +387,18 @@ Class VxOutputList
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index the new output should be inserted before. If index is lower than .1 or equal to the number of outputs in list the new output will be added to the end of the list</p>
+</dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Optional name of the output.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
-    <dd></dd>
+    <dd><p>The new output</p>
+</dd>
   </dl>
 
 
@@ -394,7 +418,8 @@ Class VxOutputList
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes/deletes output at the given zero based index. All previously nodes linked to the deleted output will be unlinked - no deleted!</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -404,7 +429,8 @@ Class VxOutputList
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>zero based index of the output to remove.</p>
+</dd>
   </dl>
 
 
