@@ -641,6 +641,21 @@ references:
   commentId: Overload:Ventuz.Extension.IVxApiDesigner.CreateAndOpenScene
   fullName: Ventuz.Extension.IVxApiDesigner.CreateAndOpenScene
   nameWithType: IVxApiDesigner.CreateAndOpenScene
+- uid: Ventuz.Extension.IVxApiDesigner.CreateDataObject(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)
+  name: CreateDataObject(VxSceneFragment, Func<Stream>, string)
+  href: api/Ventuz.Extension.IVxApiDesigner.html#Ventuz_Extension_IVxApiDesigner_CreateDataObject_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__System_String_
+  commentId: M:Ventuz.Extension.IVxApiDesigner.CreateDataObject(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)
+  name.vb: CreateDataObject(VxSceneFragment, Func(Of Stream), String)
+  fullName: Ventuz.Extension.IVxApiDesigner.CreateDataObject(Ventuz.Extension.VxSceneFragment, System.Func<System.IO.Stream>, string)
+  fullName.vb: Ventuz.Extension.IVxApiDesigner.CreateDataObject(Ventuz.Extension.VxSceneFragment, System.Func(Of System.IO.Stream), String)
+  nameWithType: IVxApiDesigner.CreateDataObject(VxSceneFragment, Func<Stream>, string)
+  nameWithType.vb: IVxApiDesigner.CreateDataObject(VxSceneFragment, Func(Of Stream), String)
+- uid: Ventuz.Extension.IVxApiDesigner.CreateDataObject*
+  name: CreateDataObject
+  href: api/Ventuz.Extension.IVxApiDesigner.html#Ventuz_Extension_IVxApiDesigner_CreateDataObject_
+  commentId: Overload:Ventuz.Extension.IVxApiDesigner.CreateDataObject
+  fullName: Ventuz.Extension.IVxApiDesigner.CreateDataObject
+  nameWithType: IVxApiDesigner.CreateDataObject
 - uid: Ventuz.Extension.IVxApiDesigner.ExportArchive(Ventuz.Extension.VxScene,System.Uri,System.Boolean)
   name: ExportArchive(VxScene, Uri, bool)
   href: api/Ventuz.Extension.IVxApiDesigner.html#Ventuz_Extension_IVxApiDesigner_ExportArchive_Ventuz_Extension_VxScene_System_Uri_System_Boolean_
@@ -1484,6 +1499,21 @@ references:
   commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutputs
   fullName: Ventuz.Extension.IVxApiSceneBuilder.EnumerateOutputs
   nameWithType: IVxApiSceneBuilder.EnumerateOutputs
+- uid: Ventuz.Extension.IVxApiSceneBuilder.Export(Ventuz.Extension.VxNode[],System.IO.Stream,Ventuz.Extension.VxExportFlags)
+  name: Export(VxNode[], Stream, VxExportFlags)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_Export_Ventuz_Extension_VxNode___System_IO_Stream_Ventuz_Extension_VxExportFlags_
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.Export(Ventuz.Extension.VxNode[],System.IO.Stream,Ventuz.Extension.VxExportFlags)
+  name.vb: Export(VxNode(), Stream, VxExportFlags)
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.Export(Ventuz.Extension.VxNode[], System.IO.Stream, Ventuz.Extension.VxExportFlags)
+  fullName.vb: Ventuz.Extension.IVxApiSceneBuilder.Export(Ventuz.Extension.VxNode(), System.IO.Stream, Ventuz.Extension.VxExportFlags)
+  nameWithType: IVxApiSceneBuilder.Export(VxNode[], Stream, VxExportFlags)
+  nameWithType.vb: IVxApiSceneBuilder.Export(VxNode(), Stream, VxExportFlags)
+- uid: Ventuz.Extension.IVxApiSceneBuilder.Export*
+  name: Export
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_Export_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.Export
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.Export
+  nameWithType: IVxApiSceneBuilder.Export
 - uid: Ventuz.Extension.IVxApiSceneBuilder.GetActive(Ventuz.Extension.VxPort)
   name: GetActive(VxPort)
   href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_GetActive_Ventuz_Extension_VxPort_
@@ -1994,6 +2024,30 @@ references:
   commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.GetSceneOfPort
   fullName: Ventuz.Extension.IVxApiSceneBuilder.GetSceneOfPort
   nameWithType: IVxApiSceneBuilder.GetSceneOfPort
+- uid: Ventuz.Extension.IVxApiSceneBuilder.GetSource(Ventuz.Extension.VxBinding)
+  name: GetSource(VxBinding)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_GetSource_Ventuz_Extension_VxBinding_
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.GetSource(Ventuz.Extension.VxBinding)
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.GetSource(Ventuz.Extension.VxBinding)
+  nameWithType: IVxApiSceneBuilder.GetSource(VxBinding)
+- uid: Ventuz.Extension.IVxApiSceneBuilder.GetSource*
+  name: GetSource
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_GetSource_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.GetSource
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.GetSource
+  nameWithType: IVxApiSceneBuilder.GetSource
+- uid: Ventuz.Extension.IVxApiSceneBuilder.GetTarget(Ventuz.Extension.VxBinding)
+  name: GetTarget(VxBinding)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_GetTarget_Ventuz_Extension_VxBinding_
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.GetTarget(Ventuz.Extension.VxBinding)
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.GetTarget(Ventuz.Extension.VxBinding)
+  nameWithType: IVxApiSceneBuilder.GetTarget(VxBinding)
+- uid: Ventuz.Extension.IVxApiSceneBuilder.GetTarget*
+  name: GetTarget
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_GetTarget_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.GetTarget
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.GetTarget
+  nameWithType: IVxApiSceneBuilder.GetTarget
 - uid: Ventuz.Extension.IVxApiSceneBuilder.GetToNode(Ventuz.Extension.VxLink)
   name: GetToNode(VxLink)
   href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_GetToNode_Ventuz_Extension_VxLink_
@@ -2018,6 +2072,51 @@ references:
   commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.GetUri
   fullName: Ventuz.Extension.IVxApiSceneBuilder.GetUri
   nameWithType: IVxApiSceneBuilder.GetUri
+- uid: Ventuz.Extension.IVxApiSceneBuilder.ImportToContainers(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags,Ventuz.Extension.IVxContainer[],System.Func{System.Uri,System.Uri})
+  name: ImportToContainers(VxSceneFragment, Func<Stream>, VxImportFlags, IVxContainer[], Func<Uri, Uri>)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_ImportToContainers_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_Ventuz_Extension_IVxContainer___System_Func_System_Uri_System_Uri__
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.ImportToContainers(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags,Ventuz.Extension.IVxContainer[],System.Func{System.Uri,System.Uri})
+  name.vb: ImportToContainers(VxSceneFragment, Func(Of Stream), VxImportFlags, IVxContainer(), Func(Of Uri, Uri))
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.ImportToContainers(Ventuz.Extension.VxSceneFragment, System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags, Ventuz.Extension.IVxContainer[], System.Func<System.Uri, System.Uri>)
+  fullName.vb: Ventuz.Extension.IVxApiSceneBuilder.ImportToContainers(Ventuz.Extension.VxSceneFragment, System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags, Ventuz.Extension.IVxContainer(), System.Func(Of System.Uri, System.Uri))
+  nameWithType: IVxApiSceneBuilder.ImportToContainers(VxSceneFragment, Func<Stream>, VxImportFlags, IVxContainer[], Func<Uri, Uri>)
+  nameWithType.vb: IVxApiSceneBuilder.ImportToContainers(VxSceneFragment, Func(Of Stream), VxImportFlags, IVxContainer(), Func(Of Uri, Uri))
+- uid: Ventuz.Extension.IVxApiSceneBuilder.ImportToContainers*
+  name: ImportToContainers
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_ImportToContainers_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.ImportToContainers
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.ImportToContainers
+  nameWithType: IVxApiSceneBuilder.ImportToContainers
+- uid: Ventuz.Extension.IVxApiSceneBuilder.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags,Ventuz.Extension.IVxContainer[],System.Func{System.Uri,System.Uri})
+  name: ImportToInterfaceContainers(VxSceneFragment, Func<Stream>, VxImportFlags, IVxContainer[], Func<Uri, Uri>)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_ImportToInterfaceContainers_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_Ventuz_Extension_IVxContainer___System_Func_System_Uri_System_Uri__
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags,Ventuz.Extension.IVxContainer[],System.Func{System.Uri,System.Uri})
+  name.vb: ImportToInterfaceContainers(VxSceneFragment, Func(Of Stream), VxImportFlags, IVxContainer(), Func(Of Uri, Uri))
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment, System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags, Ventuz.Extension.IVxContainer[], System.Func<System.Uri, System.Uri>)
+  fullName.vb: Ventuz.Extension.IVxApiSceneBuilder.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment, System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags, Ventuz.Extension.IVxContainer(), System.Func(Of System.Uri, System.Uri))
+  nameWithType: IVxApiSceneBuilder.ImportToInterfaceContainers(VxSceneFragment, Func<Stream>, VxImportFlags, IVxContainer[], Func<Uri, Uri>)
+  nameWithType.vb: IVxApiSceneBuilder.ImportToInterfaceContainers(VxSceneFragment, Func(Of Stream), VxImportFlags, IVxContainer(), Func(Of Uri, Uri))
+- uid: Ventuz.Extension.IVxApiSceneBuilder.ImportToInterfaceContainers*
+  name: ImportToInterfaceContainers
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_ImportToInterfaceContainers_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.ImportToInterfaceContainers
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.ImportToInterfaceContainers
+  nameWithType: IVxApiSceneBuilder.ImportToInterfaceContainers
+- uid: Ventuz.Extension.IVxApiSceneBuilder.ImportToNodes(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags,Ventuz.Extension.VxNode[],System.Func{System.Uri,System.Uri})
+  name: ImportToNodes(VxSceneFragment, Func<Stream>, VxImportFlags, VxNode[], Func<Uri, Uri>)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_ImportToNodes_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_Ventuz_Extension_VxNode___System_Func_System_Uri_System_Uri__
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.ImportToNodes(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags,Ventuz.Extension.VxNode[],System.Func{System.Uri,System.Uri})
+  name.vb: ImportToNodes(VxSceneFragment, Func(Of Stream), VxImportFlags, VxNode(), Func(Of Uri, Uri))
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.ImportToNodes(Ventuz.Extension.VxSceneFragment, System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags, Ventuz.Extension.VxNode[], System.Func<System.Uri, System.Uri>)
+  fullName.vb: Ventuz.Extension.IVxApiSceneBuilder.ImportToNodes(Ventuz.Extension.VxSceneFragment, System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags, Ventuz.Extension.VxNode(), System.Func(Of System.Uri, System.Uri))
+  nameWithType: IVxApiSceneBuilder.ImportToNodes(VxSceneFragment, Func<Stream>, VxImportFlags, VxNode[], Func<Uri, Uri>)
+  nameWithType.vb: IVxApiSceneBuilder.ImportToNodes(VxSceneFragment, Func(Of Stream), VxImportFlags, VxNode(), Func(Of Uri, Uri))
+- uid: Ventuz.Extension.IVxApiSceneBuilder.ImportToNodes*
+  name: ImportToNodes
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_ImportToNodes_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.ImportToNodes
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.ImportToNodes
+  nameWithType: IVxApiSceneBuilder.ImportToNodes
 - uid: Ventuz.Extension.IVxApiSceneBuilder.InsertOutput(Ventuz.Extension.VxOutputList,System.Int32,System.String)
   name: InsertOutput(VxOutputList, int, string)
   href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_InsertOutput_Ventuz_Extension_VxOutputList_System_Int32_System_String_
@@ -2033,6 +2132,18 @@ references:
   commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.InsertOutput
   fullName: Ventuz.Extension.IVxApiSceneBuilder.InsertOutput
   nameWithType: IVxApiSceneBuilder.InsertOutput
+- uid: Ventuz.Extension.IVxApiSceneBuilder.IsInterfaceContainer(Ventuz.Extension.IVxContainer)
+  name: IsInterfaceContainer(IVxContainer)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_IsInterfaceContainer_Ventuz_Extension_IVxContainer_
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.IsInterfaceContainer(Ventuz.Extension.IVxContainer)
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.IsInterfaceContainer(Ventuz.Extension.IVxContainer)
+  nameWithType: IVxApiSceneBuilder.IsInterfaceContainer(IVxContainer)
+- uid: Ventuz.Extension.IVxApiSceneBuilder.IsInterfaceContainer*
+  name: IsInterfaceContainer
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_IsInterfaceContainer_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.IsInterfaceContainer
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.IsInterfaceContainer
+  nameWithType: IVxApiSceneBuilder.IsInterfaceContainer
 - uid: Ventuz.Extension.IVxApiSceneBuilder.IsValid(Ventuz.Extension.VxScene)
   name: IsValid(VxScene)
   href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_IsValid_Ventuz_Extension_VxScene_
@@ -2207,6 +2318,18 @@ references:
   commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.SetScene
   fullName: Ventuz.Extension.IVxApiSceneBuilder.SetScene
   nameWithType: IVxApiSceneBuilder.SetScene
+- uid: Ventuz.Extension.IVxApiSceneBuilder.Unbind(Ventuz.Extension.VxBinding)
+  name: Unbind(VxBinding)
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_Unbind_Ventuz_Extension_VxBinding_
+  commentId: M:Ventuz.Extension.IVxApiSceneBuilder.Unbind(Ventuz.Extension.VxBinding)
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.Unbind(Ventuz.Extension.VxBinding)
+  nameWithType: IVxApiSceneBuilder.Unbind(VxBinding)
+- uid: Ventuz.Extension.IVxApiSceneBuilder.Unbind*
+  name: Unbind
+  href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_Unbind_
+  commentId: Overload:Ventuz.Extension.IVxApiSceneBuilder.Unbind
+  fullName: Ventuz.Extension.IVxApiSceneBuilder.Unbind
+  nameWithType: IVxApiSceneBuilder.Unbind
 - uid: Ventuz.Extension.IVxApiSceneBuilder.Unlink(Ventuz.Extension.VxLink)
   name: Unlink(VxLink)
   href: api/Ventuz.Extension.IVxApiSceneBuilder.html#Ventuz_Extension_IVxApiSceneBuilder_Unlink_Ventuz_Extension_VxLink_
@@ -3911,6 +4034,66 @@ references:
   fullName.vb: Ventuz.Extension.VxBaseProperty.New
   nameWithType: VxBaseProperty.VxBaseProperty
   nameWithType.vb: VxBaseProperty.New
+- uid: Ventuz.Extension.VxBinding
+  name: VxBinding
+  href: api/Ventuz.Extension.VxBinding.html
+  commentId: T:Ventuz.Extension.VxBinding
+  fullName: Ventuz.Extension.VxBinding
+  nameWithType: VxBinding
+- uid: Ventuz.Extension.VxBinding.#ctor
+  name: VxBinding()
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding__ctor
+  commentId: M:Ventuz.Extension.VxBinding.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxBinding.VxBinding()
+  fullName.vb: Ventuz.Extension.VxBinding.New()
+  nameWithType: VxBinding.VxBinding()
+  nameWithType.vb: VxBinding.New()
+- uid: Ventuz.Extension.VxBinding.#ctor*
+  name: VxBinding
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding__ctor_
+  commentId: Overload:Ventuz.Extension.VxBinding.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxBinding.VxBinding
+  fullName.vb: Ventuz.Extension.VxBinding.New
+  nameWithType: VxBinding.VxBinding
+  nameWithType.vb: VxBinding.New
+- uid: Ventuz.Extension.VxBinding.SourceMember
+  name: SourceMember
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_SourceMember
+  commentId: P:Ventuz.Extension.VxBinding.SourceMember
+  fullName: Ventuz.Extension.VxBinding.SourceMember
+  nameWithType: VxBinding.SourceMember
+- uid: Ventuz.Extension.VxBinding.SourceMember*
+  name: SourceMember
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_SourceMember_
+  commentId: Overload:Ventuz.Extension.VxBinding.SourceMember
+  fullName: Ventuz.Extension.VxBinding.SourceMember
+  nameWithType: VxBinding.SourceMember
+- uid: Ventuz.Extension.VxBinding.TargetMember
+  name: TargetMember
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_TargetMember
+  commentId: P:Ventuz.Extension.VxBinding.TargetMember
+  fullName: Ventuz.Extension.VxBinding.TargetMember
+  nameWithType: VxBinding.TargetMember
+- uid: Ventuz.Extension.VxBinding.TargetMember*
+  name: TargetMember
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_TargetMember_
+  commentId: Overload:Ventuz.Extension.VxBinding.TargetMember
+  fullName: Ventuz.Extension.VxBinding.TargetMember
+  nameWithType: VxBinding.TargetMember
+- uid: Ventuz.Extension.VxBinding.Unbind
+  name: Unbind()
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_Unbind
+  commentId: M:Ventuz.Extension.VxBinding.Unbind
+  fullName: Ventuz.Extension.VxBinding.Unbind()
+  nameWithType: VxBinding.Unbind()
+- uid: Ventuz.Extension.VxBinding.Unbind*
+  name: Unbind
+  href: api/Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_Unbind_
+  commentId: Overload:Ventuz.Extension.VxBinding.Unbind
+  fullName: Ventuz.Extension.VxBinding.Unbind
+  nameWithType: VxBinding.Unbind
 - uid: Ventuz.Extension.VxCategoriesAttribute
   name: VxCategoriesAttribute
   href: api/Ventuz.Extension.VxCategoriesAttribute.html
@@ -4100,6 +4283,21 @@ references:
   commentId: Overload:Ventuz.Extension.VxConvenienceExt.Add
   fullName: Ventuz.Extension.VxConvenienceExt.Add
   nameWithType: VxConvenienceExt.Add
+- uid: Ventuz.Extension.VxConvenienceExt.CreateDataObject(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)
+  name: CreateDataObject(VxSceneFragment, Func<Stream>, string)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateDataObject_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__System_String_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.CreateDataObject(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)
+  name.vb: CreateDataObject(VxSceneFragment, Func(Of Stream), String)
+  fullName: Ventuz.Extension.VxConvenienceExt.CreateDataObject(Ventuz.Extension.VxSceneFragment, System.Func<System.IO.Stream>, string)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.CreateDataObject(Ventuz.Extension.VxSceneFragment, System.Func(Of System.IO.Stream), String)
+  nameWithType: VxConvenienceExt.CreateDataObject(VxSceneFragment, Func<Stream>, string)
+  nameWithType.vb: VxConvenienceExt.CreateDataObject(VxSceneFragment, Func(Of Stream), String)
+- uid: Ventuz.Extension.VxConvenienceExt.CreateDataObject*
+  name: CreateDataObject
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateDataObject_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.CreateDataObject
+  fullName: Ventuz.Extension.VxConvenienceExt.CreateDataObject
+  nameWithType: VxConvenienceExt.CreateDataObject
 - uid: Ventuz.Extension.VxConvenienceExt.CreateNode*
   name: CreateNode
   href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_CreateNode_
@@ -4169,6 +4367,57 @@ references:
   fullName.vb: Ventuz.Extension.VxConvenienceExt.CreateNode(Of T)(Ventuz.Extension.IVxContainer, String)
   nameWithType: VxConvenienceExt.CreateNode<T>(IVxContainer, string)
   nameWithType.vb: VxConvenienceExt.CreateNode(Of T)(IVxContainer, String)
+- uid: Ventuz.Extension.VxConvenienceExt.DoDragDrop(Ventuz.Extension.VxSceneFragment,System.Windows.Forms.Control,System.Func{System.IO.Stream},System.String)
+  name: DoDragDrop(VxSceneFragment, Control, Func<Stream>, string)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_DoDragDrop_Ventuz_Extension_VxSceneFragment_System_Windows_Forms_Control_System_Func_System_IO_Stream__System_String_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.DoDragDrop(Ventuz.Extension.VxSceneFragment,System.Windows.Forms.Control,System.Func{System.IO.Stream},System.String)
+  name.vb: DoDragDrop(VxSceneFragment, Control, Func(Of Stream), String)
+  fullName: Ventuz.Extension.VxConvenienceExt.DoDragDrop(Ventuz.Extension.VxSceneFragment, System.Windows.Forms.Control, System.Func<System.IO.Stream>, string)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.DoDragDrop(Ventuz.Extension.VxSceneFragment, System.Windows.Forms.Control, System.Func(Of System.IO.Stream), String)
+  nameWithType: VxConvenienceExt.DoDragDrop(VxSceneFragment, Control, Func<Stream>, string)
+  nameWithType.vb: VxConvenienceExt.DoDragDrop(VxSceneFragment, Control, Func(Of Stream), String)
+- uid: Ventuz.Extension.VxConvenienceExt.DoDragDrop*
+  name: DoDragDrop
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_DoDragDrop_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.DoDragDrop
+  fullName: Ventuz.Extension.VxConvenienceExt.DoDragDrop
+  nameWithType: VxConvenienceExt.DoDragDrop
+- uid: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode,System.IO.Stream,Ventuz.Extension.VxExportFlags)
+  name: Export(VxNode, Stream, VxExportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_System_IO_Stream_Ventuz_Extension_VxExportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode,System.IO.Stream,Ventuz.Extension.VxExportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode, System.IO.Stream, Ventuz.Extension.VxExportFlags)
+  nameWithType: VxConvenienceExt.Export(VxNode, Stream, VxExportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode,Ventuz.Extension.VxExportFlags)
+  name: Export(VxNode, VxExportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_Ventuz_Extension_VxExportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode,Ventuz.Extension.VxExportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode, Ventuz.Extension.VxExportFlags)
+  nameWithType: VxConvenienceExt.Export(VxNode, VxExportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[],System.IO.Stream,Ventuz.Extension.VxExportFlags)
+  name: Export(VxNode[], Stream, VxExportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode___System_IO_Stream_Ventuz_Extension_VxExportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[],System.IO.Stream,Ventuz.Extension.VxExportFlags)
+  name.vb: Export(VxNode(), Stream, VxExportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[], System.IO.Stream, Ventuz.Extension.VxExportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode(), System.IO.Stream, Ventuz.Extension.VxExportFlags)
+  nameWithType: VxConvenienceExt.Export(VxNode[], Stream, VxExportFlags)
+  nameWithType.vb: VxConvenienceExt.Export(VxNode(), Stream, VxExportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[],Ventuz.Extension.VxExportFlags)
+  name: Export(VxNode[], VxExportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode___Ventuz_Extension_VxExportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[],Ventuz.Extension.VxExportFlags)
+  name.vb: Export(VxNode(), VxExportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[], Ventuz.Extension.VxExportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode(), Ventuz.Extension.VxExportFlags)
+  nameWithType: VxConvenienceExt.Export(VxNode[], VxExportFlags)
+  nameWithType.vb: VxConvenienceExt.Export(VxNode(), VxExportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.Export*
+  name: Export
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.Export
+  fullName: Ventuz.Extension.VxConvenienceExt.Export
+  nameWithType: VxConvenienceExt.Export
 - uid: Ventuz.Extension.VxConvenienceExt.GetContainer(Ventuz.Extension.VxNode)
   name: GetContainer(VxNode)
   href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetContainer_Ventuz_Extension_VxNode_
@@ -4370,6 +4619,96 @@ references:
   fullName.vb: Ventuz.Extension.VxConvenienceExt.GetService(Of T)(Ventuz.Extension.IVxApiManagement)
   nameWithType: VxConvenienceExt.GetService<T>(IVxApiManagement)
   nameWithType.vb: VxConvenienceExt.GetService(Of T)(IVxApiManagement)
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToContainer(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name: ImportToContainer(VxSceneFragment, IVxContainer, Func<Stream>, VxImportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToContainer_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.ImportToContainer(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name.vb: ImportToContainer(VxSceneFragment, IVxContainer, Func(Of Stream), VxImportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToContainer(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer, System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.ImportToContainer(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer, System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags)
+  nameWithType: VxConvenienceExt.ImportToContainer(VxSceneFragment, IVxContainer, Func<Stream>, VxImportFlags)
+  nameWithType.vb: VxConvenienceExt.ImportToContainer(VxSceneFragment, IVxContainer, Func(Of Stream), VxImportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToContainer*
+  name: ImportToContainer
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToContainer_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.ImportToContainer
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToContainer
+  nameWithType: VxConvenienceExt.ImportToContainer
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToContainers(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name: ImportToContainers(VxSceneFragment, IVxContainer[], Func<Stream>, VxImportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToContainers_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer___System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.ImportToContainers(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name.vb: ImportToContainers(VxSceneFragment, IVxContainer(), Func(Of Stream), VxImportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToContainers(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer[], System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.ImportToContainers(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer(), System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags)
+  nameWithType: VxConvenienceExt.ImportToContainers(VxSceneFragment, IVxContainer[], Func<Stream>, VxImportFlags)
+  nameWithType.vb: VxConvenienceExt.ImportToContainers(VxSceneFragment, IVxContainer(), Func(Of Stream), VxImportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToContainers*
+  name: ImportToContainers
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToContainers_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.ImportToContainers
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToContainers
+  nameWithType: VxConvenienceExt.ImportToContainers
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name: ImportToInterfaceContainer(VxSceneFragment, IVxContainer, Func<Stream>, VxImportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainer_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name.vb: ImportToInterfaceContainer(VxSceneFragment, IVxContainer, Func(Of Stream), VxImportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer, System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer, System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags)
+  nameWithType: VxConvenienceExt.ImportToInterfaceContainer(VxSceneFragment, IVxContainer, Func<Stream>, VxImportFlags)
+  nameWithType.vb: VxConvenienceExt.ImportToInterfaceContainer(VxSceneFragment, IVxContainer, Func(Of Stream), VxImportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer*
+  name: ImportToInterfaceContainer
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainer_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer
+  nameWithType: VxConvenienceExt.ImportToInterfaceContainer
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name: ImportToInterfaceContainers(VxSceneFragment, IVxContainer[], Func<Stream>, VxImportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainers_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer___System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name.vb: ImportToInterfaceContainers(VxSceneFragment, IVxContainer(), Func(Of Stream), VxImportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer[], System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.IVxContainer(), System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags)
+  nameWithType: VxConvenienceExt.ImportToInterfaceContainers(VxSceneFragment, IVxContainer[], Func<Stream>, VxImportFlags)
+  nameWithType.vb: VxConvenienceExt.ImportToInterfaceContainers(VxSceneFragment, IVxContainer(), Func(Of Stream), VxImportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers*
+  name: ImportToInterfaceContainers
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainers_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers
+  nameWithType: VxConvenienceExt.ImportToInterfaceContainers
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToNode(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.VxNode,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name: ImportToNode(VxSceneFragment, VxNode, Func<Stream>, VxImportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToNode_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_VxNode_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.ImportToNode(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.VxNode,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name.vb: ImportToNode(VxSceneFragment, VxNode, Func(Of Stream), VxImportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToNode(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.VxNode, System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.ImportToNode(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.VxNode, System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags)
+  nameWithType: VxConvenienceExt.ImportToNode(VxSceneFragment, VxNode, Func<Stream>, VxImportFlags)
+  nameWithType.vb: VxConvenienceExt.ImportToNode(VxSceneFragment, VxNode, Func(Of Stream), VxImportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToNode*
+  name: ImportToNode
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToNode_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.ImportToNode
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToNode
+  nameWithType: VxConvenienceExt.ImportToNode
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToNodes(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.VxNode[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name: ImportToNodes(VxSceneFragment, VxNode[], Func<Stream>, VxImportFlags)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToNodes_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_VxNode___System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.ImportToNodes(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.VxNode[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)
+  name.vb: ImportToNodes(VxSceneFragment, VxNode(), Func(Of Stream), VxImportFlags)
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToNodes(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.VxNode[], System.Func<System.IO.Stream>, Ventuz.Extension.VxImportFlags)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.ImportToNodes(Ventuz.Extension.VxSceneFragment, Ventuz.Extension.VxNode(), System.Func(Of System.IO.Stream), Ventuz.Extension.VxImportFlags)
+  nameWithType: VxConvenienceExt.ImportToNodes(VxSceneFragment, VxNode[], Func<Stream>, VxImportFlags)
+  nameWithType.vb: VxConvenienceExt.ImportToNodes(VxSceneFragment, VxNode(), Func(Of Stream), VxImportFlags)
+- uid: Ventuz.Extension.VxConvenienceExt.ImportToNodes*
+  name: ImportToNodes
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ImportToNodes_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.ImportToNodes
+  fullName: Ventuz.Extension.VxConvenienceExt.ImportToNodes
+  nameWithType: VxConvenienceExt.ImportToNodes
 - uid: Ventuz.Extension.VxConvenienceExt.Insert(Ventuz.Extension.VxOutputList,System.Int32,System.String)
   name: Insert(VxOutputList, int, string)
   href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Insert_Ventuz_Extension_VxOutputList_System_Int32_System_String_
@@ -4385,6 +4724,18 @@ references:
   commentId: Overload:Ventuz.Extension.VxConvenienceExt.Insert
   fullName: Ventuz.Extension.VxConvenienceExt.Insert
   nameWithType: VxConvenienceExt.Insert
+- uid: Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer(Ventuz.Extension.IVxContainer)
+  name: IsInterfaceContainer(IVxContainer)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_IsInterfaceContainer_Ventuz_Extension_IVxContainer_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer(Ventuz.Extension.IVxContainer)
+  fullName: Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer(Ventuz.Extension.IVxContainer)
+  nameWithType: VxConvenienceExt.IsInterfaceContainer(IVxContainer)
+- uid: Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer*
+  name: IsInterfaceContainer
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_IsInterfaceContainer_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer
+  fullName: Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer
+  nameWithType: VxConvenienceExt.IsInterfaceContainer
 - uid: Ventuz.Extension.VxConvenienceExt.LinkAfter(Ventuz.Extension.VxHierarchyBaseNode,Ventuz.Extension.VxHierarchyBaseNode)
   name: LinkAfter(VxHierarchyBaseNode, VxHierarchyBaseNode)
   href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_LinkAfter_Ventuz_Extension_VxHierarchyBaseNode_Ventuz_Extension_VxHierarchyBaseNode_
@@ -4469,6 +4820,21 @@ references:
   commentId: Overload:Ventuz.Extension.VxConvenienceExt.SetName
   fullName: Ventuz.Extension.VxConvenienceExt.SetName
   nameWithType: VxConvenienceExt.SetName
+- uid: Ventuz.Extension.VxConvenienceExt.ToClipboard(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)
+  name: ToClipboard(VxSceneFragment, Func<Stream>, string)
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ToClipboard_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__System_String_
+  commentId: M:Ventuz.Extension.VxConvenienceExt.ToClipboard(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)
+  name.vb: ToClipboard(VxSceneFragment, Func(Of Stream), String)
+  fullName: Ventuz.Extension.VxConvenienceExt.ToClipboard(Ventuz.Extension.VxSceneFragment, System.Func<System.IO.Stream>, string)
+  fullName.vb: Ventuz.Extension.VxConvenienceExt.ToClipboard(Ventuz.Extension.VxSceneFragment, System.Func(Of System.IO.Stream), String)
+  nameWithType: VxConvenienceExt.ToClipboard(VxSceneFragment, Func<Stream>, string)
+  nameWithType.vb: VxConvenienceExt.ToClipboard(VxSceneFragment, Func(Of Stream), String)
+- uid: Ventuz.Extension.VxConvenienceExt.ToClipboard*
+  name: ToClipboard
+  href: api/Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_ToClipboard_
+  commentId: Overload:Ventuz.Extension.VxConvenienceExt.ToClipboard
+  fullName: Ventuz.Extension.VxConvenienceExt.ToClipboard
+  nameWithType: VxConvenienceExt.ToClipboard
 - uid: Ventuz.Extension.VxDataObjectHandler
   name: VxDataObjectHandler
   href: api/Ventuz.Extension.VxDataObjectHandler.html
@@ -5383,6 +5749,54 @@ references:
   commentId: Overload:Ventuz.Extension.VxEvent.Fire
   fullName: Ventuz.Extension.VxEvent.Fire
   nameWithType: VxEvent.Fire
+- uid: Ventuz.Extension.VxEventBinding
+  name: VxEventBinding
+  href: api/Ventuz.Extension.VxEventBinding.html
+  commentId: T:Ventuz.Extension.VxEventBinding
+  fullName: Ventuz.Extension.VxEventBinding
+  nameWithType: VxEventBinding
+- uid: Ventuz.Extension.VxEventBinding.#ctor
+  name: VxEventBinding()
+  href: api/Ventuz.Extension.VxEventBinding.html#Ventuz_Extension_VxEventBinding__ctor
+  commentId: M:Ventuz.Extension.VxEventBinding.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxEventBinding.VxEventBinding()
+  fullName.vb: Ventuz.Extension.VxEventBinding.New()
+  nameWithType: VxEventBinding.VxEventBinding()
+  nameWithType.vb: VxEventBinding.New()
+- uid: Ventuz.Extension.VxEventBinding.#ctor*
+  name: VxEventBinding
+  href: api/Ventuz.Extension.VxEventBinding.html#Ventuz_Extension_VxEventBinding__ctor_
+  commentId: Overload:Ventuz.Extension.VxEventBinding.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxEventBinding.VxEventBinding
+  fullName.vb: Ventuz.Extension.VxEventBinding.New
+  nameWithType: VxEventBinding.VxEventBinding
+  nameWithType.vb: VxEventBinding.New
+- uid: Ventuz.Extension.VxEventBinding.Source
+  name: Source
+  href: api/Ventuz.Extension.VxEventBinding.html#Ventuz_Extension_VxEventBinding_Source
+  commentId: P:Ventuz.Extension.VxEventBinding.Source
+  fullName: Ventuz.Extension.VxEventBinding.Source
+  nameWithType: VxEventBinding.Source
+- uid: Ventuz.Extension.VxEventBinding.Source*
+  name: Source
+  href: api/Ventuz.Extension.VxEventBinding.html#Ventuz_Extension_VxEventBinding_Source_
+  commentId: Overload:Ventuz.Extension.VxEventBinding.Source
+  fullName: Ventuz.Extension.VxEventBinding.Source
+  nameWithType: VxEventBinding.Source
+- uid: Ventuz.Extension.VxEventBinding.Target
+  name: Target
+  href: api/Ventuz.Extension.VxEventBinding.html#Ventuz_Extension_VxEventBinding_Target
+  commentId: P:Ventuz.Extension.VxEventBinding.Target
+  fullName: Ventuz.Extension.VxEventBinding.Target
+  nameWithType: VxEventBinding.Target
+- uid: Ventuz.Extension.VxEventBinding.Target*
+  name: Target
+  href: api/Ventuz.Extension.VxEventBinding.html#Ventuz_Extension_VxEventBinding_Target_
+  commentId: Overload:Ventuz.Extension.VxEventBinding.Target
+  fullName: Ventuz.Extension.VxEventBinding.Target
+  nameWithType: VxEventBinding.Target
 - uid: Ventuz.Extension.VxException
   name: VxException
   href: api/Ventuz.Extension.VxException.html
@@ -5425,6 +5839,36 @@ references:
   fullName.vb: Ventuz.Extension.VxException.New
   nameWithType: VxException.VxException
   nameWithType.vb: VxException.New
+- uid: Ventuz.Extension.VxExportFlags
+  name: VxExportFlags
+  href: api/Ventuz.Extension.VxExportFlags.html
+  commentId: T:Ventuz.Extension.VxExportFlags
+  fullName: Ventuz.Extension.VxExportFlags
+  nameWithType: VxExportFlags
+- uid: Ventuz.Extension.VxExportFlags.WithAllScenes
+  name: WithAllScenes
+  href: api/Ventuz.Extension.VxExportFlags.html#Ventuz_Extension_VxExportFlags_WithAllScenes
+  commentId: F:Ventuz.Extension.VxExportFlags.WithAllScenes
+  fullName: Ventuz.Extension.VxExportFlags.WithAllScenes
+  nameWithType: VxExportFlags.WithAllScenes
+- uid: Ventuz.Extension.VxExportFlags.WithChildren
+  name: WithChildren
+  href: api/Ventuz.Extension.VxExportFlags.html#Ventuz_Extension_VxExportFlags_WithChildren
+  commentId: F:Ventuz.Extension.VxExportFlags.WithChildren
+  fullName: Ventuz.Extension.VxExportFlags.WithChildren
+  nameWithType: VxExportFlags.WithChildren
+- uid: Ventuz.Extension.VxExportFlags.WithResources
+  name: WithResources
+  href: api/Ventuz.Extension.VxExportFlags.html#Ventuz_Extension_VxExportFlags_WithResources
+  commentId: F:Ventuz.Extension.VxExportFlags.WithResources
+  fullName: Ventuz.Extension.VxExportFlags.WithResources
+  nameWithType: VxExportFlags.WithResources
+- uid: Ventuz.Extension.VxExportFlags.WithScenesFromLockedPorts
+  name: WithScenesFromLockedPorts
+  href: api/Ventuz.Extension.VxExportFlags.html#Ventuz_Extension_VxExportFlags_WithScenesFromLockedPorts
+  commentId: F:Ventuz.Extension.VxExportFlags.WithScenesFromLockedPorts
+  fullName: Ventuz.Extension.VxExportFlags.WithScenesFromLockedPorts
+  nameWithType: VxExportFlags.WithScenesFromLockedPorts
 - uid: Ventuz.Extension.VxFavoredAttribute
   name: VxFavoredAttribute
   href: api/Ventuz.Extension.VxFavoredAttribute.html
@@ -6077,6 +6521,18 @@ references:
   commentId: Overload:Ventuz.Extension.VxIconAttribute._ReplaceOnItem
   fullName: Ventuz.Extension.VxIconAttribute._ReplaceOnItem
   nameWithType: VxIconAttribute._ReplaceOnItem
+- uid: Ventuz.Extension.VxImportFlags
+  name: VxImportFlags
+  href: api/Ventuz.Extension.VxImportFlags.html
+  commentId: T:Ventuz.Extension.VxImportFlags
+  fullName: Ventuz.Extension.VxImportFlags
+  nameWithType: VxImportFlags
+- uid: Ventuz.Extension.VxImportFlags.WithResources
+  name: WithResources
+  href: api/Ventuz.Extension.VxImportFlags.html#Ventuz_Extension_VxImportFlags_WithResources
+  commentId: F:Ventuz.Extension.VxImportFlags.WithResources
+  fullName: Ventuz.Extension.VxImportFlags.WithResources
+  nameWithType: VxImportFlags.WithResources
 - uid: Ventuz.Extension.VxInitialOutputsAttribute
   name: VxInitialOutputsAttribute
   href: api/Ventuz.Extension.VxInitialOutputsAttribute.html
@@ -7796,6 +8252,54 @@ references:
   commentId: Overload:Ventuz.Extension.VxProperty.Invalidate
   fullName: Ventuz.Extension.VxProperty.Invalidate
   nameWithType: VxProperty.Invalidate
+- uid: Ventuz.Extension.VxPropertyBinding
+  name: VxPropertyBinding
+  href: api/Ventuz.Extension.VxPropertyBinding.html
+  commentId: T:Ventuz.Extension.VxPropertyBinding
+  fullName: Ventuz.Extension.VxPropertyBinding
+  nameWithType: VxPropertyBinding
+- uid: Ventuz.Extension.VxPropertyBinding.#ctor
+  name: VxPropertyBinding()
+  href: api/Ventuz.Extension.VxPropertyBinding.html#Ventuz_Extension_VxPropertyBinding__ctor
+  commentId: M:Ventuz.Extension.VxPropertyBinding.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxPropertyBinding.VxPropertyBinding()
+  fullName.vb: Ventuz.Extension.VxPropertyBinding.New()
+  nameWithType: VxPropertyBinding.VxPropertyBinding()
+  nameWithType.vb: VxPropertyBinding.New()
+- uid: Ventuz.Extension.VxPropertyBinding.#ctor*
+  name: VxPropertyBinding
+  href: api/Ventuz.Extension.VxPropertyBinding.html#Ventuz_Extension_VxPropertyBinding__ctor_
+  commentId: Overload:Ventuz.Extension.VxPropertyBinding.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxPropertyBinding.VxPropertyBinding
+  fullName.vb: Ventuz.Extension.VxPropertyBinding.New
+  nameWithType: VxPropertyBinding.VxPropertyBinding
+  nameWithType.vb: VxPropertyBinding.New
+- uid: Ventuz.Extension.VxPropertyBinding.Source
+  name: Source
+  href: api/Ventuz.Extension.VxPropertyBinding.html#Ventuz_Extension_VxPropertyBinding_Source
+  commentId: P:Ventuz.Extension.VxPropertyBinding.Source
+  fullName: Ventuz.Extension.VxPropertyBinding.Source
+  nameWithType: VxPropertyBinding.Source
+- uid: Ventuz.Extension.VxPropertyBinding.Source*
+  name: Source
+  href: api/Ventuz.Extension.VxPropertyBinding.html#Ventuz_Extension_VxPropertyBinding_Source_
+  commentId: Overload:Ventuz.Extension.VxPropertyBinding.Source
+  fullName: Ventuz.Extension.VxPropertyBinding.Source
+  nameWithType: VxPropertyBinding.Source
+- uid: Ventuz.Extension.VxPropertyBinding.Target
+  name: Target
+  href: api/Ventuz.Extension.VxPropertyBinding.html#Ventuz_Extension_VxPropertyBinding_Target
+  commentId: P:Ventuz.Extension.VxPropertyBinding.Target
+  fullName: Ventuz.Extension.VxPropertyBinding.Target
+  nameWithType: VxPropertyBinding.Target
+- uid: Ventuz.Extension.VxPropertyBinding.Target*
+  name: Target
+  href: api/Ventuz.Extension.VxPropertyBinding.html#Ventuz_Extension_VxPropertyBinding_Target_
+  commentId: Overload:Ventuz.Extension.VxPropertyBinding.Target
+  fullName: Ventuz.Extension.VxPropertyBinding.Target
+  nameWithType: VxPropertyBinding.Target
 - uid: Ventuz.Extension.VxPropertyGroup
   name: VxPropertyGroup
   href: api/Ventuz.Extension.VxPropertyGroup.html
@@ -8227,21 +8731,21 @@ references:
   commentId: Overload:Ventuz.Extension.VxScene.MainContainer
   fullName: Ventuz.Extension.VxScene.MainContainer
   nameWithType: VxScene.MainContainer
-- uid: Ventuz.Extension.VxScene.Modify(System.Action{Ventuz.Extension.VxScene},Ventuz.Extension.VxScene[])
-  name: Modify(Action<VxScene>, params VxScene[])
-  href: api/Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_Modify_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___
-  commentId: M:Ventuz.Extension.VxScene.Modify(System.Action{Ventuz.Extension.VxScene},Ventuz.Extension.VxScene[])
-  name.vb: Modify(Action(Of VxScene), ParamArray VxScene())
-  fullName: Ventuz.Extension.VxScene.Modify(System.Action<Ventuz.Extension.VxScene>, params Ventuz.Extension.VxScene[])
-  fullName.vb: Ventuz.Extension.VxScene.Modify(System.Action(Of Ventuz.Extension.VxScene), ParamArray Ventuz.Extension.VxScene())
-  nameWithType: VxScene.Modify(Action<VxScene>, params VxScene[])
-  nameWithType.vb: VxScene.Modify(Action(Of VxScene), ParamArray VxScene())
-- uid: Ventuz.Extension.VxScene.Modify*
-  name: Modify
-  href: api/Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_Modify_
-  commentId: Overload:Ventuz.Extension.VxScene.Modify
-  fullName: Ventuz.Extension.VxScene.Modify
-  nameWithType: VxScene.Modify
+- uid: Ventuz.Extension.VxScene.ModifyAsync(System.Action{Ventuz.Extension.VxScene},Ventuz.Extension.VxScene[])
+  name: ModifyAsync(Action<VxScene>, params VxScene[])
+  href: api/Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_ModifyAsync_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___
+  commentId: M:Ventuz.Extension.VxScene.ModifyAsync(System.Action{Ventuz.Extension.VxScene},Ventuz.Extension.VxScene[])
+  name.vb: ModifyAsync(Action(Of VxScene), ParamArray VxScene())
+  fullName: Ventuz.Extension.VxScene.ModifyAsync(System.Action<Ventuz.Extension.VxScene>, params Ventuz.Extension.VxScene[])
+  fullName.vb: Ventuz.Extension.VxScene.ModifyAsync(System.Action(Of Ventuz.Extension.VxScene), ParamArray Ventuz.Extension.VxScene())
+  nameWithType: VxScene.ModifyAsync(Action<VxScene>, params VxScene[])
+  nameWithType.vb: VxScene.ModifyAsync(Action(Of VxScene), ParamArray VxScene())
+- uid: Ventuz.Extension.VxScene.ModifyAsync*
+  name: ModifyAsync
+  href: api/Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_ModifyAsync_
+  commentId: Overload:Ventuz.Extension.VxScene.ModifyAsync
+  fullName: Ventuz.Extension.VxScene.ModifyAsync
+  nameWithType: VxScene.ModifyAsync
 - uid: Ventuz.Extension.VxScene.NeedSave
   name: NeedSave
   href: api/Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_NeedSave
@@ -8362,6 +8866,246 @@ references:
   commentId: F:Ventuz.Extension.VxSceneEvent.SceneRenamed
   fullName: Ventuz.Extension.VxSceneEvent.SceneRenamed
   nameWithType: VxSceneEvent.SceneRenamed
+- uid: Ventuz.Extension.VxSceneFragment
+  name: VxSceneFragment
+  href: api/Ventuz.Extension.VxSceneFragment.html
+  commentId: T:Ventuz.Extension.VxSceneFragment
+  fullName: Ventuz.Extension.VxSceneFragment
+  nameWithType: VxSceneFragment
+- uid: Ventuz.Extension.VxSceneFragment.#ctor
+  name: VxSceneFragment()
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment__ctor
+  commentId: M:Ventuz.Extension.VxSceneFragment.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxSceneFragment.VxSceneFragment()
+  fullName.vb: Ventuz.Extension.VxSceneFragment.New()
+  nameWithType: VxSceneFragment.VxSceneFragment()
+  nameWithType.vb: VxSceneFragment.New()
+- uid: Ventuz.Extension.VxSceneFragment.#ctor*
+  name: VxSceneFragment
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment__ctor_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxSceneFragment.VxSceneFragment
+  fullName.vb: Ventuz.Extension.VxSceneFragment.New
+  nameWithType: VxSceneFragment.VxSceneFragment
+  nameWithType.vb: VxSceneFragment.New
+- uid: Ventuz.Extension.VxSceneFragment.Data
+  name: Data
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data
+  commentId: P:Ventuz.Extension.VxSceneFragment.Data
+  fullName: Ventuz.Extension.VxSceneFragment.Data
+  nameWithType: VxSceneFragment.Data
+- uid: Ventuz.Extension.VxSceneFragment.Data*
+  name: Data
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.Data
+  fullName: Ventuz.Extension.VxSceneFragment.Data
+  nameWithType: VxSceneFragment.Data
+- uid: Ventuz.Extension.VxSceneFragment.Flags
+  name: Flags
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Flags
+  commentId: P:Ventuz.Extension.VxSceneFragment.Flags
+  fullName: Ventuz.Extension.VxSceneFragment.Flags
+  nameWithType: VxSceneFragment.Flags
+- uid: Ventuz.Extension.VxSceneFragment.Flags*
+  name: Flags
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Flags_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.Flags
+  fullName: Ventuz.Extension.VxSceneFragment.Flags
+  nameWithType: VxSceneFragment.Flags
+- uid: Ventuz.Extension.VxSceneFragment.GetDataStream
+  name: GetDataStream()
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_GetDataStream
+  commentId: M:Ventuz.Extension.VxSceneFragment.GetDataStream
+  fullName: Ventuz.Extension.VxSceneFragment.GetDataStream()
+  nameWithType: VxSceneFragment.GetDataStream()
+- uid: Ventuz.Extension.VxSceneFragment.GetDataStream*
+  name: GetDataStream
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_GetDataStream_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.GetDataStream
+  fullName: Ventuz.Extension.VxSceneFragment.GetDataStream
+  nameWithType: VxSceneFragment.GetDataStream
+- uid: Ventuz.Extension.VxSceneFragment.InterfaceDescription
+  name: InterfaceDescription
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_InterfaceDescription
+  commentId: P:Ventuz.Extension.VxSceneFragment.InterfaceDescription
+  fullName: Ventuz.Extension.VxSceneFragment.InterfaceDescription
+  nameWithType: VxSceneFragment.InterfaceDescription
+- uid: Ventuz.Extension.VxSceneFragment.InterfaceDescription*
+  name: InterfaceDescription
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_InterfaceDescription_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.InterfaceDescription
+  fullName: Ventuz.Extension.VxSceneFragment.InterfaceDescription
+  nameWithType: VxSceneFragment.InterfaceDescription
+- uid: Ventuz.Extension.VxSceneFragment.Metadata
+  name: Metadata
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Metadata
+  commentId: P:Ventuz.Extension.VxSceneFragment.Metadata
+  fullName: Ventuz.Extension.VxSceneFragment.Metadata
+  nameWithType: VxSceneFragment.Metadata
+- uid: Ventuz.Extension.VxSceneFragment.Metadata*
+  name: Metadata
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Metadata_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.Metadata
+  fullName: Ventuz.Extension.VxSceneFragment.Metadata
+  nameWithType: VxSceneFragment.Metadata
+- uid: Ventuz.Extension.VxSceneFragment.Tag
+  name: Tag
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Tag
+  commentId: P:Ventuz.Extension.VxSceneFragment.Tag
+  fullName: Ventuz.Extension.VxSceneFragment.Tag
+  nameWithType: VxSceneFragment.Tag
+- uid: Ventuz.Extension.VxSceneFragment.Tag*
+  name: Tag
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Tag_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.Tag
+  fullName: Ventuz.Extension.VxSceneFragment.Tag
+  nameWithType: VxSceneFragment.Tag
+- uid: Ventuz.Extension.VxSceneFragment.ToString
+  name: ToString()
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_ToString
+  commentId: M:Ventuz.Extension.VxSceneFragment.ToString
+  fullName: Ventuz.Extension.VxSceneFragment.ToString()
+  nameWithType: VxSceneFragment.ToString()
+- uid: Ventuz.Extension.VxSceneFragment.ToString*
+  name: ToString
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_ToString_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.ToString
+  fullName: Ventuz.Extension.VxSceneFragment.ToString
+  nameWithType: VxSceneFragment.ToString
+- uid: Ventuz.Extension.VxSceneFragment.Type
+  name: Type
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Type
+  commentId: P:Ventuz.Extension.VxSceneFragment.Type
+  fullName: Ventuz.Extension.VxSceneFragment.Type
+  nameWithType: VxSceneFragment.Type
+- uid: Ventuz.Extension.VxSceneFragment.Type*
+  name: Type
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Type_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.Type
+  fullName: Ventuz.Extension.VxSceneFragment.Type
+  nameWithType: VxSceneFragment.Type
+- uid: Ventuz.Extension.VxSceneFragment.Valid
+  name: Valid
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Valid
+  commentId: P:Ventuz.Extension.VxSceneFragment.Valid
+  fullName: Ventuz.Extension.VxSceneFragment.Valid
+  nameWithType: VxSceneFragment.Valid
+- uid: Ventuz.Extension.VxSceneFragment.Valid*
+  name: Valid
+  href: api/Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Valid_
+  commentId: Overload:Ventuz.Extension.VxSceneFragment.Valid
+  fullName: Ventuz.Extension.VxSceneFragment.Valid
+  nameWithType: VxSceneFragment.Valid
+- uid: Ventuz.Extension.VxSceneFragmentFlags
+  name: VxSceneFragmentFlags
+  href: api/Ventuz.Extension.VxSceneFragmentFlags.html
+  commentId: T:Ventuz.Extension.VxSceneFragmentFlags
+  fullName: Ventuz.Extension.VxSceneFragmentFlags
+  nameWithType: VxSceneFragmentFlags
+- uid: Ventuz.Extension.VxSceneFragmentFlags.CanAsParent
+  name: CanAsParent
+  href: api/Ventuz.Extension.VxSceneFragmentFlags.html#Ventuz_Extension_VxSceneFragmentFlags_CanAsParent
+  commentId: F:Ventuz.Extension.VxSceneFragmentFlags.CanAsParent
+  fullName: Ventuz.Extension.VxSceneFragmentFlags.CanAsParent
+  nameWithType: VxSceneFragmentFlags.CanAsParent
+- uid: Ventuz.Extension.VxSceneFragmentFlags.Compositions
+  name: Compositions
+  href: api/Ventuz.Extension.VxSceneFragmentFlags.html#Ventuz_Extension_VxSceneFragmentFlags_Compositions
+  commentId: F:Ventuz.Extension.VxSceneFragmentFlags.Compositions
+  fullName: Ventuz.Extension.VxSceneFragmentFlags.Compositions
+  nameWithType: VxSceneFragmentFlags.Compositions
+- uid: Ventuz.Extension.VxSceneFragmentFlags.HasInterface
+  name: HasInterface
+  href: api/Ventuz.Extension.VxSceneFragmentFlags.html#Ventuz_Extension_VxSceneFragmentFlags_HasInterface
+  commentId: F:Ventuz.Extension.VxSceneFragmentFlags.HasInterface
+  fullName: Ventuz.Extension.VxSceneFragmentFlags.HasInterface
+  nameWithType: VxSceneFragmentFlags.HasInterface
+- uid: Ventuz.Extension.VxSceneFragmentFlags.Multiple
+  name: Multiple
+  href: api/Ventuz.Extension.VxSceneFragmentFlags.html#Ventuz_Extension_VxSceneFragmentFlags_Multiple
+  commentId: F:Ventuz.Extension.VxSceneFragmentFlags.Multiple
+  fullName: Ventuz.Extension.VxSceneFragmentFlags.Multiple
+  nameWithType: VxSceneFragmentFlags.Multiple
+- uid: Ventuz.Extension.VxSceneFragmentMetadata
+  name: VxSceneFragmentMetadata
+  href: api/Ventuz.Extension.VxSceneFragmentMetadata.html
+  commentId: T:Ventuz.Extension.VxSceneFragmentMetadata
+  fullName: Ventuz.Extension.VxSceneFragmentMetadata
+  nameWithType: VxSceneFragmentMetadata
+- uid: Ventuz.Extension.VxSceneFragmentMetadata.#ctor
+  name: VxSceneFragmentMetadata()
+  href: api/Ventuz.Extension.VxSceneFragmentMetadata.html#Ventuz_Extension_VxSceneFragmentMetadata__ctor
+  commentId: M:Ventuz.Extension.VxSceneFragmentMetadata.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxSceneFragmentMetadata.VxSceneFragmentMetadata()
+  fullName.vb: Ventuz.Extension.VxSceneFragmentMetadata.New()
+  nameWithType: VxSceneFragmentMetadata.VxSceneFragmentMetadata()
+  nameWithType.vb: VxSceneFragmentMetadata.New()
+- uid: Ventuz.Extension.VxSceneFragmentMetadata.#ctor*
+  name: VxSceneFragmentMetadata
+  href: api/Ventuz.Extension.VxSceneFragmentMetadata.html#Ventuz_Extension_VxSceneFragmentMetadata__ctor_
+  commentId: Overload:Ventuz.Extension.VxSceneFragmentMetadata.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxSceneFragmentMetadata.VxSceneFragmentMetadata
+  fullName.vb: Ventuz.Extension.VxSceneFragmentMetadata.New
+  nameWithType: VxSceneFragmentMetadata.VxSceneFragmentMetadata
+  nameWithType.vb: VxSceneFragmentMetadata.New
+- uid: Ventuz.Extension.VxSceneFragmentMetadata.Description
+  name: Description
+  href: api/Ventuz.Extension.VxSceneFragmentMetadata.html#Ventuz_Extension_VxSceneFragmentMetadata_Description
+  commentId: P:Ventuz.Extension.VxSceneFragmentMetadata.Description
+  fullName: Ventuz.Extension.VxSceneFragmentMetadata.Description
+  nameWithType: VxSceneFragmentMetadata.Description
+- uid: Ventuz.Extension.VxSceneFragmentMetadata.Description*
+  name: Description
+  href: api/Ventuz.Extension.VxSceneFragmentMetadata.html#Ventuz_Extension_VxSceneFragmentMetadata_Description_
+  commentId: Overload:Ventuz.Extension.VxSceneFragmentMetadata.Description
+  fullName: Ventuz.Extension.VxSceneFragmentMetadata.Description
+  nameWithType: VxSceneFragmentMetadata.Description
+- uid: Ventuz.Extension.VxSceneFragmentMetadata.Icon
+  name: Icon
+  href: api/Ventuz.Extension.VxSceneFragmentMetadata.html#Ventuz_Extension_VxSceneFragmentMetadata_Icon
+  commentId: P:Ventuz.Extension.VxSceneFragmentMetadata.Icon
+  fullName: Ventuz.Extension.VxSceneFragmentMetadata.Icon
+  nameWithType: VxSceneFragmentMetadata.Icon
+- uid: Ventuz.Extension.VxSceneFragmentMetadata.Icon*
+  name: Icon
+  href: api/Ventuz.Extension.VxSceneFragmentMetadata.html#Ventuz_Extension_VxSceneFragmentMetadata_Icon_
+  commentId: Overload:Ventuz.Extension.VxSceneFragmentMetadata.Icon
+  fullName: Ventuz.Extension.VxSceneFragmentMetadata.Icon
+  nameWithType: VxSceneFragmentMetadata.Icon
+- uid: Ventuz.Extension.VxSceneFragmentType
+  name: VxSceneFragmentType
+  href: api/Ventuz.Extension.VxSceneFragmentType.html
+  commentId: T:Ventuz.Extension.VxSceneFragmentType
+  fullName: Ventuz.Extension.VxSceneFragmentType
+  nameWithType: VxSceneFragmentType
+- uid: Ventuz.Extension.VxSceneFragmentType.Content
+  name: Content
+  href: api/Ventuz.Extension.VxSceneFragmentType.html#Ventuz_Extension_VxSceneFragmentType_Content
+  commentId: F:Ventuz.Extension.VxSceneFragmentType.Content
+  fullName: Ventuz.Extension.VxSceneFragmentType.Content
+  nameWithType: VxSceneFragmentType.Content
+- uid: Ventuz.Extension.VxSceneFragmentType.Empty
+  name: Empty
+  href: api/Ventuz.Extension.VxSceneFragmentType.html#Ventuz_Extension_VxSceneFragmentType_Empty
+  commentId: F:Ventuz.Extension.VxSceneFragmentType.Empty
+  fullName: Ventuz.Extension.VxSceneFragmentType.Empty
+  nameWithType: VxSceneFragmentType.Empty
+- uid: Ventuz.Extension.VxSceneFragmentType.Hierarchy
+  name: Hierarchy
+  href: api/Ventuz.Extension.VxSceneFragmentType.html#Ventuz_Extension_VxSceneFragmentType_Hierarchy
+  commentId: F:Ventuz.Extension.VxSceneFragmentType.Hierarchy
+  fullName: Ventuz.Extension.VxSceneFragmentType.Hierarchy
+  nameWithType: VxSceneFragmentType.Hierarchy
+- uid: Ventuz.Extension.VxSceneFragmentType.Layer
+  name: Layer
+  href: api/Ventuz.Extension.VxSceneFragmentType.html#Ventuz_Extension_VxSceneFragmentType_Layer
+  commentId: F:Ventuz.Extension.VxSceneFragmentType.Layer
+  fullName: Ventuz.Extension.VxSceneFragmentType.Layer
+  nameWithType: VxSceneFragmentType.Layer
 - uid: Ventuz.Extension.VxServiceBase
   name: VxServiceBase
   href: api/Ventuz.Extension.VxServiceBase.html

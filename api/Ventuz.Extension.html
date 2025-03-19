@@ -124,6 +124,11 @@ Classes
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxBinding.html">VxBinding</a></dt>
+      <dd><p>Base class of a binding between nodes</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxCategoriesAttribute.html">VxCategoriesAttribute</a></dt>
       <dd></dd>
     </dl>
@@ -204,6 +209,11 @@ Synchronous and Asynchronous method must implement the import or conversion of t
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxEvent.html">VxEvent</a></dt>
       <dd><p>Represents an Event</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxEventBinding.html">VxEventBinding</a></dt>
+      <dd><p>Represents a binding an event and a method of two different nodes on the same container level.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -421,6 +431,11 @@ Supported types are: bool, byte, sbyte, short, ushort, int, uint, long, ulong, f
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxPropertyBinding.html">VxPropertyBinding</a></dt>
+      <dd><p>Represents a binding between properties of two different nodes on the same container level.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxPropertyGroup.html">VxPropertyGroup</a></dt>
       <dd></dd>
     </dl>
@@ -444,6 +459,17 @@ Supported types are: bool, byte, sbyte, short, ushort, int, uint, long, ulong, f
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxSceneElement.html">VxSceneElement</a></dt>
       <dd><p>A <a class="xref" href="Ventuz.Extension.VxSceneElement.html">VxSceneElement</a> is the base class for all elements of a scene (nodes, ports, properties, etc)</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxSceneFragmentMetadata.html">VxSceneFragmentMetadata</a></dt>
+      <dd><p>This class contains optional meta data for a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a>
+Only Designer can provide metadata if a scene fragment is created.
+In Runtime no metadata are available</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -718,7 +744,7 @@ Log message can provide a sender that helps to navigate to if the use clicks on 
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.IVxApiSceneBuilder.html">IVxApiSceneBuilder</a></dt>
       <dd><p>SceneBuilder API. Scene elements accessed by this API must be owned by a scene in Idle State.
-Usw the <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_Modify_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___">Modify(Action&lt;VxScene&gt;, params VxScene[])</a> method to schedule modifications not only to the right thread but also ensure the scene(s) to be in right state.
+Usw the <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_ModifyAsync_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___">ModifyAsync(Action&lt;VxScene&gt;, params VxScene[])</a> method to schedule modifications not only to the right thread but also ensure the scene(s) to be in right state.
 <br>See also <a href="../guide/vx_how_to_develop.html#threading">../guide/vx_how_to_develop.html#threading</a></p>
 </dd>
     </dl>
@@ -821,6 +847,16 @@ Enums
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxExportFlags.html">VxExportFlags</a></dt>
+      <dd><p>Options to control the export of a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxImportFlags.html">VxImportFlags</a></dt>
+      <dd><p>Options to control the import of a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxMemberStatus.html">VxMemberStatus</a></dt>
       <dd><p>The <a class="xref" href="Ventuz.Extension.VxMemberStatus.html">VxMemberStatus</a> gives technical information about a member. Members are found at nodes and property groups.</p>
 </dd>
@@ -837,6 +873,16 @@ Enums
     <dl class="jumplist">
       <dt><a class="xref" href="Ventuz.Extension.VxSceneEvent.html">VxSceneEvent</a></dt>
       <dd><p>Scene event type used in <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSceneEvent_Ventuz_Extension_VxScene_Ventuz_Extension_VxSceneEvent_">OnSceneEvent(VxScene, VxSceneEvent)</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxSceneFragmentFlags.html">VxSceneFragmentFlags</a></dt>
+      <dd><p>Describes flags describing the content of a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Ventuz.Extension.VxSceneFragmentType.html">VxSceneFragmentType</a></dt>
+      <dd><p>Describes the type of a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></p>
 </dd>
     </dl>
     <dl class="jumplist">

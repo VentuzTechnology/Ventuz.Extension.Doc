@@ -190,6 +190,52 @@ Class VxConvenienceExt
 
 
 
+  <a id="Ventuz_Extension_VxConvenienceExt_CreateDataObject_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateDataObject*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_CreateDataObject_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateDataObject(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)">
+  CreateDataObject(VxSceneFragment, Func&lt;Stream&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an OLE data object (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comtypes.idataobject">IDataObject</a>) to be used for drag'n'drop our clipboard operations.
+Designer can handle such data object. They are of the same type as Repository Items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDataObject CreateDataObject(this VxSceneFragment fragment, Func&lt;Stream&gt; getStream = null, string name = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to create an IDataObject from</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional name of the fragment</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comtypes.idataobject">IDataObject</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.comtypes.idataobject">IDataObject</a> containing the Fragment</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ventuz_Extension_VxConvenienceExt_CreateNodeAfter_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeAfter*"></a>
 
   <h3 id="Ventuz_Extension_VxConvenienceExt_CreateNodeAfter__1_Ventuz_Extension_IVxContainer_Ventuz_Extension_VxHierarchyBaseNode_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.CreateNodeAfter``1(Ventuz.Extension.IVxContainer,Ventuz.Extension.VxHierarchyBaseNode,System.String)">
@@ -403,6 +449,204 @@ Class VxConvenienceExt
     <dt><code>T</code></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_DoDragDrop_" data-uid="Ventuz.Extension.VxConvenienceExt.DoDragDrop*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_DoDragDrop_Ventuz_Extension_VxSceneFragment_System_Windows_Forms_Control_System_Func_System_IO_Stream__System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.DoDragDrop(Ventuz.Extension.VxSceneFragment,System.Windows.Forms.Control,System.Func{System.IO.Stream},System.String)">
+  DoDragDrop(VxSceneFragment, Control, Func&lt;Stream&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a drag'n'drop operation with a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a>. Designer can handle such operation in Layer, Hierarchy and Content Editor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDragDrop(this VxSceneFragment fragment, Control control, Func&lt;Stream&gt; getStream = null, string name = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to create start a drag'n'drop operation from</p>
+</dd>
+    <dt><code>control</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.control">Control</a></dt>
+    <dd><p>WinForms Control to initiate the drag'n'drop operation</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional name of the fragment</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_Export_" data-uid="Ventuz.Extension.VxConvenienceExt.Export*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_System_IO_Stream_Ventuz_Extension_VxExportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode,System.IO.Stream,Ventuz.Extension.VxExportFlags)">
+  Export(VxNode, Stream, VxExportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VxSceneFragment Export(this VxNode vxNode, Stream stream, VxExportFlags flags = VxExportFlags.WithChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxNode</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxExportFlags.html">VxExportFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_Export_" data-uid="Ventuz.Extension.VxConvenienceExt.Export*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_Ventuz_Extension_VxExportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode,Ventuz.Extension.VxExportFlags)">
+  Export(VxNode, VxExportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VxSceneFragment Export(this VxNode vxNode, VxExportFlags flags = VxExportFlags.WithChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxNode</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxExportFlags.html">VxExportFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_Export_" data-uid="Ventuz.Extension.VxConvenienceExt.Export*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode___System_IO_Stream_Ventuz_Extension_VxExportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[],System.IO.Stream,Ventuz.Extension.VxExportFlags)">
+  Export(VxNode[], Stream, VxExportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VxSceneFragment Export(this VxNode[] vxNodes, Stream stream, VxExportFlags flags = VxExportFlags.WithChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxNodes</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>[]</dt>
+    <dd></dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxExportFlags.html">VxExportFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_Export_" data-uid="Ventuz.Extension.VxConvenienceExt.Export*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode___Ventuz_Extension_VxExportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.Export(Ventuz.Extension.VxNode[],Ventuz.Extension.VxExportFlags)">
+  Export(VxNode[], VxExportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VxSceneFragment Export(this VxNode[] vxNodes, VxExportFlags flags = VxExportFlags.WithChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vxNodes</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>[]</dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxExportFlags.html">VxExportFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 
@@ -980,6 +1224,262 @@ Class VxConvenienceExt
 
 
 
+  <a id="Ventuz_Extension_VxConvenienceExt_ImportToContainer_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToContainer*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_ImportToContainer_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToContainer(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)">
+  ImportToContainer(VxSceneFragment, IVxContainer, Func&lt;Stream&gt;, VxImportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a> into a container.
+If the imported fragment contains any Hierarchy Nodes and the target container is a Hierarchy Container the imported nodes are linked at the end of the root node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ImportToContainer(this VxSceneFragment fragment, IVxContainer target, Func&lt;Stream&gt; getStream = null, VxImportFlags flags = VxImportFlags.WithResources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to import</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd><p>Target container to import the fragment.</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxImportFlags.html">VxImportFlags</a></dt>
+    <dd><p>Flags for the import. Default <a class="xref" href="Ventuz.Extension.VxImportFlags.html#Ventuz_Extension_VxImportFlags_WithResources">WithResources</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_ImportToContainers_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToContainers*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_ImportToContainers_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer___System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToContainers(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)">
+  ImportToContainers(VxSceneFragment, IVxContainer[], Func&lt;Stream&gt;, VxImportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a> into multiple containers.
+If the imported fragment contains any Hierarchy Nodes and the target container is a Hierarchy Container the imported nodes are linked at the end of the root node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ImportToContainers(this VxSceneFragment fragment, IVxContainer[] targets, Func&lt;Stream&gt; getStream = null, VxImportFlags flags = VxImportFlags.WithResources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to import</p>
+</dd>
+    <dt><code>targets</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a>[]</dt>
+    <dd><p>Target containers to import the fragment.</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxImportFlags.html">VxImportFlags</a></dt>
+    <dd><p>Flags for the import. Default <a class="xref" href="Ventuz.Extension.VxImportFlags.html#Ventuz_Extension_VxImportFlags_WithResources">WithResources</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainer_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainer_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainer(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)">
+  ImportToInterfaceContainer(VxSceneFragment, IVxContainer, Func&lt;Stream&gt;, VxImportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a> inside an interface container and replaces the implementation of it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ImportToInterfaceContainer(this VxSceneFragment fragment, IVxContainer target, Func&lt;Stream&gt; getStream = null, VxImportFlags flags = VxImportFlags.WithResources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to import</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd><p>Target containers to import the fragment.</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxImportFlags.html">VxImportFlags</a></dt>
+    <dd><p>Flags for the import. Default <a class="xref" href="Ventuz.Extension.VxImportFlags.html#Ventuz_Extension_VxImportFlags_WithResources">WithResources</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainers_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_ImportToInterfaceContainers_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_IVxContainer___System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToInterfaceContainers(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.IVxContainer[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)">
+  ImportToInterfaceContainers(VxSceneFragment, IVxContainer[], Func&lt;Stream&gt;, VxImportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a> inside multiple interface containers and replaces the implementation of it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ImportToInterfaceContainers(this VxSceneFragment fragment, IVxContainer[] targets, Func&lt;Stream&gt; getStream = null, VxImportFlags flags = VxImportFlags.WithResources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to import</p>
+</dd>
+    <dt><code>targets</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a>[]</dt>
+    <dd><p>Target containers to import the fragment.</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxImportFlags.html">VxImportFlags</a></dt>
+    <dd><p>Flags for the import. Default <a class="xref" href="Ventuz.Extension.VxImportFlags.html#Ventuz_Extension_VxImportFlags_WithResources">WithResources</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_ImportToNode_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToNode*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_ImportToNode_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_VxNode_System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToNode(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.VxNode,System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)">
+  ImportToNode(VxSceneFragment, VxNode, Func&lt;Stream&gt;, VxImportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a> at the position of a target node.
+If the imported fragment contains any Hierarchy Nodes and the target is also a Hierarchy Node the imported nodes are linked after that target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ImportToNode(this VxSceneFragment fragment, VxNode target, Func&lt;Stream&gt; getStream = null, VxImportFlags flags = VxImportFlags.WithResources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to import</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></dt>
+    <dd><p>Target to imported the fragment to</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxImportFlags.html">VxImportFlags</a></dt>
+    <dd><p>Flags for the import. Default <a class="xref" href="Ventuz.Extension.VxImportFlags.html#Ventuz_Extension_VxImportFlags_WithResources">WithResources</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_ImportToNodes_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToNodes*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_ImportToNodes_Ventuz_Extension_VxSceneFragment_Ventuz_Extension_VxNode___System_Func_System_IO_Stream__Ventuz_Extension_VxImportFlags_" data-uid="Ventuz.Extension.VxConvenienceExt.ImportToNodes(Ventuz.Extension.VxSceneFragment,Ventuz.Extension.VxNode[],System.Func{System.IO.Stream},Ventuz.Extension.VxImportFlags)">
+  ImportToNodes(VxSceneFragment, VxNode[], Func&lt;Stream&gt;, VxImportFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a> at multiple positions of a target nodes.
+If the imported fragment contains any Hierarchy Nodes and the target is also a Hierarchy Node the imported nodes are linked after that target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ImportToNodes(this VxSceneFragment fragment, VxNode[] targets, Func&lt;Stream&gt; getStream = null, VxImportFlags flags = VxImportFlags.WithResources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to import</p>
+</dd>
+    <dt><code>targets</code> <a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a>[]</dt>
+    <dd><p>Targets to imported the fragment to</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="Ventuz.Extension.VxImportFlags.html">VxImportFlags</a></dt>
+    <dd><p>Flags for the import. Default <a class="xref" href="Ventuz.Extension.VxImportFlags.html#Ventuz_Extension_VxImportFlags_WithResources">WithResources</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ventuz_Extension_VxConvenienceExt_Insert_" data-uid="Ventuz.Extension.VxConvenienceExt.Insert*"></a>
 
   <h3 id="Ventuz_Extension_VxConvenienceExt_Insert_Ventuz_Extension_VxOutputList_System_Int32_System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.Insert(Ventuz.Extension.VxOutputList,System.Int32,System.String)">
@@ -1007,6 +1507,42 @@ Class VxConvenienceExt
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_IsInterfaceContainer_" data-uid="Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_IsInterfaceContainer_Ventuz_Extension_IVxContainer_" data-uid="Ventuz.Extension.VxConvenienceExt.IsInterfaceContainer(Ventuz.Extension.IVxContainer)">
+  IsInterfaceContainer(IVxContainer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInterfaceContainer(this IVxContainer container)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>container</code> <a class="xref" href="Ventuz.Extension.IVxContainer.html">IVxContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -1222,6 +1758,45 @@ Class VxConvenienceExt
     <dd></dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxConvenienceExt_ToClipboard_" data-uid="Ventuz.Extension.VxConvenienceExt.ToClipboard*"></a>
+
+  <h3 id="Ventuz_Extension_VxConvenienceExt_ToClipboard_Ventuz_Extension_VxSceneFragment_System_Func_System_IO_Stream__System_String_" data-uid="Ventuz.Extension.VxConvenienceExt.ToClipboard(Ventuz.Extension.VxSceneFragment,System.Func{System.IO.Stream},System.String)">
+  ToClipboard(VxSceneFragment, Func&lt;Stream&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the data of the clipboard for paste operation. Designer is able to handle such data in the clipboard and can paste it into the Layer, Hierarchy or Content Editor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToClipboard(this VxSceneFragment fragment, Func&lt;Stream&gt; getStream = null, string name = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fragment</code> <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></dt>
+    <dd><p>Fragment to be set into the clipboard</p>
+</dd>
+    <dt><code>getStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>optional function to provide a read stream for reading the fragment data. If set to null, the data must be attached to the fragment in the property <a class="xref" href="Ventuz.Extension.VxSceneFragment.html#Ventuz_Extension_VxSceneFragment_Data">Data</a></p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional name of the fragment</p>
+</dd>
   </dl>
 
 

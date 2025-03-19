@@ -309,7 +309,7 @@ Class VxScene
   
   </h3>
 
-  <div class="markdown level1 summary"><p>test if the scene is valid. An existing instance of <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a> may reference an unloaded/disposed scene. <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_IsValid">IsValid</a> return false in this case.</p>
+  <div class="markdown level1 summary"><p>Return true if the scene is valid. An existing instance of <a class="xref" href="Ventuz.Extension.VxScene.html">VxScene</a> may reference an unloaded/disposed scene. <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_IsValid">IsValid</a> return false in this case.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -838,7 +838,8 @@ Be aware that this list may contain ten thousands of nodes. Use this method with
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a>[]</dt>
-    <dd></dd>
+    <dd><p>Array of ports with that scene</p>
+</dd>
   </dl>
 
 
@@ -924,23 +925,23 @@ Scenes can be loaded multiple times. Multiple instances of scenes have the same 
 
 
 
-  <a id="Ventuz_Extension_VxScene_Modify_" data-uid="Ventuz.Extension.VxScene.Modify*"></a>
+  <a id="Ventuz_Extension_VxScene_ModifyAsync_" data-uid="Ventuz.Extension.VxScene.ModifyAsync*"></a>
 
-  <h3 id="Ventuz_Extension_VxScene_Modify_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___" data-uid="Ventuz.Extension.VxScene.Modify(System.Action{Ventuz.Extension.VxScene},Ventuz.Extension.VxScene[])">
-  Modify(Action&lt;VxScene&gt;, params VxScene[])
+  <h3 id="Ventuz_Extension_VxScene_ModifyAsync_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___" data-uid="Ventuz.Extension.VxScene.ModifyAsync(System.Action{Ventuz.Extension.VxScene},Ventuz.Extension.VxScene[])">
+  ModifyAsync(Action&lt;VxScene&gt;, params VxScene[])
   
   </h3>
 
   <div class="markdown level1 summary"><p>It is highly recommended to use this method to modify the structure of a scene.
 A single modification will result in an internal re-calculation of many internal structures so it is a better approach to combine multiple modifications together.
 Additionally the modification of a scene requires the scene in &quot;Idle&quot; state. If you like to modify a the during the validation of a scene or node, the scene state will be wrong.
-Using the <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_Modify_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___">Modify(Action&lt;VxScene&gt;, params VxScene[])</a> method will schedule the modification not only to the right thread but also ensure the scene(s) to be in right state.
+Using the <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_ModifyAsync_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___">ModifyAsync(Action&lt;VxScene&gt;, params VxScene[])</a> method will schedule the modification not only to the right thread but also ensure the scene(s) to be in right state.
 <br>See also <a href="./vx_how_to_develop.html#threading">./vx_how_to_develop.html#threading</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Modify(Action&lt;VxScene&gt; sceneModificationAction, params VxScene[] scenesToRead)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ModifyAsync(Action&lt;VxScene&gt; sceneModificationAction, params VxScene[] scenesToRead)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -956,7 +957,8 @@ Using the <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_V
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>The awaitable Task for the modification</p>
+</dd>
   </dl>
 
 

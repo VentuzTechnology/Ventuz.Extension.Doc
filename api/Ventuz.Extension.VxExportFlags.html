@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VxSceneElement </title>
+      <title>Enum VxExportFlags </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VxSceneElement ">
+      <meta name="title" content="Enum VxExportFlags ">
       
-      <meta name="description" content="A  is the base class for all elements of a scene (nodes, ports, properties, etc)">
+      <meta name="description" content="Options to control the export of a">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -84,12 +84,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ventuz.Extension.VxSceneElement">
+        <article data-uid="Ventuz.Extension.VxExportFlags">
 
 
 
-  <h1 id="Ventuz_Extension_VxSceneElement" data-uid="Ventuz.Extension.VxSceneElement" class="text-break">
-Class VxSceneElement  
+
+  <h1 id="Ventuz_Extension_VxExportFlags" data-uid="Ventuz.Extension.VxExportFlags" class="text-break">
+Enum VxExportFlags  
   </h1>
 
   <div class="facts text-secondary">
@@ -97,103 +98,43 @@ Class VxSceneElement
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A <a class="xref" href="Ventuz.Extension.VxSceneElement.html">VxSceneElement</a> is the base class for all elements of a scene (nodes, ports, properties, etc)</p>
+  <div class="markdown summary"><p>Options to control the export of a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class VxSceneElement : VxManagedObject</code></pre>
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum VxExportFlags</code></pre>
   </div>
 
 
 
 
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxBase.html">VxBase</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxManagedObject.html">VxManagedObject</a></div>
-      <div><span class="xref">VxSceneElement</span></div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Ventuz.Extension.VxBinding.html">VxBinding</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxLink.html">VxLink</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxMember.html">VxMember</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxOutput.html">VxOutput</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxOutputList.html">VxOutputList</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxPort.html">VxPort</a></div>
-    </dd>
-  </dl>
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-  </dd></dl>
 
 
 
 
 
-
-  <h2 class="section" id="constructors">Constructors
+  <h2 id="fields">Fields
 </h2>
-
-
-  <a id="Ventuz_Extension_VxSceneElement__ctor_" data-uid="Ventuz.Extension.VxSceneElement.#ctor*"></a>
-
-  <h3 id="Ventuz_Extension_VxSceneElement__ctor" data-uid="Ventuz.Extension.VxSceneElement.#ctor">
-  VxSceneElement()
+  <dl class="parameters">
+    <dt id="Ventuz_Extension_VxExportFlags_WithAllScenes"><code>WithAllScenes = 4</code></dt>
   
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VxSceneElement()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
+  <dd><p>All scenes currently hosted in any port are included in the export</p>
+</dd>
+    <dt id="Ventuz_Extension_VxExportFlags_WithChildren"><code>WithChildren = 8</code></dt>
+  
+  <dd><p>Children of Hierachy Nodes are included in the export</p>
+</dd>
+    <dt id="Ventuz_Extension_VxExportFlags_WithResources"><code>WithResources = 1</code></dt>
+  
+  <dd><p>Used resources will be included in the export</p>
+</dd>
+    <dt id="Ventuz_Extension_VxExportFlags_WithScenesFromLockedPorts"><code>WithScenesFromLockedPorts = 2</code></dt>
+  
+  <dd><p>Complete scenes currently hosted in locked ported are included in the export</p>
+</dd>
+  </dl>
 
 
 

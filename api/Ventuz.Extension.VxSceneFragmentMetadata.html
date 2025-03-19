@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VxContentBaseNode </title>
+      <title>Class VxSceneFragmentMetadata </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VxContentBaseNode ">
+      <meta name="title" content="Class VxSceneFragmentMetadata ">
       
-      <meta name="description" content="Represents a general content node No custom vx-implementation possible yet!">
+      <meta name="description" content="This class contains optional meta data for a  Only Designer can provide metadata if a scene fragment is created. In Runtime no metadata are available">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ventuz.Extension.VxContentBaseNode">
+        <article data-uid="Ventuz.Extension.VxSceneFragmentMetadata">
 
 
 
-  <h1 id="Ventuz_Extension_VxContentBaseNode" data-uid="Ventuz.Extension.VxContentBaseNode" class="text-break">
-Class VxContentBaseNode  
+  <h1 id="Ventuz_Extension_VxSceneFragmentMetadata" data-uid="Ventuz.Extension.VxSceneFragmentMetadata" class="text-break">
+Class VxSceneFragmentMetadata  
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,14 @@ Class VxContentBaseNode
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a general content node
-<br><b>No custom vx-implementation possible yet!</b></p>
+  <div class="markdown summary"><p>This class contains optional meta data for a <a class="xref" href="Ventuz.Extension.VxSceneFragment.html">VxSceneFragment</a>
+Only Designer can provide metadata if a scene fragment is created.
+In Runtime no metadata are available</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VxContentBaseNode : VxNode</code></pre>
+    <pre><code class="lang-csharp hljs">public class VxSceneFragmentMetadata</code></pre>
   </div>
 
 
@@ -113,30 +114,15 @@ Class VxContentBaseNode
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxBase.html">VxBase</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxManagedObject.html">VxManagedObject</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxSceneElement.html">VxSceneElement</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></div>
-      <div><span class="xref">VxContentBaseNode</span></div>
+      <div><span class="xref">VxSceneFragmentMetadata</span></div>
     </dd>
   </dl>
 
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Ventuz.Extension.VxContentContainer.html">VxContentContainer</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxContentNode.html">VxContentNode</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
@@ -160,46 +146,6 @@ Class VxContentBaseNode
     </div>
   </dd></dl>
 
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetEvent_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetEvent(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetMethod_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetMethod(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetProperty_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetProperty(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetPropertyGroupList__1_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetPropertyGroupList&lt;PG&gt;(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetPropertyGroup__1_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetPropertyGroup&lt;PG&gt;(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_System_IO_Stream_Ventuz_Extension_VxExportFlags_">VxConvenienceExt.Export(VxNode, Stream, VxExportFlags)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_Ventuz_Extension_VxExportFlags_">VxConvenienceExt.Export(VxNode, VxExportFlags)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetContainer_Ventuz_Extension_VxNode_">VxConvenienceExt.GetContainer(VxNode)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetID_Ventuz_Extension_VxNode_">VxConvenienceExt.GetID(VxNode)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetName_Ventuz_Extension_VxNode_">VxConvenienceExt.GetName(VxNode)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Navigate_Ventuz_Extension_VxNode_System_String_">VxConvenienceExt.Navigate(VxNode, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_SetName_Ventuz_Extension_VxNode_System_String_">VxConvenienceExt.SetName(VxNode, string)</a>
-  </div>
-  </dd></dl>
 
 
 
@@ -209,10 +155,10 @@ Class VxContentBaseNode
 </h2>
 
 
-  <a id="Ventuz_Extension_VxContentBaseNode__ctor_" data-uid="Ventuz.Extension.VxContentBaseNode.#ctor*"></a>
+  <a id="Ventuz_Extension_VxSceneFragmentMetadata__ctor_" data-uid="Ventuz.Extension.VxSceneFragmentMetadata.#ctor*"></a>
 
-  <h3 id="Ventuz_Extension_VxContentBaseNode__ctor" data-uid="Ventuz.Extension.VxContentBaseNode.#ctor">
-  VxContentBaseNode()
+  <h3 id="Ventuz_Extension_VxSceneFragmentMetadata__ctor" data-uid="Ventuz.Extension.VxSceneFragmentMetadata.#ctor">
+  VxSceneFragmentMetadata()
   
   </h3>
 
@@ -220,13 +166,81 @@ Class VxContentBaseNode
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VxContentBaseNode()</code></pre>
+    <pre><code class="lang-csharp hljs">public VxSceneFragmentMetadata()</code></pre>
   </div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ventuz_Extension_VxSceneFragmentMetadata_Description_" data-uid="Ventuz.Extension.VxSceneFragmentMetadata.Description*"></a>
+
+  <h3 id="Ventuz_Extension_VxSceneFragmentMetadata_Description" data-uid="Ventuz.Extension.VxSceneFragmentMetadata.Description">
+  Description
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Description of the scene fragment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxSceneFragmentMetadata_Icon_" data-uid="Ventuz.Extension.VxSceneFragmentMetadata.Icon*"></a>
+
+  <h3 id="Ventuz_Extension_VxSceneFragmentMetadata_Icon" data-uid="Ventuz.Extension.VxSceneFragmentMetadata.Icon">
+  Icon
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Icon of the scene fragment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image Icon { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.image">Image</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

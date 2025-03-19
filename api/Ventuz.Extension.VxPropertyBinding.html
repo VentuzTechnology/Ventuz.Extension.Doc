@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VxContentBaseNode </title>
+      <title>Class VxPropertyBinding </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VxContentBaseNode ">
+      <meta name="title" content="Class VxPropertyBinding ">
       
-      <meta name="description" content="Represents a general content node No custom vx-implementation possible yet!">
+      <meta name="description" content="Represents a binding between properties of two different nodes on the same container level.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ventuz.Extension.VxContentBaseNode">
+        <article data-uid="Ventuz.Extension.VxPropertyBinding">
 
 
 
-  <h1 id="Ventuz_Extension_VxContentBaseNode" data-uid="Ventuz.Extension.VxContentBaseNode" class="text-break">
-Class VxContentBaseNode  
+  <h1 id="Ventuz_Extension_VxPropertyBinding" data-uid="Ventuz.Extension.VxPropertyBinding" class="text-break">
+Class VxPropertyBinding  
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,12 @@ Class VxContentBaseNode
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a general content node
-<br><b>No custom vx-implementation possible yet!</b></p>
+  <div class="markdown summary"><p>Represents a binding between properties of two different nodes on the same container level.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VxContentBaseNode : VxNode</code></pre>
+    <pre><code class="lang-csharp hljs">public class VxPropertyBinding : VxBinding</code></pre>
   </div>
 
 
@@ -116,24 +115,25 @@ Class VxContentBaseNode
       <div><a class="xref" href="Ventuz.Extension.VxBase.html">VxBase</a></div>
       <div><a class="xref" href="Ventuz.Extension.VxManagedObject.html">VxManagedObject</a></div>
       <div><a class="xref" href="Ventuz.Extension.VxSceneElement.html">VxSceneElement</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxMemberOwner.html">VxMemberOwner</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxNode.html">VxNode</a></div>
-      <div><span class="xref">VxContentBaseNode</span></div>
+      <div><a class="xref" href="Ventuz.Extension.VxBinding.html">VxBinding</a></div>
+      <div><span class="xref">VxPropertyBinding</span></div>
     </dd>
   </dl>
 
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Ventuz.Extension.VxContentContainer.html">VxContentContainer</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxContentNode.html">VxContentNode</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_Unbind">VxBinding.Unbind()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_SourceMember">VxBinding.SourceMember</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxBinding.html#Ventuz_Extension_VxBinding_TargetMember">VxBinding.TargetMember</a>
+    </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
     </div>
@@ -160,46 +160,6 @@ Class VxContentBaseNode
     </div>
   </dd></dl>
 
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetEvent_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetEvent(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetMethod_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetMethod(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetProperty_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetProperty(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetPropertyGroupList__1_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetPropertyGroupList&lt;PG&gt;(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetPropertyGroup__1_Ventuz_Extension_VxMemberOwner_System_String_">VxConvenienceExt.GetPropertyGroup&lt;PG&gt;(VxMemberOwner, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_System_IO_Stream_Ventuz_Extension_VxExportFlags_">VxConvenienceExt.Export(VxNode, Stream, VxExportFlags)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Export_Ventuz_Extension_VxNode_Ventuz_Extension_VxExportFlags_">VxConvenienceExt.Export(VxNode, VxExportFlags)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetContainer_Ventuz_Extension_VxNode_">VxConvenienceExt.GetContainer(VxNode)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetID_Ventuz_Extension_VxNode_">VxConvenienceExt.GetID(VxNode)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_GetName_Ventuz_Extension_VxNode_">VxConvenienceExt.GetName(VxNode)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_Navigate_Ventuz_Extension_VxNode_System_String_">VxConvenienceExt.Navigate(VxNode, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Ventuz.Extension.VxConvenienceExt.html#Ventuz_Extension_VxConvenienceExt_SetName_Ventuz_Extension_VxNode_System_String_">VxConvenienceExt.SetName(VxNode, string)</a>
-  </div>
-  </dd></dl>
 
 
 
@@ -209,10 +169,10 @@ Class VxContentBaseNode
 </h2>
 
 
-  <a id="Ventuz_Extension_VxContentBaseNode__ctor_" data-uid="Ventuz.Extension.VxContentBaseNode.#ctor*"></a>
+  <a id="Ventuz_Extension_VxPropertyBinding__ctor_" data-uid="Ventuz.Extension.VxPropertyBinding.#ctor*"></a>
 
-  <h3 id="Ventuz_Extension_VxContentBaseNode__ctor" data-uid="Ventuz.Extension.VxContentBaseNode.#ctor">
-  VxContentBaseNode()
+  <h3 id="Ventuz_Extension_VxPropertyBinding__ctor" data-uid="Ventuz.Extension.VxPropertyBinding.#ctor">
+  VxPropertyBinding()
   
   </h3>
 
@@ -220,13 +180,81 @@ Class VxContentBaseNode
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VxContentBaseNode()</code></pre>
+    <pre><code class="lang-csharp hljs">public VxPropertyBinding()</code></pre>
   </div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ventuz_Extension_VxPropertyBinding_Source_" data-uid="Ventuz.Extension.VxPropertyBinding.Source*"></a>
+
+  <h3 id="Ventuz_Extension_VxPropertyBinding_Source" data-uid="Ventuz.Extension.VxPropertyBinding.Source">
+  Source
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the source property of this binding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VxProperty Source { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxProperty.html">VxProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxPropertyBinding_Target_" data-uid="Ventuz.Extension.VxPropertyBinding.Target*"></a>
+
+  <h3 id="Ventuz_Extension_VxPropertyBinding_Target" data-uid="Ventuz.Extension.VxPropertyBinding.Target">
+  Target
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the target property of this binding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VxProperty Target { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ventuz.Extension.VxProperty.html">VxProperty</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

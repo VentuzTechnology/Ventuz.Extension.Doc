@@ -596,7 +596,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.IVxApiSceneBuilder",
-      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiSceneBuilder.yml\" sourcestartlinenumber=\"1\">SceneBuilder API. Scene elements accessed by this API must be owned by a scene in Idle State.\nUsw the <xref href=\"Ventuz.Extension.VxScene.Modify(System.Action%7bVentuz.Extension.VxScene%7d%2cVentuz.Extension.VxScene%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref> method to schedule modifications not only to the right thread but also ensure the scene(s) to be in right state.\n<br>See also <a href=\"../guide/vx_how_to_develop.html#threading\">../guide/vx_how_to_develop.html#threading</a></p>\n"
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.IVxApiSceneBuilder.yml\" sourcestartlinenumber=\"1\">SceneBuilder API. Scene elements accessed by this API must be owned by a scene in Idle State.\nUsw the <xref href=\"Ventuz.Extension.VxScene.ModifyAsync(System.Action%7bVentuz.Extension.VxScene%7d%2cVentuz.Extension.VxScene%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref> method to schedule modifications not only to the right thread but also ensure the scene(s) to be in right state.\n<br>See also <a href=\"../guide/vx_how_to_develop.html#threading\">../guide/vx_how_to_develop.html#threading</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1020,6 +1020,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxBinding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxBinding",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxBinding.yml\" sourcestartlinenumber=\"1\">Base class of a binding between nodes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxCategoriesAttribute.yml",
       "output": {
         ".html": {
@@ -1300,6 +1314,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxEventBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxEventBinding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxEventBinding",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxEventBinding.yml\" sourcestartlinenumber=\"1\">Represents a binding an event and a method of two different nodes on the same container level.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxException.yml",
       "output": {
         ".html": {
@@ -1311,6 +1339,20 @@
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxException",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxExportFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxExportFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxExportFlags",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxExportFlags.yml\" sourcestartlinenumber=\"1\">Options to control the export of a <xref href=\"Ventuz.Extension.VxSceneFragment\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1493,6 +1535,20 @@
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxIconAttribute",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxImportFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxImportFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxImportFlags",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxImportFlags.yml\" sourcestartlinenumber=\"1\">Options to control the import of a <xref href=\"Ventuz.Extension.VxSceneFragment\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1972,6 +2028,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxPropertyBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxPropertyBinding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxPropertyBinding",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxPropertyBinding.yml\" sourcestartlinenumber=\"1\">Represents a binding between properties of two different nodes on the same container level.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxPropertyGroup.VxPreset.yml",
       "output": {
         ".html": {
@@ -2053,6 +2123,62 @@
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxSceneEvent",
       "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSceneEvent.yml\" sourcestartlinenumber=\"1\">Scene event type used in <xref href=\"Ventuz.Extension.VxUiExtension.OnSceneEvent(Ventuz.Extension.VxScene%2cVentuz.Extension.VxSceneEvent)\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneFragment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSceneFragment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSceneFragment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneFragmentFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSceneFragmentFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSceneFragmentFlags",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSceneFragmentFlags.yml\" sourcestartlinenumber=\"1\">Describes flags describing the content of a <xref href=\"Ventuz.Extension.VxSceneFragment\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneFragmentMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSceneFragmentMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSceneFragmentMetadata",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSceneFragmentMetadata.yml\" sourcestartlinenumber=\"1\">This class contains optional meta data for a <xref href=\"Ventuz.Extension.VxSceneFragment\" data-throw-if-not-resolved=\"false\"></xref>\nOnly Designer can provide metadata if a scene fragment is created.\nIn Runtime no metadata are available</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxSceneFragmentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxSceneFragmentType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxSceneFragmentType",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSceneFragmentType.yml\" sourcestartlinenumber=\"1\">Describes the type of a <xref href=\"Ventuz.Extension.VxSceneFragment\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
