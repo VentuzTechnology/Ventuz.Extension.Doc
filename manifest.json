@@ -684,20 +684,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "guide/api/Ventuz.Extension.IVxMenuEntry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ventuz.Extension.IVxMenuEntry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Ventuz.Extension.IVxMenuEntry",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.IVxTaskProgress.yml",
       "output": {
         ".html": {
@@ -1454,6 +1440,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxHelpMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxHelpMenu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxHelpMenu",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxHelpMenu.yml\" sourcestartlinenumber=\"1\">This represents the VX_API for help menus in Designer. The class should be decorated with <xref href=\"Ventuz.Extension.VxMenuAttribute\" data-throw-if-not-resolved=\"false\"></xref> and/or optionally with <xref href=\"Ventuz.Extension.VxIconAttribute\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxHelpUrlAttribute.yml",
       "output": {
         ".html": {
@@ -1832,6 +1832,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxMenuBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxMenuBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxMenuBase",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxMenuBase.yml\" sourcestartlinenumber=\"1\">Base class for all menu extensions like <xref href=\"Ventuz.Extension.VxMainMenu\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxMenuEntry.yml",
       "output": {
         ".html": {
@@ -2136,7 +2150,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxSceneFragment",
-      "Summary": null
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxSceneFragment.yml\" sourcestartlinenumber=\"1\">A <xref href=\"Ventuz.Extension.VxSceneFragment\" data-throw-if-not-resolved=\"false\"></xref> is a partially serialized scene.\nScene-fragment can be use to copy and paste parts of a scene or to store parts on disk.\nIn Designer such fragments are used for copy/paste, drag'n'drop and save/load items in repositories.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2291,6 +2305,20 @@
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxUiExtension",
       "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxUiExtension.yml\" sourcestartlinenumber=\"1\">Base class of all UI Extension classes provided by the VX-API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxUiService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxUiService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxUiService",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxUiService.yml\" sourcestartlinenumber=\"1\">This is a base class for UI services. Deriving from this class only allows to receive callbacks from the UI but do not represent any UI function directly.\nAn UI service could for example do something if a project is loaded or closed, or a new scene is loaded. <xref href=\"Ventuz.Extension.VxUiExtension.OnProjectOpened\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Ventuz.Extension.VxUiExtension.OnSceneEvent(Ventuz.Extension.VxScene%2cVentuz.Extension.VxSceneEvent)\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VxDockableWebView </title>
+      <title>Class VxHelpMenu </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VxDockableWebView ">
+      <meta name="title" content="Class VxHelpMenu ">
       
-      <meta name="description" content="This is the base class used for custom dockable a web view. It hosts a WebView2 control.">
+      <meta name="description" content="This represents the VX_API for help menus in Designer. The class should be decorated with  and/or optionally with">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ventuz.Extension.VxDockableWebView">
+        <article data-uid="Ventuz.Extension.VxHelpMenu">
 
 
 
-  <h1 id="Ventuz_Extension_VxDockableWebView" data-uid="Ventuz.Extension.VxDockableWebView" class="text-break">
-Class VxDockableWebView  
+  <h1 id="Ventuz_Extension_VxHelpMenu" data-uid="Ventuz.Extension.VxHelpMenu" class="text-break">
+Class VxHelpMenu  
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class VxDockableWebView
   <dl><dt>Assembly</dt><dd>Ventuz.Extension.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>This is the base class used for custom dockable a web view. It hosts a WebView2 control.</p>
+  <div class="markdown summary"><p>This represents the VX_API for help menus in Designer. The class should be decorated with <a class="xref" href="Ventuz.Extension.VxMenuAttribute.html">VxMenuAttribute</a> and/or optionally with <a class="xref" href="Ventuz.Extension.VxIconAttribute.html">VxIconAttribute</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VxDockableWebView : VxDockableWindow</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class VxHelpMenu : VxMenuBase</code></pre>
   </div>
 
 
@@ -115,9 +115,8 @@ Class VxDockableWebView
       <div><a class="xref" href="Ventuz.Extension.VxBase.html">VxBase</a></div>
       <div><a class="xref" href="Ventuz.Extension.VxManagedObject.html">VxManagedObject</a></div>
       <div><a class="xref" href="Ventuz.Extension.VxUiExtension.html">VxUiExtension</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxWindowBase.html">VxWindowBase</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxDockableWindow.html">VxDockableWindow</a></div>
-      <div><span class="xref">VxDockableWebView</span></div>
+      <div><a class="xref" href="Ventuz.Extension.VxMenuBase.html">VxMenuBase</a></div>
+      <div><span class="xref">VxHelpMenu</span></div>
     </dd>
   </dl>
 
@@ -127,13 +126,19 @@ Class VxDockableWebView
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Ventuz.Extension.VxDockableWindow.html#Ventuz_Extension_VxDockableWindow_OnDockSituationChanged_Ventuz_Extension_VxDockSituation_System_Boolean_">VxDockableWindow.OnDockSituationChanged(VxDockSituation, bool)</a>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnAnyEntryClicked_Ventuz_Extension_VxMenuEntry_">VxMenuBase.OnAnyEntryClicked(VxMenuEntry)</a>
     </div>
     <div>
-      <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase_OnControlCreated_System_Windows_Forms_Control_">VxWindowBase.OnControlCreated(Control)</a>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnOpening">VxMenuBase.OnOpening()</a>
     </div>
     <div>
-      <a class="xref" href="Ventuz.Extension.VxWindowBase.html#Ventuz_Extension_VxWindowBase_Control">VxWindowBase.Control</a>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClosed">VxMenuBase.OnClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClick">VxMenuBase.OnClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnEntryClicked_Ventuz_Extension_VxMenuEntry_">VxMenuBase.OnEntryClicked(VxMenuEntry)</a>
     </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSceneEvent_Ventuz_Extension_VxScene_Ventuz_Extension_VxSceneEvent_">VxUiExtension.OnSceneEvent(VxScene, VxSceneEvent)</a>
@@ -178,28 +183,42 @@ Class VxDockableWebView
 
 
 
-  <h2 id="Ventuz_Extension_VxDockableWebView_examples">Examples</h2>
-  <pre><code class="lang-csharp">[VxWindow("B5009177-636C-4698-A803-66A63444E830", "Label of MyWebView", Description = "Description of MyWebView")]
-[VxWebView("https://www.google.com")]
-public class MyWebView : VxDockableWebView
+  <h2 id="Ventuz_Extension_VxHelpMenu_examples">Examples</h2>
+  <pre><code class="lang-csharp">[VxMenu("Custom Entry")]
+public class MyHelpMenu : VxHelpMenu
 {
+    public override bool HasDropDownItems =&gt; false;
+
+    public override IEnumerable&lt;VxMenuEntry&gt; OnOpening() =&gt; Enumerable.Empty&lt;VxMenuEntry&gt;();
+
+    public override void OnClick() =&gt; MessageBox.Show("Do something!");
+}</code></pre>
+
+  <pre><code class="lang-csharp">[VxMenu("Custom Entry 2")]
+public class MyHelpMenu2 : VxHelpMenu
+{
+    public override bool HasDropDownItems =&gt; true;
+
+    public override IEnumerable&lt;VxMenuEntry&gt; OnOpening() =&gt; new VxMenuEntry[]
+        {
+            new VxMenuEntry("A") { Tag = "A" },
+            new VxMenuEntry("B") { Tag = "B" },
+        };
+
+    public override void OnAnyEntryClicked(VxMenuEntry vxEntry) =&gt; MessageBox.Show($"Entry {vxEntry.Tag} clicked");
 }</code></pre>
 
 
-  <h2 id="Ventuz_Extension_VxDockableWebView_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Deriving from this class required the <a class="xref" href="Ventuz.Extension.VxWindowAttribute.html">VxWindowAttribute</a> to assign a unique ID to the window.<br>
-This window is decorated by simple navigation controls. Use the <a class="xref" href="Ventuz.Extension.VxWebViewAttribute.html">VxWebViewAttribute</a> to configure these controls and its home page address.</p>
-</div>
 
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Ventuz_Extension_VxDockableWebView__ctor_" data-uid="Ventuz.Extension.VxDockableWebView.#ctor*"></a>
+  <a id="Ventuz_Extension_VxHelpMenu__ctor_" data-uid="Ventuz.Extension.VxHelpMenu.#ctor*"></a>
 
-  <h3 id="Ventuz_Extension_VxDockableWebView__ctor" data-uid="Ventuz.Extension.VxDockableWebView.#ctor">
-  VxDockableWebView()
+  <h3 id="Ventuz_Extension_VxHelpMenu__ctor" data-uid="Ventuz.Extension.VxHelpMenu.#ctor">
+  VxHelpMenu()
   
   </h3>
 
@@ -207,7 +226,7 @@ This window is decorated by simple navigation controls. Use the <a class="xref" 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VxDockableWebView()</code></pre>
+    <pre><code class="lang-csharp hljs">protected VxHelpMenu()</code></pre>
   </div>
 
 
@@ -226,19 +245,21 @@ This window is decorated by simple navigation controls. Use the <a class="xref" 
 </h2>
 
 
-  <a id="Ventuz_Extension_VxDockableWebView_ControlType_" data-uid="Ventuz.Extension.VxDockableWebView.ControlType*"></a>
+  <a id="Ventuz_Extension_VxHelpMenu_HasDropDownItems_" data-uid="Ventuz.Extension.VxHelpMenu.HasDropDownItems*"></a>
 
-  <h3 id="Ventuz_Extension_VxDockableWebView_ControlType" data-uid="Ventuz.Extension.VxDockableWebView.ControlType">
-  ControlType
+  <h3 id="Ventuz_Extension_VxHelpMenu_HasDropDownItems" data-uid="Ventuz.Extension.VxHelpMenu.HasDropDownItems">
+  HasDropDownItems
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the type of the hosted control</p>
+  <div class="markdown level1 summary"><p>Help menus do not always have sub-items in contrast to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.mainmenu">MainMenu</a>.
+Therefore a <a class="xref" href="Ventuz.Extension.VxHelpMenu.html">VxHelpMenu</a> can declare if it will return any items in <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnOpening">OnOpening()</a>.
+The simple query on this property will display the expandable arrow symbol on the entry if it returns true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Type ControlType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract bool HasDropDownItems { get; }</code></pre>
   </div>
 
 
@@ -247,46 +268,9 @@ This window is decorated by simple navigation controls. Use the <a class="xref" 
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Ventuz_Extension_VxDockableWebView_CoreWebView2InitializationCompleted_" data-uid="Ventuz.Extension.VxDockableWebView.CoreWebView2InitializationCompleted*"></a>
-
-  <h3 id="Ventuz_Extension_VxDockableWebView_CoreWebView2InitializationCompleted_System_Object_" data-uid="Ventuz.Extension.VxDockableWebView.CoreWebView2InitializationCompleted(System.Object)">
-  CoreWebView2InitializationCompleted(object)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Called if the actual WebView2 core component was created and initialized.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void CoreWebView2InitializationCompleted(object CoreWebView2)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>CoreWebView2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The instance of type Microsoft.Web.WebView2.CoreWebView</p>
-</dd>
-  </dl>
-
-
-
-
 
 
 

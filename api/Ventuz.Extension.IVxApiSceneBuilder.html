@@ -2628,7 +2628,7 @@ When creating links between nodes, please make sure not to create endless recurs
   <div class="markdown level1 summary"><p>It is highly recommended to use this method to modify the structure of a scene.
 A single modification will result in an internal re-calculation of many internal structures so it is a better approach to combine multiple modifications together.
 Additionally the modification of a scene requires the scene in &quot;Idle&quot; state. If you like to modify a the during the validation of a scene or node, the scene state will be wrong.
-Using the ModifyAsync(Action&lt;VxScene&gt;, VxScene[]) method will schedule the modification not only to the right thread but also ensure the scene(s) to be in right state.
+Using the <a class="xref" href="Ventuz.Extension.VxScene.html#Ventuz_Extension_VxScene_ModifyAsync_System_Action_Ventuz_Extension_VxScene__Ventuz_Extension_VxScene___">ModifyAsync(Action&lt;VxScene&gt;, params VxScene[])</a> method will schedule the modification not only to the right thread but also ensure the scene(s) to be in right state.
 <br>See also <a href="./vx_how_to_develop.html#threading">./vx_how_to_develop.html#threading</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>

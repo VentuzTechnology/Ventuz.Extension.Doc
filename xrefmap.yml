@@ -2750,60 +2750,6 @@ references:
   commentId: T:Ventuz.Extension.IVxHierarchyContainer
   fullName: Ventuz.Extension.IVxHierarchyContainer
   nameWithType: IVxHierarchyContainer
-- uid: Ventuz.Extension.IVxMenuEntry
-  name: IVxMenuEntry
-  href: api/Ventuz.Extension.IVxMenuEntry.html
-  commentId: T:Ventuz.Extension.IVxMenuEntry
-  fullName: Ventuz.Extension.IVxMenuEntry
-  nameWithType: IVxMenuEntry
-- uid: Ventuz.Extension.IVxMenuEntry.OnClick
-  name: OnClick()
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnClick
-  commentId: M:Ventuz.Extension.IVxMenuEntry.OnClick
-  fullName: Ventuz.Extension.IVxMenuEntry.OnClick()
-  nameWithType: IVxMenuEntry.OnClick()
-- uid: Ventuz.Extension.IVxMenuEntry.OnClick*
-  name: OnClick
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnClick_
-  commentId: Overload:Ventuz.Extension.IVxMenuEntry.OnClick
-  fullName: Ventuz.Extension.IVxMenuEntry.OnClick
-  nameWithType: IVxMenuEntry.OnClick
-- uid: Ventuz.Extension.IVxMenuEntry.OnClosed
-  name: OnClosed()
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnClosed
-  commentId: M:Ventuz.Extension.IVxMenuEntry.OnClosed
-  fullName: Ventuz.Extension.IVxMenuEntry.OnClosed()
-  nameWithType: IVxMenuEntry.OnClosed()
-- uid: Ventuz.Extension.IVxMenuEntry.OnClosed*
-  name: OnClosed
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnClosed_
-  commentId: Overload:Ventuz.Extension.IVxMenuEntry.OnClosed
-  fullName: Ventuz.Extension.IVxMenuEntry.OnClosed
-  nameWithType: IVxMenuEntry.OnClosed
-- uid: Ventuz.Extension.IVxMenuEntry.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
-  name: OnEntryClicked(VxMenuEntry)
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnEntryClicked_Ventuz_Extension_VxMenuEntry_
-  commentId: M:Ventuz.Extension.IVxMenuEntry.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
-  fullName: Ventuz.Extension.IVxMenuEntry.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
-  nameWithType: IVxMenuEntry.OnEntryClicked(VxMenuEntry)
-- uid: Ventuz.Extension.IVxMenuEntry.OnEntryClicked*
-  name: OnEntryClicked
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnEntryClicked_
-  commentId: Overload:Ventuz.Extension.IVxMenuEntry.OnEntryClicked
-  fullName: Ventuz.Extension.IVxMenuEntry.OnEntryClicked
-  nameWithType: IVxMenuEntry.OnEntryClicked
-- uid: Ventuz.Extension.IVxMenuEntry.OnOpening
-  name: OnOpening()
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnOpening
-  commentId: M:Ventuz.Extension.IVxMenuEntry.OnOpening
-  fullName: Ventuz.Extension.IVxMenuEntry.OnOpening()
-  nameWithType: IVxMenuEntry.OnOpening()
-- uid: Ventuz.Extension.IVxMenuEntry.OnOpening*
-  name: OnOpening
-  href: api/Ventuz.Extension.IVxMenuEntry.html#Ventuz_Extension_IVxMenuEntry_OnOpening_
-  commentId: Overload:Ventuz.Extension.IVxMenuEntry.OnOpening
-  fullName: Ventuz.Extension.IVxMenuEntry.OnOpening
-  nameWithType: IVxMenuEntry.OnOpening
 - uid: Ventuz.Extension.IVxTaskProgress
   name: IVxTaskProgress
   href: api/Ventuz.Extension.IVxTaskProgress.html
@@ -6281,6 +6227,42 @@ references:
   fullName.vb: Ventuz.Extension.VxGroupProperty(Of PG).Value
   nameWithType: VxGroupProperty<PG>.Value
   nameWithType.vb: VxGroupProperty(Of PG).Value
+- uid: Ventuz.Extension.VxHelpMenu
+  name: VxHelpMenu
+  href: api/Ventuz.Extension.VxHelpMenu.html
+  commentId: T:Ventuz.Extension.VxHelpMenu
+  fullName: Ventuz.Extension.VxHelpMenu
+  nameWithType: VxHelpMenu
+- uid: Ventuz.Extension.VxHelpMenu.#ctor
+  name: VxHelpMenu()
+  href: api/Ventuz.Extension.VxHelpMenu.html#Ventuz_Extension_VxHelpMenu__ctor
+  commentId: M:Ventuz.Extension.VxHelpMenu.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxHelpMenu.VxHelpMenu()
+  fullName.vb: Ventuz.Extension.VxHelpMenu.New()
+  nameWithType: VxHelpMenu.VxHelpMenu()
+  nameWithType.vb: VxHelpMenu.New()
+- uid: Ventuz.Extension.VxHelpMenu.#ctor*
+  name: VxHelpMenu
+  href: api/Ventuz.Extension.VxHelpMenu.html#Ventuz_Extension_VxHelpMenu__ctor_
+  commentId: Overload:Ventuz.Extension.VxHelpMenu.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxHelpMenu.VxHelpMenu
+  fullName.vb: Ventuz.Extension.VxHelpMenu.New
+  nameWithType: VxHelpMenu.VxHelpMenu
+  nameWithType.vb: VxHelpMenu.New
+- uid: Ventuz.Extension.VxHelpMenu.HasDropDownItems
+  name: HasDropDownItems
+  href: api/Ventuz.Extension.VxHelpMenu.html#Ventuz_Extension_VxHelpMenu_HasDropDownItems
+  commentId: P:Ventuz.Extension.VxHelpMenu.HasDropDownItems
+  fullName: Ventuz.Extension.VxHelpMenu.HasDropDownItems
+  nameWithType: VxHelpMenu.HasDropDownItems
+- uid: Ventuz.Extension.VxHelpMenu.HasDropDownItems*
+  name: HasDropDownItems
+  href: api/Ventuz.Extension.VxHelpMenu.html#Ventuz_Extension_VxHelpMenu_HasDropDownItems_
+  commentId: Overload:Ventuz.Extension.VxHelpMenu.HasDropDownItems
+  fullName: Ventuz.Extension.VxHelpMenu.HasDropDownItems
+  nameWithType: VxHelpMenu.HasDropDownItems
 - uid: Ventuz.Extension.VxHelpUrlAttribute
   name: VxHelpUrlAttribute
   href: api/Ventuz.Extension.VxHelpUrlAttribute.html
@@ -6983,66 +6965,6 @@ references:
   fullName.vb: Ventuz.Extension.VxMainMenu.New
   nameWithType: VxMainMenu.VxMainMenu
   nameWithType.vb: VxMainMenu.New
-- uid: Ventuz.Extension.VxMainMenu.OnAnyEntryClicked(Ventuz.Extension.VxMenuEntry)
-  name: OnAnyEntryClicked(VxMenuEntry)
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnAnyEntryClicked_Ventuz_Extension_VxMenuEntry_
-  commentId: M:Ventuz.Extension.VxMainMenu.OnAnyEntryClicked(Ventuz.Extension.VxMenuEntry)
-  fullName: Ventuz.Extension.VxMainMenu.OnAnyEntryClicked(Ventuz.Extension.VxMenuEntry)
-  nameWithType: VxMainMenu.OnAnyEntryClicked(VxMenuEntry)
-- uid: Ventuz.Extension.VxMainMenu.OnAnyEntryClicked*
-  name: OnAnyEntryClicked
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnAnyEntryClicked_
-  commentId: Overload:Ventuz.Extension.VxMainMenu.OnAnyEntryClicked
-  fullName: Ventuz.Extension.VxMainMenu.OnAnyEntryClicked
-  nameWithType: VxMainMenu.OnAnyEntryClicked
-- uid: Ventuz.Extension.VxMainMenu.OnClick
-  name: OnClick()
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnClick
-  commentId: M:Ventuz.Extension.VxMainMenu.OnClick
-  fullName: Ventuz.Extension.VxMainMenu.OnClick()
-  nameWithType: VxMainMenu.OnClick()
-- uid: Ventuz.Extension.VxMainMenu.OnClick*
-  name: OnClick
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnClick_
-  commentId: Overload:Ventuz.Extension.VxMainMenu.OnClick
-  fullName: Ventuz.Extension.VxMainMenu.OnClick
-  nameWithType: VxMainMenu.OnClick
-- uid: Ventuz.Extension.VxMainMenu.OnClosed
-  name: OnClosed()
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnClosed
-  commentId: M:Ventuz.Extension.VxMainMenu.OnClosed
-  fullName: Ventuz.Extension.VxMainMenu.OnClosed()
-  nameWithType: VxMainMenu.OnClosed()
-- uid: Ventuz.Extension.VxMainMenu.OnClosed*
-  name: OnClosed
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnClosed_
-  commentId: Overload:Ventuz.Extension.VxMainMenu.OnClosed
-  fullName: Ventuz.Extension.VxMainMenu.OnClosed
-  nameWithType: VxMainMenu.OnClosed
-- uid: Ventuz.Extension.VxMainMenu.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
-  name: OnEntryClicked(VxMenuEntry)
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnEntryClicked_Ventuz_Extension_VxMenuEntry_
-  commentId: M:Ventuz.Extension.VxMainMenu.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
-  fullName: Ventuz.Extension.VxMainMenu.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
-  nameWithType: VxMainMenu.OnEntryClicked(VxMenuEntry)
-- uid: Ventuz.Extension.VxMainMenu.OnEntryClicked*
-  name: OnEntryClicked
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnEntryClicked_
-  commentId: Overload:Ventuz.Extension.VxMainMenu.OnEntryClicked
-  fullName: Ventuz.Extension.VxMainMenu.OnEntryClicked
-  nameWithType: VxMainMenu.OnEntryClicked
-- uid: Ventuz.Extension.VxMainMenu.OnOpening
-  name: OnOpening()
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnOpening
-  commentId: M:Ventuz.Extension.VxMainMenu.OnOpening
-  fullName: Ventuz.Extension.VxMainMenu.OnOpening()
-  nameWithType: VxMainMenu.OnOpening()
-- uid: Ventuz.Extension.VxMainMenu.OnOpening*
-  name: OnOpening
-  href: api/Ventuz.Extension.VxMainMenu.html#Ventuz_Extension_VxMainMenu_OnOpening_
-  commentId: Overload:Ventuz.Extension.VxMainMenu.OnOpening
-  fullName: Ventuz.Extension.VxMainMenu.OnOpening
-  nameWithType: VxMainMenu.OnOpening
 - uid: Ventuz.Extension.VxManagedObject
   name: VxManagedObject
   href: api/Ventuz.Extension.VxManagedObject.html
@@ -7331,6 +7253,90 @@ references:
   commentId: Overload:Ventuz.Extension.VxMenuAttribute.MdCode
   fullName: Ventuz.Extension.VxMenuAttribute.MdCode
   nameWithType: VxMenuAttribute.MdCode
+- uid: Ventuz.Extension.VxMenuBase
+  name: VxMenuBase
+  href: api/Ventuz.Extension.VxMenuBase.html
+  commentId: T:Ventuz.Extension.VxMenuBase
+  fullName: Ventuz.Extension.VxMenuBase
+  nameWithType: VxMenuBase
+- uid: Ventuz.Extension.VxMenuBase.#ctor
+  name: VxMenuBase()
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase__ctor
+  commentId: M:Ventuz.Extension.VxMenuBase.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxMenuBase.VxMenuBase()
+  fullName.vb: Ventuz.Extension.VxMenuBase.New()
+  nameWithType: VxMenuBase.VxMenuBase()
+  nameWithType.vb: VxMenuBase.New()
+- uid: Ventuz.Extension.VxMenuBase.#ctor*
+  name: VxMenuBase
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase__ctor_
+  commentId: Overload:Ventuz.Extension.VxMenuBase.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxMenuBase.VxMenuBase
+  fullName.vb: Ventuz.Extension.VxMenuBase.New
+  nameWithType: VxMenuBase.VxMenuBase
+  nameWithType.vb: VxMenuBase.New
+- uid: Ventuz.Extension.VxMenuBase.OnAnyEntryClicked(Ventuz.Extension.VxMenuEntry)
+  name: OnAnyEntryClicked(VxMenuEntry)
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnAnyEntryClicked_Ventuz_Extension_VxMenuEntry_
+  commentId: M:Ventuz.Extension.VxMenuBase.OnAnyEntryClicked(Ventuz.Extension.VxMenuEntry)
+  fullName: Ventuz.Extension.VxMenuBase.OnAnyEntryClicked(Ventuz.Extension.VxMenuEntry)
+  nameWithType: VxMenuBase.OnAnyEntryClicked(VxMenuEntry)
+- uid: Ventuz.Extension.VxMenuBase.OnAnyEntryClicked*
+  name: OnAnyEntryClicked
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnAnyEntryClicked_
+  commentId: Overload:Ventuz.Extension.VxMenuBase.OnAnyEntryClicked
+  fullName: Ventuz.Extension.VxMenuBase.OnAnyEntryClicked
+  nameWithType: VxMenuBase.OnAnyEntryClicked
+- uid: Ventuz.Extension.VxMenuBase.OnClick
+  name: OnClick()
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClick
+  commentId: M:Ventuz.Extension.VxMenuBase.OnClick
+  fullName: Ventuz.Extension.VxMenuBase.OnClick()
+  nameWithType: VxMenuBase.OnClick()
+- uid: Ventuz.Extension.VxMenuBase.OnClick*
+  name: OnClick
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClick_
+  commentId: Overload:Ventuz.Extension.VxMenuBase.OnClick
+  fullName: Ventuz.Extension.VxMenuBase.OnClick
+  nameWithType: VxMenuBase.OnClick
+- uid: Ventuz.Extension.VxMenuBase.OnClosed
+  name: OnClosed()
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClosed
+  commentId: M:Ventuz.Extension.VxMenuBase.OnClosed
+  fullName: Ventuz.Extension.VxMenuBase.OnClosed()
+  nameWithType: VxMenuBase.OnClosed()
+- uid: Ventuz.Extension.VxMenuBase.OnClosed*
+  name: OnClosed
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClosed_
+  commentId: Overload:Ventuz.Extension.VxMenuBase.OnClosed
+  fullName: Ventuz.Extension.VxMenuBase.OnClosed
+  nameWithType: VxMenuBase.OnClosed
+- uid: Ventuz.Extension.VxMenuBase.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
+  name: OnEntryClicked(VxMenuEntry)
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnEntryClicked_Ventuz_Extension_VxMenuEntry_
+  commentId: M:Ventuz.Extension.VxMenuBase.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
+  fullName: Ventuz.Extension.VxMenuBase.OnEntryClicked(Ventuz.Extension.VxMenuEntry)
+  nameWithType: VxMenuBase.OnEntryClicked(VxMenuEntry)
+- uid: Ventuz.Extension.VxMenuBase.OnEntryClicked*
+  name: OnEntryClicked
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnEntryClicked_
+  commentId: Overload:Ventuz.Extension.VxMenuBase.OnEntryClicked
+  fullName: Ventuz.Extension.VxMenuBase.OnEntryClicked
+  nameWithType: VxMenuBase.OnEntryClicked
+- uid: Ventuz.Extension.VxMenuBase.OnOpening
+  name: OnOpening()
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnOpening
+  commentId: M:Ventuz.Extension.VxMenuBase.OnOpening
+  fullName: Ventuz.Extension.VxMenuBase.OnOpening()
+  nameWithType: VxMenuBase.OnOpening()
+- uid: Ventuz.Extension.VxMenuBase.OnOpening*
+  name: OnOpening
+  href: api/Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnOpening_
+  commentId: Overload:Ventuz.Extension.VxMenuBase.OnOpening
+  fullName: Ventuz.Extension.VxMenuBase.OnOpening
+  nameWithType: VxMenuBase.OnOpening
 - uid: Ventuz.Extension.VxMenuEntry
   name: VxMenuEntry
   href: api/Ventuz.Extension.VxMenuEntry.html
@@ -9484,6 +9490,30 @@ references:
   commentId: T:Ventuz.Extension.VxUiExtension
   fullName: Ventuz.Extension.VxUiExtension
   nameWithType: VxUiExtension
+- uid: Ventuz.Extension.VxUiExtension.OnProjectClosing
+  name: OnProjectClosing()
+  href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnProjectClosing
+  commentId: M:Ventuz.Extension.VxUiExtension.OnProjectClosing
+  fullName: Ventuz.Extension.VxUiExtension.OnProjectClosing()
+  nameWithType: VxUiExtension.OnProjectClosing()
+- uid: Ventuz.Extension.VxUiExtension.OnProjectClosing*
+  name: OnProjectClosing
+  href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnProjectClosing_
+  commentId: Overload:Ventuz.Extension.VxUiExtension.OnProjectClosing
+  fullName: Ventuz.Extension.VxUiExtension.OnProjectClosing
+  nameWithType: VxUiExtension.OnProjectClosing
+- uid: Ventuz.Extension.VxUiExtension.OnProjectOpened
+  name: OnProjectOpened()
+  href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnProjectOpened
+  commentId: M:Ventuz.Extension.VxUiExtension.OnProjectOpened
+  fullName: Ventuz.Extension.VxUiExtension.OnProjectOpened()
+  nameWithType: VxUiExtension.OnProjectOpened()
+- uid: Ventuz.Extension.VxUiExtension.OnProjectOpened*
+  name: OnProjectOpened
+  href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnProjectOpened_
+  commentId: Overload:Ventuz.Extension.VxUiExtension.OnProjectOpened
+  fullName: Ventuz.Extension.VxUiExtension.OnProjectOpened
+  nameWithType: VxUiExtension.OnProjectOpened
 - uid: Ventuz.Extension.VxUiExtension.OnSceneEvent(Ventuz.Extension.VxScene,Ventuz.Extension.VxSceneEvent)
   name: OnSceneEvent(VxScene, VxSceneEvent)
   href: api/Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSceneEvent_Ventuz_Extension_VxScene_Ventuz_Extension_VxSceneEvent_
@@ -9523,6 +9553,30 @@ references:
   commentId: Overload:Ventuz.Extension.VxUiExtension.OnUIStyleChanged
   fullName: Ventuz.Extension.VxUiExtension.OnUIStyleChanged
   nameWithType: VxUiExtension.OnUIStyleChanged
+- uid: Ventuz.Extension.VxUiService
+  name: VxUiService
+  href: api/Ventuz.Extension.VxUiService.html
+  commentId: T:Ventuz.Extension.VxUiService
+  fullName: Ventuz.Extension.VxUiService
+  nameWithType: VxUiService
+- uid: Ventuz.Extension.VxUiService.#ctor
+  name: VxUiService()
+  href: api/Ventuz.Extension.VxUiService.html#Ventuz_Extension_VxUiService__ctor
+  commentId: M:Ventuz.Extension.VxUiService.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxUiService.VxUiService()
+  fullName.vb: Ventuz.Extension.VxUiService.New()
+  nameWithType: VxUiService.VxUiService()
+  nameWithType.vb: VxUiService.New()
+- uid: Ventuz.Extension.VxUiService.#ctor*
+  name: VxUiService
+  href: api/Ventuz.Extension.VxUiService.html#Ventuz_Extension_VxUiService__ctor_
+  commentId: Overload:Ventuz.Extension.VxUiService.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxUiService.VxUiService
+  fullName.vb: Ventuz.Extension.VxUiService.New
+  nameWithType: VxUiService.VxUiService
+  nameWithType.vb: VxUiService.New
 - uid: Ventuz.Extension.VxUiStyle
   name: VxUiStyle
   href: api/Ventuz.Extension.VxUiStyle.html

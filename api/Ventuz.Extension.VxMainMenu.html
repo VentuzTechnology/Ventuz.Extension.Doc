@@ -102,7 +102,7 @@ Class VxMainMenu
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class VxMainMenu : VxUiExtension, IVxMenuEntry</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class VxMainMenu : VxMenuBase</code></pre>
   </div>
 
 
@@ -115,21 +115,31 @@ Class VxMainMenu
       <div><a class="xref" href="Ventuz.Extension.VxBase.html">VxBase</a></div>
       <div><a class="xref" href="Ventuz.Extension.VxManagedObject.html">VxManagedObject</a></div>
       <div><a class="xref" href="Ventuz.Extension.VxUiExtension.html">VxUiExtension</a></div>
+      <div><a class="xref" href="Ventuz.Extension.VxMenuBase.html">VxMenuBase</a></div>
       <div><span class="xref">VxMainMenu</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="Ventuz.Extension.IVxMenuEntry.html">IVxMenuEntry</a></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnAnyEntryClicked_Ventuz_Extension_VxMenuEntry_">VxMenuBase.OnAnyEntryClicked(VxMenuEntry)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnOpening">VxMenuBase.OnOpening()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClosed">VxMenuBase.OnClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnClick">VxMenuBase.OnClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxMenuBase.html#Ventuz_Extension_VxMenuBase_OnEntryClicked_Ventuz_Extension_VxMenuEntry_">VxMenuBase.OnEntryClicked(VxMenuEntry)</a>
+    </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSceneEvent_Ventuz_Extension_VxScene_Ventuz_Extension_VxSceneEvent_">VxUiExtension.OnSceneEvent(VxScene, VxSceneEvent)</a>
     </div>
@@ -138,6 +148,12 @@ Class VxMainMenu
     </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnSelectionChanged_System_Collections_Generic_IEnumerable_Ventuz_Extension_VxBase__">VxUiExtension.OnSelectionChanged(IEnumerable&lt;VxBase&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnProjectOpened">VxUiExtension.OnProjectOpened()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ventuz.Extension.VxUiExtension.html#Ventuz_Extension_VxUiExtension_OnProjectClosing">VxUiExtension.OnProjectClosing()</a>
     </div>
     <div>
       <a class="xref" href="Ventuz.Extension.VxBase.html#Ventuz_Extension_VxBase_Unknown">VxBase.Unknown</a>
@@ -264,155 +280,6 @@ public class MyMainMenu : VxMainMenu
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Ventuz_Extension_VxMainMenu_OnAnyEntryClicked_" data-uid="Ventuz.Extension.VxMainMenu.OnAnyEntryClicked*"></a>
-
-  <h3 id="Ventuz_Extension_VxMainMenu_OnAnyEntryClicked_Ventuz_Extension_VxMenuEntry_" data-uid="Ventuz.Extension.VxMainMenu.OnAnyEntryClicked(Ventuz.Extension.VxMenuEntry)">
-  OnAnyEntryClicked(VxMenuEntry)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void OnAnyEntryClicked(VxMenuEntry vxEntry)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>vxEntry</code> <a class="xref" href="Ventuz.Extension.VxMenuEntry.html">VxMenuEntry</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_VxMainMenu_OnClick_" data-uid="Ventuz.Extension.VxMainMenu.OnClick*"></a>
-
-  <h3 id="Ventuz_Extension_VxMainMenu_OnClick" data-uid="Ventuz.Extension.VxMainMenu.OnClick">
-  OnClick()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void OnClick()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_VxMainMenu_OnClosed_" data-uid="Ventuz.Extension.VxMainMenu.OnClosed*"></a>
-
-  <h3 id="Ventuz_Extension_VxMainMenu_OnClosed" data-uid="Ventuz.Extension.VxMainMenu.OnClosed">
-  OnClosed()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void OnClosed()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_VxMainMenu_OnEntryClicked_" data-uid="Ventuz.Extension.VxMainMenu.OnEntryClicked*"></a>
-
-  <h3 id="Ventuz_Extension_VxMainMenu_OnEntryClicked_Ventuz_Extension_VxMenuEntry_" data-uid="Ventuz.Extension.VxMainMenu.OnEntryClicked(Ventuz.Extension.VxMenuEntry)">
-  OnEntryClicked(VxMenuEntry)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void OnEntryClicked(VxMenuEntry vxEntry)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>vxEntry</code> <a class="xref" href="Ventuz.Extension.VxMenuEntry.html">VxMenuEntry</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Ventuz_Extension_VxMainMenu_OnOpening_" data-uid="Ventuz.Extension.VxMainMenu.OnOpening*"></a>
-
-  <h3 id="Ventuz_Extension_VxMainMenu_OnOpening" data-uid="Ventuz.Extension.VxMainMenu.OnOpening">
-  OnOpening()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract IEnumerable&lt;VxMenuEntry&gt; OnOpening()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Ventuz.Extension.VxMenuEntry.html">VxMenuEntry</a>&gt;</dt>
-    <dd></dd>
-  </dl>
 
 
 
