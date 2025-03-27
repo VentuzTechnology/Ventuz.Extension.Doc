@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class VxMetaDataClassAttribute </title>
+      <title>Class VxResxAttribute </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class VxMetaDataClassAttribute ">
+      <meta name="title" content="Class VxResxAttribute ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ventuz.Extension.VxMetaDataClassAttribute">
+        <article data-uid="Ventuz.Extension.VxResxAttribute">
 
 
 
-  <h1 id="Ventuz_Extension_VxMetaDataClassAttribute" data-uid="Ventuz.Extension.VxMetaDataClassAttribute" class="text-break">
-Class VxMetaDataClassAttribute  
+  <h1 id="Ventuz_Extension_VxResxAttribute" data-uid="Ventuz.Extension.VxResxAttribute" class="text-break">
+Class VxResxAttribute  
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,8 @@ Class VxMetaDataClassAttribute
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class VxMetaDataClassAttribute : VxMetaDataAttribute, _Attribute</code></pre>
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Class, Inherited = false)]
+public sealed class VxResxAttribute : VxMetaDataClassAttribute, _Attribute</code></pre>
   </div>
 
 
@@ -113,7 +114,8 @@ Class VxMetaDataClassAttribute
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
       <div><a class="xref" href="Ventuz.Extension.VxMetaDataAttribute.html">VxMetaDataAttribute</a></div>
-      <div><span class="xref">VxMetaDataClassAttribute</span></div>
+      <div><a class="xref" href="Ventuz.Extension.VxMetaDataClassAttribute.html">VxMetaDataClassAttribute</a></div>
+      <div><span class="xref">VxResxAttribute</span></div>
     </dd>
   </dl>
 
@@ -124,30 +126,12 @@ Class VxMetaDataClassAttribute
     </dd>
   </dl>
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Ventuz.Extension.VxCategoriesAttribute.html">VxCategoriesAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxDynamicIconAttribute.html">VxDynamicIconAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxHelpUrlAttribute.html">VxHelpUrlAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxIconAttribute.html">VxIconAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxInitialOutputsAttribute.html">VxInitialOutputsAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxMenuAttribute.html">VxMenuAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxResxAttribute.html">VxResxAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxToolBoxAttribute.html">VxToolBoxAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxWebViewAttribute.html">VxWebViewAttribute</a></div>
-      <div><a class="xref" href="Ventuz.Extension.VxWindowAttribute.html">VxWindowAttribute</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
       <a class="xref" href="Ventuz.Extension.VxMetaDataAttribute.html#Ventuz_Extension_VxMetaDataAttribute__ReplaceOnItem_Ventuz_Extension_VxMetaDataAttribute_">VxMetaDataAttribute._ReplaceOnItem(VxMetaDataAttribute)</a>
-    </div>
-    <div>
-      <a class="xref" href="Ventuz.Extension.VxMetaDataAttribute.html#Ventuz_Extension_VxMetaDataAttribute_MdCode">VxMetaDataAttribute.MdCode</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-type)">Attribute.GetCustomAttributes(MemberInfo, Type)</a>
@@ -272,9 +256,6 @@ Class VxMetaDataClassAttribute
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
   </dd></dl>
 
 
@@ -286,10 +267,10 @@ Class VxMetaDataClassAttribute
 </h2>
 
 
-  <a id="Ventuz_Extension_VxMetaDataClassAttribute__ctor_" data-uid="Ventuz.Extension.VxMetaDataClassAttribute.#ctor*"></a>
+  <a id="Ventuz_Extension_VxResxAttribute__ctor_" data-uid="Ventuz.Extension.VxResxAttribute.#ctor*"></a>
 
-  <h3 id="Ventuz_Extension_VxMetaDataClassAttribute__ctor" data-uid="Ventuz.Extension.VxMetaDataClassAttribute.#ctor">
-  VxMetaDataClassAttribute()
+  <h3 id="Ventuz_Extension_VxResxAttribute__ctor_System_String_" data-uid="Ventuz.Extension.VxResxAttribute.#ctor(System.String)">
+  VxResxAttribute(string)
   
   </h3>
 
@@ -297,13 +278,84 @@ Class VxMetaDataClassAttribute
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VxMetaDataClassAttribute()</code></pre>
+    <pre><code class="lang-csharp hljs">public VxResxAttribute(string baseName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>baseName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ventuz_Extension_VxResxAttribute_BaseName_" data-uid="Ventuz.Extension.VxResxAttribute.BaseName*"></a>
+
+  <h3 id="Ventuz_Extension_VxResxAttribute_BaseName" data-uid="Ventuz.Extension.VxResxAttribute.BaseName">
+  BaseName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BaseName { get; }</code></pre>
   </div>
 
 
 
 
 
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ventuz_Extension_VxResxAttribute_MdCode_" data-uid="Ventuz.Extension.VxResxAttribute.MdCode*"></a>
+
+  <h3 id="Ventuz_Extension_VxResxAttribute_MdCode" data-uid="Ventuz.Extension.VxResxAttribute.MdCode">
+  MdCode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string MdCode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

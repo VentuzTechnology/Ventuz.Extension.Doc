@@ -761,6 +761,18 @@ references:
   commentId: Overload:Ventuz.Extension.IVxApiDesigner.IsSceneOpen
   fullName: Ventuz.Extension.IVxApiDesigner.IsSceneOpen
   nameWithType: IVxApiDesigner.IsSceneOpen
+- uid: Ventuz.Extension.IVxApiDesigner.LaunchExternalWebBrowser(System.Uri)
+  name: LaunchExternalWebBrowser(Uri)
+  href: api/Ventuz.Extension.IVxApiDesigner.html#Ventuz_Extension_IVxApiDesigner_LaunchExternalWebBrowser_System_Uri_
+  commentId: M:Ventuz.Extension.IVxApiDesigner.LaunchExternalWebBrowser(System.Uri)
+  fullName: Ventuz.Extension.IVxApiDesigner.LaunchExternalWebBrowser(System.Uri)
+  nameWithType: IVxApiDesigner.LaunchExternalWebBrowser(Uri)
+- uid: Ventuz.Extension.IVxApiDesigner.LaunchExternalWebBrowser*
+  name: LaunchExternalWebBrowser
+  href: api/Ventuz.Extension.IVxApiDesigner.html#Ventuz_Extension_IVxApiDesigner_LaunchExternalWebBrowser_
+  commentId: Overload:Ventuz.Extension.IVxApiDesigner.LaunchExternalWebBrowser
+  fullName: Ventuz.Extension.IVxApiDesigner.LaunchExternalWebBrowser
+  nameWithType: IVxApiDesigner.LaunchExternalWebBrowser
 - uid: Ventuz.Extension.IVxApiDesigner.LoadAndOpenScene(System.String)
   name: LoadAndOpenScene(string)
   href: api/Ventuz.Extension.IVxApiDesigner.html#Ventuz_Extension_IVxApiDesigner_LoadAndOpenScene_System_String_
@@ -7253,6 +7265,18 @@ references:
   commentId: Overload:Ventuz.Extension.VxMenuAttribute.MdCode
   fullName: Ventuz.Extension.VxMenuAttribute.MdCode
   nameWithType: VxMenuAttribute.MdCode
+- uid: Ventuz.Extension.VxMenuAttribute.PromoButtonColor
+  name: PromoButtonColor
+  href: api/Ventuz.Extension.VxMenuAttribute.html#Ventuz_Extension_VxMenuAttribute_PromoButtonColor
+  commentId: P:Ventuz.Extension.VxMenuAttribute.PromoButtonColor
+  fullName: Ventuz.Extension.VxMenuAttribute.PromoButtonColor
+  nameWithType: VxMenuAttribute.PromoButtonColor
+- uid: Ventuz.Extension.VxMenuAttribute.PromoButtonColor*
+  name: PromoButtonColor
+  href: api/Ventuz.Extension.VxMenuAttribute.html#Ventuz_Extension_VxMenuAttribute_PromoButtonColor_
+  commentId: Overload:Ventuz.Extension.VxMenuAttribute.PromoButtonColor
+  fullName: Ventuz.Extension.VxMenuAttribute.PromoButtonColor
+  nameWithType: VxMenuAttribute.PromoButtonColor
 - uid: Ventuz.Extension.VxMenuBase
   name: VxMenuBase
   href: api/Ventuz.Extension.VxMenuBase.html
@@ -8210,6 +8234,42 @@ references:
   commentId: F:Ventuz.Extension.VxPortFlags.None
   fullName: Ventuz.Extension.VxPortFlags.None
   nameWithType: VxPortFlags.None
+- uid: Ventuz.Extension.VxPromoButton
+  name: VxPromoButton
+  href: api/Ventuz.Extension.VxPromoButton.html
+  commentId: T:Ventuz.Extension.VxPromoButton
+  fullName: Ventuz.Extension.VxPromoButton
+  nameWithType: VxPromoButton
+- uid: Ventuz.Extension.VxPromoButton.#ctor
+  name: VxPromoButton()
+  href: api/Ventuz.Extension.VxPromoButton.html#Ventuz_Extension_VxPromoButton__ctor
+  commentId: M:Ventuz.Extension.VxPromoButton.#ctor
+  name.vb: New()
+  fullName: Ventuz.Extension.VxPromoButton.VxPromoButton()
+  fullName.vb: Ventuz.Extension.VxPromoButton.New()
+  nameWithType: VxPromoButton.VxPromoButton()
+  nameWithType.vb: VxPromoButton.New()
+- uid: Ventuz.Extension.VxPromoButton.#ctor*
+  name: VxPromoButton
+  href: api/Ventuz.Extension.VxPromoButton.html#Ventuz_Extension_VxPromoButton__ctor_
+  commentId: Overload:Ventuz.Extension.VxPromoButton.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxPromoButton.VxPromoButton
+  fullName.vb: Ventuz.Extension.VxPromoButton.New
+  nameWithType: VxPromoButton.VxPromoButton
+  nameWithType.vb: VxPromoButton.New
+- uid: Ventuz.Extension.VxPromoButton.HasDropDownItems
+  name: HasDropDownItems
+  href: api/Ventuz.Extension.VxPromoButton.html#Ventuz_Extension_VxPromoButton_HasDropDownItems
+  commentId: P:Ventuz.Extension.VxPromoButton.HasDropDownItems
+  fullName: Ventuz.Extension.VxPromoButton.HasDropDownItems
+  nameWithType: VxPromoButton.HasDropDownItems
+- uid: Ventuz.Extension.VxPromoButton.HasDropDownItems*
+  name: HasDropDownItems
+  href: api/Ventuz.Extension.VxPromoButton.html#Ventuz_Extension_VxPromoButton_HasDropDownItems_
+  commentId: Overload:Ventuz.Extension.VxPromoButton.HasDropDownItems
+  fullName: Ventuz.Extension.VxPromoButton.HasDropDownItems
+  nameWithType: VxPromoButton.HasDropDownItems
 - uid: Ventuz.Extension.VxProperty
   name: VxProperty
   href: api/Ventuz.Extension.VxProperty.html
@@ -8476,6 +8536,54 @@ references:
   fullName.vb: Ventuz.Extension.VxReadOnlyProperty(Of T).Value
   nameWithType: VxReadOnlyProperty<T>.Value
   nameWithType.vb: VxReadOnlyProperty(Of T).Value
+- uid: Ventuz.Extension.VxResxAttribute
+  name: VxResxAttribute
+  href: api/Ventuz.Extension.VxResxAttribute.html
+  commentId: T:Ventuz.Extension.VxResxAttribute
+  fullName: Ventuz.Extension.VxResxAttribute
+  nameWithType: VxResxAttribute
+- uid: Ventuz.Extension.VxResxAttribute.#ctor(System.String)
+  name: VxResxAttribute(string)
+  href: api/Ventuz.Extension.VxResxAttribute.html#Ventuz_Extension_VxResxAttribute__ctor_System_String_
+  commentId: M:Ventuz.Extension.VxResxAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Ventuz.Extension.VxResxAttribute.VxResxAttribute(string)
+  fullName.vb: Ventuz.Extension.VxResxAttribute.New(String)
+  nameWithType: VxResxAttribute.VxResxAttribute(string)
+  nameWithType.vb: VxResxAttribute.New(String)
+- uid: Ventuz.Extension.VxResxAttribute.#ctor*
+  name: VxResxAttribute
+  href: api/Ventuz.Extension.VxResxAttribute.html#Ventuz_Extension_VxResxAttribute__ctor_
+  commentId: Overload:Ventuz.Extension.VxResxAttribute.#ctor
+  name.vb: New
+  fullName: Ventuz.Extension.VxResxAttribute.VxResxAttribute
+  fullName.vb: Ventuz.Extension.VxResxAttribute.New
+  nameWithType: VxResxAttribute.VxResxAttribute
+  nameWithType.vb: VxResxAttribute.New
+- uid: Ventuz.Extension.VxResxAttribute.BaseName
+  name: BaseName
+  href: api/Ventuz.Extension.VxResxAttribute.html#Ventuz_Extension_VxResxAttribute_BaseName
+  commentId: P:Ventuz.Extension.VxResxAttribute.BaseName
+  fullName: Ventuz.Extension.VxResxAttribute.BaseName
+  nameWithType: VxResxAttribute.BaseName
+- uid: Ventuz.Extension.VxResxAttribute.BaseName*
+  name: BaseName
+  href: api/Ventuz.Extension.VxResxAttribute.html#Ventuz_Extension_VxResxAttribute_BaseName_
+  commentId: Overload:Ventuz.Extension.VxResxAttribute.BaseName
+  fullName: Ventuz.Extension.VxResxAttribute.BaseName
+  nameWithType: VxResxAttribute.BaseName
+- uid: Ventuz.Extension.VxResxAttribute.MdCode
+  name: MdCode
+  href: api/Ventuz.Extension.VxResxAttribute.html#Ventuz_Extension_VxResxAttribute_MdCode
+  commentId: P:Ventuz.Extension.VxResxAttribute.MdCode
+  fullName: Ventuz.Extension.VxResxAttribute.MdCode
+  nameWithType: VxResxAttribute.MdCode
+- uid: Ventuz.Extension.VxResxAttribute.MdCode*
+  name: MdCode
+  href: api/Ventuz.Extension.VxResxAttribute.html#Ventuz_Extension_VxResxAttribute_MdCode_
+  commentId: Overload:Ventuz.Extension.VxResxAttribute.MdCode
+  fullName: Ventuz.Extension.VxResxAttribute.MdCode
+  nameWithType: VxResxAttribute.MdCode
 - uid: Ventuz.Extension.VxScene
   name: VxScene
   href: api/Ventuz.Extension.VxScene.html

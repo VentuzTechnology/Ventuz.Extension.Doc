@@ -2014,6 +2014,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxPromoButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxPromoButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxPromoButton",
+      "Summary": "<p sourcefile=\"guide/api/Ventuz.Extension.VxPromoButton.yml\" sourcestartlinenumber=\"1\">This represents the VX_API for promotion buttons (or menus) in Designer. The class should be decorated with <xref href=\"Ventuz.Extension.VxMenuAttribute\" data-throw-if-not-resolved=\"false\"></xref> and/or optionally with <xref href=\"Ventuz.Extension.VxIconAttribute\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "guide/api/Ventuz.Extension.VxProperty-1.yml",
       "output": {
         ".html": {
@@ -2094,6 +2108,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ventuz.Extension.VxReadOnlyProperty<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "guide/api/Ventuz.Extension.VxResxAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ventuz.Extension.VxResxAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ventuz.Extension.VxResxAttribute",
       "Summary": null
     },
     {
